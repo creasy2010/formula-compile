@@ -1,0 +1,84 @@
+{
+  "formulaUnit": [
+    {
+      "formulaFunction": [
+        {
+          "formulaFunctionName": [
+            {
+              "type": 15,
+              "text": "ROUND"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "text": "("
+        },
+        {
+          "formulaParams": [
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaParamNum": [
+                        {
+                          "type": 14,
+                          "text": "4.5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 3,
+              "text": ","
+            },
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaParamNum": [
+                        {
+                          "type": 14,
+                          "text": "4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 3,
+              "text": ","
+            },
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaParamConst": [
+                        {
+                          "type": 20,
+                          "text": "$QYID$"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 2,
+          "text": ")"
+        }
+      ]
+    }
+  ]
+}

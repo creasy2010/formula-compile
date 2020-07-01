@@ -1,0 +1,648 @@
+{
+  "formulaUnit": [
+    {
+      "formulaExpress": [
+        {
+          "formulaExpress": [
+            {
+              "formulaExpress": [
+                {
+                  "formulaCELLLoc": [
+                    {
+                      "type": 17,
+                      "text": "{附表二}![H20]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "formulaOperation": [
+                {
+                  "type": 12,
+                  "text": "-"
+                }
+              ]
+            },
+            {
+              "formulaExpress": [
+                {
+                  "formulaFunction": [
+                    {
+                      "formulaFunctionName": [
+                        {
+                          "type": 15,
+                          "text": "UDEF_FP_JX"
+                        }
+                      ]
+                    },
+                    {
+                      "type": 1,
+                      "text": "("
+                    },
+                    {
+                      "formulaParams": [
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u00272\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u00271\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u00271\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u00271\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamConst": [
+                                    {
+                                      "type": 20,
+                                      "text": "$QYID$"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamConst": [
+                                    {
+                                      "type": 20,
+                                      "text": "$KJND_B$"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamConst": [
+                                    {
+                                      "type": 20,
+                                      "text": "$KJQJ_B$"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamConst": [
+                                    {
+                                      "type": 20,
+                                      "text": "$KJND_E$"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamConst": [
+                                    {
+                                      "type": 20,
+                                      "text": "$KJQJ_E$"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u0027null\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u0027ZZSZY\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u0027null\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u0027null\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 3,
+                          "text": ","
+                        },
+                        {
+                          "formulaParam": [
+                            {
+                              "formulaExpress": [
+                                {
+                                  "formulaParamString": [
+                                    {
+                                      "type": 16,
+                                      "text": "\u0027null\u0027"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 2,
+                      "text": ")"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "formulaOperation": [
+            {
+              "type": 12,
+              "text": "-"
+            }
+          ]
+        },
+        {
+          "formulaExpress": [
+            {
+              "formulaFunction": [
+                {
+                  "formulaFunctionName": [
+                    {
+                      "type": 15,
+                      "text": "UDEF_FP_JX"
+                    }
+                  ]
+                },
+                {
+                  "type": 1,
+                  "text": "("
+                },
+                {
+                  "formulaParams": [
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u00272\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u00271\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u00271\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u00271\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamConst": [
+                                {
+                                  "type": 20,
+                                  "text": "$QYID$"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamConst": [
+                                {
+                                  "type": 20,
+                                  "text": "$KJND_B$"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamConst": [
+                                {
+                                  "type": 20,
+                                  "text": "$KJQJ_B$"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamConst": [
+                                {
+                                  "type": 20,
+                                  "text": "$KJND_E$"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamConst": [
+                                {
+                                  "type": 20,
+                                  "text": "$KJQJ_E$"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u0027null\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u0027JDCXS\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u0027null\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u0027null\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 3,
+                      "text": ","
+                    },
+                    {
+                      "formulaParam": [
+                        {
+                          "formulaExpress": [
+                            {
+                              "formulaParamString": [
+                                {
+                                  "type": 16,
+                                  "text": "\u0027null\u0027"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 2,
+                  "text": ")"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

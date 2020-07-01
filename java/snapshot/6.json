@@ -1,0 +1,204 @@
+{
+  "formulaUnit": [
+    {
+      "formulaFunction": [
+        {
+          "formulaFunctionName": [
+            {
+              "type": 15,
+              "text": "IF"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "text": "("
+        },
+        {
+          "formulaParams": [
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaExpress": [
+                        {
+                          "formulaCELLLoc": [
+                            {
+                              "type": 17,
+                              "text": "{主表}![Q33]"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "formulaOperation": [
+                        {
+                          "type": 5,
+                          "text": "\u003e\u003d"
+                        }
+                      ]
+                    },
+                    {
+                      "formulaExpress": [
+                        {
+                          "formulaCELLLoc": [
+                            {
+                              "type": 17,
+                              "text": "[F9]"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 3,
+              "text": ","
+            },
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaCELLLoc": [
+                        {
+                          "type": 17,
+                          "text": "[F9]"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 3,
+              "text": ","
+            },
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaFunction": [
+                        {
+                          "formulaFunctionName": [
+                            {
+                              "type": 15,
+                              "text": "IF"
+                            }
+                          ]
+                        },
+                        {
+                          "type": 1,
+                          "text": "("
+                        },
+                        {
+                          "formulaParams": [
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaCELLLoc": [
+                                            {
+                                              "type": 17,
+                                              "text": "{主表}![Q33]"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "formulaOperation": [
+                                        {
+                                          "type": 4,
+                                          "text": "\u003e"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaParamNum": [
+                                            {
+                                              "type": 14,
+                                              "text": "0"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaCELLLoc": [
+                                        {
+                                          "type": 17,
+                                          "text": "{主表}![Q33]"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamNum": [
+                                        {
+                                          "type": 14,
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 2,
+                          "text": ")"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 2,
+          "text": ")"
+        }
+      ]
+    }
+  ]
+}

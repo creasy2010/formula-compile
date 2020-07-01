@@ -1,0 +1,604 @@
+{
+  "formulaUnit": [
+    {
+      "formulaFunction": [
+        {
+          "formulaFunctionName": [
+            {
+              "type": 15,
+              "text": "IF"
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "text": "("
+        },
+        {
+          "formulaParams": [
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaExpress": [
+                        {
+                          "formulaFunction": [
+                            {
+                              "formulaFunctionName": [
+                                {
+                                  "type": 15,
+                                  "text": "CJ_SFCJ"
+                                }
+                              ]
+                            },
+                            {
+                              "type": 1,
+                              "text": "("
+                            },
+                            {
+                              "formulaParams": [
+                                {
+                                  "formulaParam": [
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaParamConst": [
+                                            {
+                                              "type": 20,
+                                              "text": "$QYID$"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": 3,
+                                  "text": ","
+                                },
+                                {
+                                  "formulaParam": [
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaParamConst": [
+                                            {
+                                              "type": 20,
+                                              "text": "$KJND$"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": 3,
+                                  "text": ","
+                                },
+                                {
+                                  "formulaParam": [
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaParamConst": [
+                                            {
+                                              "type": 20,
+                                              "text": "$KJQJ$"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": 3,
+                                  "text": ","
+                                },
+                                {
+                                  "formulaParam": [
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaParamConst": [
+                                            {
+                                              "type": 20,
+                                              "text": "$SBSZID$"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": 3,
+                                  "text": ","
+                                },
+                                {
+                                  "formulaParam": [
+                                    {
+                                      "formulaExpress": [
+                                        {
+                                          "formulaParamConst": [
+                                            {
+                                              "type": 20,
+                                              "text": "$NSQXDM$"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 2,
+                              "text": ")"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "formulaOperation": [
+                        {
+                          "type": 8,
+                          "text": "\u003d\u003d"
+                        }
+                      ]
+                    },
+                    {
+                      "formulaExpress": [
+                        {
+                          "formulaParamNum": [
+                            {
+                              "type": 14,
+                              "text": "0"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 3,
+              "text": ","
+            },
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaFunction": [
+                        {
+                          "formulaFunctionName": [
+                            {
+                              "type": 15,
+                              "text": "UDEF_ZB"
+                            }
+                          ]
+                        },
+                        {
+                          "type": 1,
+                          "text": "("
+                        },
+                        {
+                          "formulaParams": [
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$QYID$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$KJND$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$KJQJ$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamString": [
+                                        {
+                                          "type": 16,
+                                          "text": "\u0027613392304798957568\u0027"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamString": [
+                                        {
+                                          "type": 16,
+                                          "text": "\u0027主表\u0027"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamString": [
+                                        {
+                                          "type": 16,
+                                          "text": "\u0027Q29\u0027"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamNum": [
+                                        {
+                                          "type": 14,
+                                          "text": "-1"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamNum": [
+                                        {
+                                          "type": 14,
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$NSQXDM$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 2,
+                          "text": ")"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": 3,
+              "text": ","
+            },
+            {
+              "formulaParam": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaFunction": [
+                        {
+                          "formulaFunctionName": [
+                            {
+                              "type": 15,
+                              "text": "UDEF_ZB"
+                            }
+                          ]
+                        },
+                        {
+                          "type": 1,
+                          "text": "("
+                        },
+                        {
+                          "formulaParams": [
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$QYID$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$KJND$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$KJQJ$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamString": [
+                                        {
+                                          "type": 16,
+                                          "text": "\u0027559786832728948736\u0027"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamString": [
+                                        {
+                                          "type": 16,
+                                          "text": "\u0027主表\u0027"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamString": [
+                                        {
+                                          "type": 16,
+                                          "text": "\u0027Q29\u0027"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamNum": [
+                                        {
+                                          "type": 14,
+                                          "text": "-1"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamNum": [
+                                        {
+                                          "type": 14,
+                                          "text": "0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": 3,
+                              "text": ","
+                            },
+                            {
+                              "formulaParam": [
+                                {
+                                  "formulaExpress": [
+                                    {
+                                      "formulaParamConst": [
+                                        {
+                                          "type": 20,
+                                          "text": "$NSQXDM$"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": 2,
+                          "text": ")"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": 2,
+          "text": ")"
+        }
+      ]
+    }
+  ]
+}

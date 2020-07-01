@@ -1,0 +1,112 @@
+{
+  "formulaUnit": [
+    {
+      "formulaExpress": [
+        {
+          "formulaExpress": [
+            {
+              "formulaExpress": [
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaExpress": [
+                        {
+                          "formulaCELLLoc": [
+                            {
+                              "type": 17,
+                              "text": "[Q21]"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "formulaOperation": [
+                        {
+                          "type": 9,
+                          "text": "+"
+                        }
+                      ]
+                    },
+                    {
+                      "formulaExpress": [
+                        {
+                          "formulaCELLLoc": [
+                            {
+                              "type": 17,
+                              "text": "[Q22]"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "formulaOperation": [
+                    {
+                      "type": 12,
+                      "text": "-"
+                    }
+                  ]
+                },
+                {
+                  "formulaExpress": [
+                    {
+                      "formulaCELLLoc": [
+                        {
+                          "type": 17,
+                          "text": "[Q23]"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "formulaOperation": [
+                {
+                  "type": 12,
+                  "text": "-"
+                }
+              ]
+            },
+            {
+              "formulaExpress": [
+                {
+                  "formulaCELLLoc": [
+                    {
+                      "type": 17,
+                      "text": "[Q24]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "formulaOperation": [
+            {
+              "type": 9,
+              "text": "+"
+            }
+          ]
+        },
+        {
+          "formulaExpress": [
+            {
+              "formulaCELLLoc": [
+                {
+                  "type": 17,
+                  "text": "[Q25]"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
