@@ -1,0 +1,15 @@
+{
+  "name": "formula-compile",
+  "version": "0.0.0",
+  "description": "formula-compile",
+  "main": "index.js",
+  "scripts": {
+    "gene": "antlr4 -Dlanguage=JavaScript ../java/Formula.g4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.8.0"
+  }
+}
