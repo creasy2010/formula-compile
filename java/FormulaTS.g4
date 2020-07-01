@@ -1,4 +1,4 @@
-grammar Formula;
+grammar FormulaTS;
 
 formulaUnit  :
    formulaFunction
