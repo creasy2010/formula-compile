@@ -6,13 +6,27 @@
           "formulaFunctionName": [
             {
               "type": 15,
-              "text": "IF"
+              "text": "IF",
+              "range": {
+                "stopIndex": 1,
+                "startIndex": 0,
+                "line": 1,
+                "column": 0,
+                "type": 15
+              }
             }
           ]
         },
         {
           "type": 1,
-          "text": "("
+          "text": "(",
+          "range": {
+            "stopIndex": 2,
+            "startIndex": 2,
+            "line": 1,
+            "column": 2,
+            "type": 1
+          }
         },
         {
           "formulaParams": [
@@ -30,7 +44,14 @@
                                   "formulaCELLLoc": [
                                     {
                                       "type": 17,
-                                      "text": "[Q34]"
+                                      "text": "[Q34]",
+                                      "range": {
+                                        "stopIndex": 7,
+                                        "startIndex": 3,
+                                        "line": 1,
+                                        "column": 3,
+                                        "type": 17
+                                      }
                                     }
                                   ]
                                 }
@@ -40,7 +61,14 @@
                               "formulaOperation": [
                                 {
                                   "type": 9,
-                                  "text": "+"
+                                  "text": "+",
+                                  "range": {
+                                    "stopIndex": 8,
+                                    "startIndex": 8,
+                                    "line": 1,
+                                    "column": 8,
+                                    "type": 9
+                                  }
                                 }
                               ]
                             },
@@ -50,7 +78,14 @@
                                   "formulaCELLLoc": [
                                     {
                                       "type": 17,
-                                      "text": "[Q35]"
+                                      "text": "[Q35]",
+                                      "range": {
+                                        "stopIndex": 13,
+                                        "startIndex": 9,
+                                        "line": 1,
+                                        "column": 9,
+                                        "type": 17
+                                      }
                                     }
                                   ]
                                 }
@@ -62,7 +97,14 @@
                           "formulaOperation": [
                             {
                               "type": 12,
-                              "text": "-"
+                              "text": "-",
+                              "range": {
+                                "stopIndex": 14,
+                                "startIndex": 14,
+                                "line": 1,
+                                "column": 14,
+                                "type": 12
+                              }
                             }
                           ]
                         },
@@ -72,7 +114,14 @@
                               "formulaCELLLoc": [
                                 {
                                   "type": 17,
-                                  "text": "[Q36]"
+                                  "text": "[Q36]",
+                                  "range": {
+                                    "stopIndex": 19,
+                                    "startIndex": 15,
+                                    "line": 1,
+                                    "column": 15,
+                                    "type": 17
+                                  }
                                 }
                               ]
                             }
@@ -84,7 +133,14 @@
                       "formulaOperation": [
                         {
                           "type": 4,
-                          "text": "\u003e"
+                          "text": "\u003e",
+                          "range": {
+                            "stopIndex": 20,
+                            "startIndex": 20,
+                            "line": 1,
+                            "column": 20,
+                            "type": 4
+                          }
                         }
                       ]
                     },
@@ -94,7 +150,14 @@
                           "formulaParamNum": [
                             {
                               "type": 14,
-                              "text": "0"
+                              "text": "0",
+                              "range": {
+                                "stopIndex": 21,
+                                "startIndex": 21,
+                                "line": 1,
+                                "column": 21,
+                                "type": 14
+                              }
                             }
                           ]
                         }
@@ -106,7 +169,14 @@
             },
             {
               "type": 3,
-              "text": ","
+              "text": ",",
+              "range": {
+                "stopIndex": 22,
+                "startIndex": 22,
+                "line": 1,
+                "column": 22,
+                "type": 3
+              }
             },
             {
               "formulaParam": [
@@ -120,7 +190,14 @@
                               "formulaCELLLoc": [
                                 {
                                   "type": 17,
-                                  "text": "[Q34]"
+                                  "text": "[Q34]",
+                                  "range": {
+                                    "stopIndex": 27,
+                                    "startIndex": 23,
+                                    "line": 1,
+                                    "column": 23,
+                                    "type": 17
+                                  }
                                 }
                               ]
                             }
@@ -130,7 +207,14 @@
                           "formulaOperation": [
                             {
                               "type": 9,
-                              "text": "+"
+                              "text": "+",
+                              "range": {
+                                "stopIndex": 28,
+                                "startIndex": 28,
+                                "line": 1,
+                                "column": 28,
+                                "type": 9
+                              }
                             }
                           ]
                         },
@@ -140,7 +224,14 @@
                               "formulaCELLLoc": [
                                 {
                                   "type": 17,
-                                  "text": "[Q35]"
+                                  "text": "[Q35]",
+                                  "range": {
+                                    "stopIndex": 33,
+                                    "startIndex": 29,
+                                    "line": 1,
+                                    "column": 29,
+                                    "type": 17
+                                  }
                                 }
                               ]
                             }
@@ -152,7 +243,14 @@
                       "formulaOperation": [
                         {
                           "type": 12,
-                          "text": "-"
+                          "text": "-",
+                          "range": {
+                            "stopIndex": 34,
+                            "startIndex": 34,
+                            "line": 1,
+                            "column": 34,
+                            "type": 12
+                          }
                         }
                       ]
                     },
@@ -162,7 +260,14 @@
                           "formulaCELLLoc": [
                             {
                               "type": 17,
-                              "text": "[Q36]"
+                              "text": "[Q36]",
+                              "range": {
+                                "stopIndex": 39,
+                                "startIndex": 35,
+                                "line": 1,
+                                "column": 35,
+                                "type": 17
+                              }
                             }
                           ]
                         }
@@ -174,7 +279,14 @@
             },
             {
               "type": 3,
-              "text": ","
+              "text": ",",
+              "range": {
+                "stopIndex": 40,
+                "startIndex": 40,
+                "line": 1,
+                "column": 40,
+                "type": 3
+              }
             },
             {
               "formulaParam": [
@@ -184,7 +296,14 @@
                       "formulaParamNum": [
                         {
                           "type": 14,
-                          "text": "0"
+                          "text": "0",
+                          "range": {
+                            "stopIndex": 41,
+                            "startIndex": 41,
+                            "line": 1,
+                            "column": 41,
+                            "type": 14
+                          }
                         }
                       ]
                     }
@@ -196,7 +315,14 @@
         },
         {
           "type": 2,
-          "text": ")"
+          "text": ")",
+          "range": {
+            "stopIndex": 42,
+            "startIndex": 42,
+            "line": 1,
+            "column": 42,
+            "type": 2
+          }
         }
       ]
     }

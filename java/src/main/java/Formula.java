@@ -7,6 +7,8 @@ import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
 
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,6 +41,13 @@ public class Formula {
             map.put("type", token.getType());
             map.put("text", Formula.unicodeStr2String(token.getText()));
 
+            Map<String,Number> range =new HashMap<String, Number>();
+            range.put("line",token.getLine());
+            range.put("startIndex",token.getStartIndex());
+            range.put("stopIndex",token.getStopIndex());
+            range.put("column",token.getCharPositionInLine());
+            range.put("type",token.getType());
+            map.put("range", range);
         }else {
             List<Map<String, Object>> children = new ArrayList<Map<String, Object>>();
             String name = tree.getClass().getSimpleName().replaceAll("Context$", "");
@@ -139,18 +148,18 @@ public class Formula {
             FormulaLexer lexer = new FormulaLexer(CharStreams.fromString(Formula.testFormulas.get(i)));
             CommonTokenStream tokens = new CommonTokenStream(lexer);
 //
-//            FileOutputStream outStream = new FileOutputStream("/Users/dong/ast/antlr4-execrse/1hello/java/formula/snapshot/"+i+".json");
-//            OutputStreamWriter writer = new OutputStreamWriter(outStream, "UTF-8");
-//            writer.append(Formula.toJson(new FormulaParser(tokens).formulaUnit()));
-//            writer.close();
-//            outStream.close();
+            FileOutputStream outStream = new FileOutputStream("/Users/dong/yzfworkbench/formula-compile/java/snapshot/"+i+".json");
+            OutputStreamWriter writer = new OutputStreamWriter(outStream, "UTF-8");
+            writer.append(Formula.toJson(new FormulaParser(tokens).formulaUnit()));
+            writer.close();
+            outStream.close();
 
-            FormulaParser parser = new FormulaParser(tokens);
-            RuleContext tree = parser.formulaUnit();
-            parser.setBuildParseTree(true);
-//            System.out.println("Vocabulary:"+parser.getVocabulary());
-//            System.out.println("token :"+parser.getCurrentToken());
-            System.out.println("["+i+"]\\T:"+tree.toStringTree(parser));
+//            FormulaParser parser = new FormulaParser(tokens);
+//            RuleContext tree = parser.formulaUnit();
+//            parser.setBuildParseTree(true);
+////            System.out.println("Vocabulary:"+parser.getVocabulary());
+////            System.out.println("token :"+parser.getCurrentToken());
+//            System.out.println("["+i+"]\\T:"+tree.toStringTree(parser));
         }
     }
 

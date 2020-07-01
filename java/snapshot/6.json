@@ -6,13 +6,27 @@
           "formulaFunctionName": [
             {
               "type": 15,
-              "text": "IF"
+              "text": "IF",
+              "range": {
+                "stopIndex": 1,
+                "startIndex": 0,
+                "line": 1,
+                "column": 0,
+                "type": 15
+              }
             }
           ]
         },
         {
           "type": 1,
-          "text": "("
+          "text": "(",
+          "range": {
+            "stopIndex": 2,
+            "startIndex": 2,
+            "line": 1,
+            "column": 2,
+            "type": 1
+          }
         },
         {
           "formulaParams": [
@@ -26,7 +40,14 @@
                           "formulaCELLLoc": [
                             {
                               "type": 17,
-                              "text": "{主表}![Q33]"
+                              "text": "{主表}![Q33]",
+                              "range": {
+                                "stopIndex": 12,
+                                "startIndex": 3,
+                                "line": 1,
+                                "column": 3,
+                                "type": 17
+                              }
                             }
                           ]
                         }
@@ -36,7 +57,14 @@
                       "formulaOperation": [
                         {
                           "type": 5,
-                          "text": "\u003e\u003d"
+                          "text": "\u003e\u003d",
+                          "range": {
+                            "stopIndex": 14,
+                            "startIndex": 13,
+                            "line": 1,
+                            "column": 13,
+                            "type": 5
+                          }
                         }
                       ]
                     },
@@ -46,7 +74,14 @@
                           "formulaCELLLoc": [
                             {
                               "type": 17,
-                              "text": "[F9]"
+                              "text": "[F9]",
+                              "range": {
+                                "stopIndex": 18,
+                                "startIndex": 15,
+                                "line": 1,
+                                "column": 15,
+                                "type": 17
+                              }
                             }
                           ]
                         }
@@ -58,7 +93,14 @@
             },
             {
               "type": 3,
-              "text": ","
+              "text": ",",
+              "range": {
+                "stopIndex": 19,
+                "startIndex": 19,
+                "line": 1,
+                "column": 19,
+                "type": 3
+              }
             },
             {
               "formulaParam": [
@@ -68,7 +110,14 @@
                       "formulaCELLLoc": [
                         {
                           "type": 17,
-                          "text": "[F9]"
+                          "text": "[F9]",
+                          "range": {
+                            "stopIndex": 23,
+                            "startIndex": 20,
+                            "line": 1,
+                            "column": 20,
+                            "type": 17
+                          }
                         }
                       ]
                     }
@@ -78,7 +127,14 @@
             },
             {
               "type": 3,
-              "text": ","
+              "text": ",",
+              "range": {
+                "stopIndex": 24,
+                "startIndex": 24,
+                "line": 1,
+                "column": 24,
+                "type": 3
+              }
             },
             {
               "formulaParam": [
@@ -90,13 +146,27 @@
                           "formulaFunctionName": [
                             {
                               "type": 15,
-                              "text": "IF"
+                              "text": "IF",
+                              "range": {
+                                "stopIndex": 26,
+                                "startIndex": 25,
+                                "line": 1,
+                                "column": 25,
+                                "type": 15
+                              }
                             }
                           ]
                         },
                         {
                           "type": 1,
-                          "text": "("
+                          "text": "(",
+                          "range": {
+                            "stopIndex": 27,
+                            "startIndex": 27,
+                            "line": 1,
+                            "column": 27,
+                            "type": 1
+                          }
                         },
                         {
                           "formulaParams": [
@@ -110,7 +180,14 @@
                                           "formulaCELLLoc": [
                                             {
                                               "type": 17,
-                                              "text": "{主表}![Q33]"
+                                              "text": "{主表}![Q33]",
+                                              "range": {
+                                                "stopIndex": 37,
+                                                "startIndex": 28,
+                                                "line": 1,
+                                                "column": 28,
+                                                "type": 17
+                                              }
                                             }
                                           ]
                                         }
@@ -120,7 +197,14 @@
                                       "formulaOperation": [
                                         {
                                           "type": 4,
-                                          "text": "\u003e"
+                                          "text": "\u003e",
+                                          "range": {
+                                            "stopIndex": 38,
+                                            "startIndex": 38,
+                                            "line": 1,
+                                            "column": 38,
+                                            "type": 4
+                                          }
                                         }
                                       ]
                                     },
@@ -130,7 +214,14 @@
                                           "formulaParamNum": [
                                             {
                                               "type": 14,
-                                              "text": "0"
+                                              "text": "0",
+                                              "range": {
+                                                "stopIndex": 39,
+                                                "startIndex": 39,
+                                                "line": 1,
+                                                "column": 39,
+                                                "type": 14
+                                              }
                                             }
                                           ]
                                         }
@@ -142,7 +233,14 @@
                             },
                             {
                               "type": 3,
-                              "text": ","
+                              "text": ",",
+                              "range": {
+                                "stopIndex": 40,
+                                "startIndex": 40,
+                                "line": 1,
+                                "column": 40,
+                                "type": 3
+                              }
                             },
                             {
                               "formulaParam": [
@@ -152,7 +250,14 @@
                                       "formulaCELLLoc": [
                                         {
                                           "type": 17,
-                                          "text": "{主表}![Q33]"
+                                          "text": "{主表}![Q33]",
+                                          "range": {
+                                            "stopIndex": 50,
+                                            "startIndex": 41,
+                                            "line": 1,
+                                            "column": 41,
+                                            "type": 17
+                                          }
                                         }
                                       ]
                                     }
@@ -162,7 +267,14 @@
                             },
                             {
                               "type": 3,
-                              "text": ","
+                              "text": ",",
+                              "range": {
+                                "stopIndex": 51,
+                                "startIndex": 51,
+                                "line": 1,
+                                "column": 51,
+                                "type": 3
+                              }
                             },
                             {
                               "formulaParam": [
@@ -172,7 +284,14 @@
                                       "formulaParamNum": [
                                         {
                                           "type": 14,
-                                          "text": "0"
+                                          "text": "0",
+                                          "range": {
+                                            "stopIndex": 52,
+                                            "startIndex": 52,
+                                            "line": 1,
+                                            "column": 52,
+                                            "type": 14
+                                          }
                                         }
                                       ]
                                     }
@@ -184,7 +303,14 @@
                         },
                         {
                           "type": 2,
-                          "text": ")"
+                          "text": ")",
+                          "range": {
+                            "stopIndex": 53,
+                            "startIndex": 53,
+                            "line": 1,
+                            "column": 53,
+                            "type": 2
+                          }
                         }
                       ]
                     }
@@ -196,7 +322,14 @@
         },
         {
           "type": 2,
-          "text": ")"
+          "text": ")",
+          "range": {
+            "stopIndex": 54,
+            "startIndex": 54,
+            "line": 1,
+            "column": 54,
+            "type": 2
+          }
         }
       ]
     }

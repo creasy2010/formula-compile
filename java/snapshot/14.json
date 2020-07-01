@@ -10,7 +10,14 @@
                   "formulaCELLLoc": [
                     {
                       "type": 17,
-                      "text": "{附表二}![H20]"
+                      "text": "{附表二}![H20]",
+                      "range": {
+                        "stopIndex": 10,
+                        "startIndex": 0,
+                        "line": 1,
+                        "column": 0,
+                        "type": 17
+                      }
                     }
                   ]
                 }
@@ -20,7 +27,14 @@
               "formulaOperation": [
                 {
                   "type": 12,
-                  "text": "-"
+                  "text": "-",
+                  "range": {
+                    "stopIndex": 11,
+                    "startIndex": 11,
+                    "line": 1,
+                    "column": 11,
+                    "type": 12
+                  }
                 }
               ]
             },
@@ -32,13 +46,27 @@
                       "formulaFunctionName": [
                         {
                           "type": 15,
-                          "text": "UDEF_FP_JX"
+                          "text": "UDEF_FP_JX",
+                          "range": {
+                            "stopIndex": 21,
+                            "startIndex": 12,
+                            "line": 1,
+                            "column": 12,
+                            "type": 15
+                          }
                         }
                       ]
                     },
                     {
                       "type": 1,
-                      "text": "("
+                      "text": "(",
+                      "range": {
+                        "stopIndex": 22,
+                        "startIndex": 22,
+                        "line": 1,
+                        "column": 22,
+                        "type": 1
+                      }
                     },
                     {
                       "formulaParams": [
@@ -50,7 +78,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u00272\u0027"
+                                      "text": "\u00272\u0027",
+                                      "range": {
+                                        "stopIndex": 25,
+                                        "startIndex": 23,
+                                        "line": 1,
+                                        "column": 23,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -60,7 +95,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 26,
+                            "startIndex": 26,
+                            "line": 1,
+                            "column": 26,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -70,7 +112,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u00271\u0027"
+                                      "text": "\u00271\u0027",
+                                      "range": {
+                                        "stopIndex": 29,
+                                        "startIndex": 27,
+                                        "line": 1,
+                                        "column": 27,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -80,7 +129,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 30,
+                            "startIndex": 30,
+                            "line": 1,
+                            "column": 30,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -90,7 +146,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u00271\u0027"
+                                      "text": "\u00271\u0027",
+                                      "range": {
+                                        "stopIndex": 33,
+                                        "startIndex": 31,
+                                        "line": 1,
+                                        "column": 31,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -100,7 +163,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 34,
+                            "startIndex": 34,
+                            "line": 1,
+                            "column": 34,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -110,7 +180,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u00271\u0027"
+                                      "text": "\u00271\u0027",
+                                      "range": {
+                                        "stopIndex": 37,
+                                        "startIndex": 35,
+                                        "line": 1,
+                                        "column": 35,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -120,7 +197,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 38,
+                            "startIndex": 38,
+                            "line": 1,
+                            "column": 38,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -130,7 +214,14 @@
                                   "formulaParamConst": [
                                     {
                                       "type": 20,
-                                      "text": "$QYID$"
+                                      "text": "$QYID$",
+                                      "range": {
+                                        "stopIndex": 44,
+                                        "startIndex": 39,
+                                        "line": 1,
+                                        "column": 39,
+                                        "type": 20
+                                      }
                                     }
                                   ]
                                 }
@@ -140,7 +231,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 45,
+                            "startIndex": 45,
+                            "line": 1,
+                            "column": 45,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -150,7 +248,14 @@
                                   "formulaParamConst": [
                                     {
                                       "type": 20,
-                                      "text": "$KJND_B$"
+                                      "text": "$KJND_B$",
+                                      "range": {
+                                        "stopIndex": 53,
+                                        "startIndex": 46,
+                                        "line": 1,
+                                        "column": 46,
+                                        "type": 20
+                                      }
                                     }
                                   ]
                                 }
@@ -160,7 +265,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 54,
+                            "startIndex": 54,
+                            "line": 1,
+                            "column": 54,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -170,7 +282,14 @@
                                   "formulaParamConst": [
                                     {
                                       "type": 20,
-                                      "text": "$KJQJ_B$"
+                                      "text": "$KJQJ_B$",
+                                      "range": {
+                                        "stopIndex": 62,
+                                        "startIndex": 55,
+                                        "line": 1,
+                                        "column": 55,
+                                        "type": 20
+                                      }
                                     }
                                   ]
                                 }
@@ -180,7 +299,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 63,
+                            "startIndex": 63,
+                            "line": 1,
+                            "column": 63,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -190,7 +316,14 @@
                                   "formulaParamConst": [
                                     {
                                       "type": 20,
-                                      "text": "$KJND_E$"
+                                      "text": "$KJND_E$",
+                                      "range": {
+                                        "stopIndex": 71,
+                                        "startIndex": 64,
+                                        "line": 1,
+                                        "column": 64,
+                                        "type": 20
+                                      }
                                     }
                                   ]
                                 }
@@ -200,7 +333,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 72,
+                            "startIndex": 72,
+                            "line": 1,
+                            "column": 72,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -210,7 +350,14 @@
                                   "formulaParamConst": [
                                     {
                                       "type": 20,
-                                      "text": "$KJQJ_E$"
+                                      "text": "$KJQJ_E$",
+                                      "range": {
+                                        "stopIndex": 80,
+                                        "startIndex": 73,
+                                        "line": 1,
+                                        "column": 73,
+                                        "type": 20
+                                      }
                                     }
                                   ]
                                 }
@@ -220,7 +367,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 81,
+                            "startIndex": 81,
+                            "line": 1,
+                            "column": 81,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -230,7 +384,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u0027null\u0027"
+                                      "text": "\u0027null\u0027",
+                                      "range": {
+                                        "stopIndex": 87,
+                                        "startIndex": 82,
+                                        "line": 1,
+                                        "column": 82,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -240,7 +401,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 88,
+                            "startIndex": 88,
+                            "line": 1,
+                            "column": 88,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -250,7 +418,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u0027ZZSZY\u0027"
+                                      "text": "\u0027ZZSZY\u0027",
+                                      "range": {
+                                        "stopIndex": 95,
+                                        "startIndex": 89,
+                                        "line": 1,
+                                        "column": 89,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -260,7 +435,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 96,
+                            "startIndex": 96,
+                            "line": 1,
+                            "column": 96,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -270,7 +452,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u0027null\u0027"
+                                      "text": "\u0027null\u0027",
+                                      "range": {
+                                        "stopIndex": 102,
+                                        "startIndex": 97,
+                                        "line": 1,
+                                        "column": 97,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -280,7 +469,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 103,
+                            "startIndex": 103,
+                            "line": 1,
+                            "column": 103,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -290,7 +486,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u0027null\u0027"
+                                      "text": "\u0027null\u0027",
+                                      "range": {
+                                        "stopIndex": 109,
+                                        "startIndex": 104,
+                                        "line": 1,
+                                        "column": 104,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -300,7 +503,14 @@
                         },
                         {
                           "type": 3,
-                          "text": ","
+                          "text": ",",
+                          "range": {
+                            "stopIndex": 110,
+                            "startIndex": 110,
+                            "line": 1,
+                            "column": 110,
+                            "type": 3
+                          }
                         },
                         {
                           "formulaParam": [
@@ -310,7 +520,14 @@
                                   "formulaParamString": [
                                     {
                                       "type": 16,
-                                      "text": "\u0027null\u0027"
+                                      "text": "\u0027null\u0027",
+                                      "range": {
+                                        "stopIndex": 116,
+                                        "startIndex": 111,
+                                        "line": 1,
+                                        "column": 111,
+                                        "type": 16
+                                      }
                                     }
                                   ]
                                 }
@@ -322,7 +539,14 @@
                     },
                     {
                       "type": 2,
-                      "text": ")"
+                      "text": ")",
+                      "range": {
+                        "stopIndex": 117,
+                        "startIndex": 117,
+                        "line": 1,
+                        "column": 117,
+                        "type": 2
+                      }
                     }
                   ]
                 }
@@ -334,7 +558,14 @@
           "formulaOperation": [
             {
               "type": 12,
-              "text": "-"
+              "text": "-",
+              "range": {
+                "stopIndex": 118,
+                "startIndex": 118,
+                "line": 1,
+                "column": 118,
+                "type": 12
+              }
             }
           ]
         },
@@ -346,13 +577,27 @@
                   "formulaFunctionName": [
                     {
                       "type": 15,
-                      "text": "UDEF_FP_JX"
+                      "text": "UDEF_FP_JX",
+                      "range": {
+                        "stopIndex": 128,
+                        "startIndex": 119,
+                        "line": 1,
+                        "column": 119,
+                        "type": 15
+                      }
                     }
                   ]
                 },
                 {
                   "type": 1,
-                  "text": "("
+                  "text": "(",
+                  "range": {
+                    "stopIndex": 129,
+                    "startIndex": 129,
+                    "line": 1,
+                    "column": 129,
+                    "type": 1
+                  }
                 },
                 {
                   "formulaParams": [
@@ -364,7 +609,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u00272\u0027"
+                                  "text": "\u00272\u0027",
+                                  "range": {
+                                    "stopIndex": 132,
+                                    "startIndex": 130,
+                                    "line": 1,
+                                    "column": 130,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -374,7 +626,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 133,
+                        "startIndex": 133,
+                        "line": 1,
+                        "column": 133,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -384,7 +643,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u00271\u0027"
+                                  "text": "\u00271\u0027",
+                                  "range": {
+                                    "stopIndex": 136,
+                                    "startIndex": 134,
+                                    "line": 1,
+                                    "column": 134,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -394,7 +660,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 137,
+                        "startIndex": 137,
+                        "line": 1,
+                        "column": 137,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -404,7 +677,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u00271\u0027"
+                                  "text": "\u00271\u0027",
+                                  "range": {
+                                    "stopIndex": 140,
+                                    "startIndex": 138,
+                                    "line": 1,
+                                    "column": 138,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -414,7 +694,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 141,
+                        "startIndex": 141,
+                        "line": 1,
+                        "column": 141,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -424,7 +711,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u00271\u0027"
+                                  "text": "\u00271\u0027",
+                                  "range": {
+                                    "stopIndex": 144,
+                                    "startIndex": 142,
+                                    "line": 1,
+                                    "column": 142,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -434,7 +728,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 145,
+                        "startIndex": 145,
+                        "line": 1,
+                        "column": 145,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -444,7 +745,14 @@
                               "formulaParamConst": [
                                 {
                                   "type": 20,
-                                  "text": "$QYID$"
+                                  "text": "$QYID$",
+                                  "range": {
+                                    "stopIndex": 151,
+                                    "startIndex": 146,
+                                    "line": 1,
+                                    "column": 146,
+                                    "type": 20
+                                  }
                                 }
                               ]
                             }
@@ -454,7 +762,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 152,
+                        "startIndex": 152,
+                        "line": 1,
+                        "column": 152,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -464,7 +779,14 @@
                               "formulaParamConst": [
                                 {
                                   "type": 20,
-                                  "text": "$KJND_B$"
+                                  "text": "$KJND_B$",
+                                  "range": {
+                                    "stopIndex": 160,
+                                    "startIndex": 153,
+                                    "line": 1,
+                                    "column": 153,
+                                    "type": 20
+                                  }
                                 }
                               ]
                             }
@@ -474,7 +796,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 161,
+                        "startIndex": 161,
+                        "line": 1,
+                        "column": 161,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -484,7 +813,14 @@
                               "formulaParamConst": [
                                 {
                                   "type": 20,
-                                  "text": "$KJQJ_B$"
+                                  "text": "$KJQJ_B$",
+                                  "range": {
+                                    "stopIndex": 169,
+                                    "startIndex": 162,
+                                    "line": 1,
+                                    "column": 162,
+                                    "type": 20
+                                  }
                                 }
                               ]
                             }
@@ -494,7 +830,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 170,
+                        "startIndex": 170,
+                        "line": 1,
+                        "column": 170,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -504,7 +847,14 @@
                               "formulaParamConst": [
                                 {
                                   "type": 20,
-                                  "text": "$KJND_E$"
+                                  "text": "$KJND_E$",
+                                  "range": {
+                                    "stopIndex": 178,
+                                    "startIndex": 171,
+                                    "line": 1,
+                                    "column": 171,
+                                    "type": 20
+                                  }
                                 }
                               ]
                             }
@@ -514,7 +864,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 179,
+                        "startIndex": 179,
+                        "line": 1,
+                        "column": 179,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -524,7 +881,14 @@
                               "formulaParamConst": [
                                 {
                                   "type": 20,
-                                  "text": "$KJQJ_E$"
+                                  "text": "$KJQJ_E$",
+                                  "range": {
+                                    "stopIndex": 187,
+                                    "startIndex": 180,
+                                    "line": 1,
+                                    "column": 180,
+                                    "type": 20
+                                  }
                                 }
                               ]
                             }
@@ -534,7 +898,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 188,
+                        "startIndex": 188,
+                        "line": 1,
+                        "column": 188,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -544,7 +915,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u0027null\u0027"
+                                  "text": "\u0027null\u0027",
+                                  "range": {
+                                    "stopIndex": 194,
+                                    "startIndex": 189,
+                                    "line": 1,
+                                    "column": 189,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -554,7 +932,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 195,
+                        "startIndex": 195,
+                        "line": 1,
+                        "column": 195,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -564,7 +949,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u0027JDCXS\u0027"
+                                  "text": "\u0027JDCXS\u0027",
+                                  "range": {
+                                    "stopIndex": 202,
+                                    "startIndex": 196,
+                                    "line": 1,
+                                    "column": 196,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -574,7 +966,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 203,
+                        "startIndex": 203,
+                        "line": 1,
+                        "column": 203,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -584,7 +983,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u0027null\u0027"
+                                  "text": "\u0027null\u0027",
+                                  "range": {
+                                    "stopIndex": 209,
+                                    "startIndex": 204,
+                                    "line": 1,
+                                    "column": 204,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -594,7 +1000,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 210,
+                        "startIndex": 210,
+                        "line": 1,
+                        "column": 210,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -604,7 +1017,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u0027null\u0027"
+                                  "text": "\u0027null\u0027",
+                                  "range": {
+                                    "stopIndex": 216,
+                                    "startIndex": 211,
+                                    "line": 1,
+                                    "column": 211,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -614,7 +1034,14 @@
                     },
                     {
                       "type": 3,
-                      "text": ","
+                      "text": ",",
+                      "range": {
+                        "stopIndex": 217,
+                        "startIndex": 217,
+                        "line": 1,
+                        "column": 217,
+                        "type": 3
+                      }
                     },
                     {
                       "formulaParam": [
@@ -624,7 +1051,14 @@
                               "formulaParamString": [
                                 {
                                   "type": 16,
-                                  "text": "\u0027null\u0027"
+                                  "text": "\u0027null\u0027",
+                                  "range": {
+                                    "stopIndex": 223,
+                                    "startIndex": 218,
+                                    "line": 1,
+                                    "column": 218,
+                                    "type": 16
+                                  }
                                 }
                               ]
                             }
@@ -636,7 +1070,14 @@
                 },
                 {
                   "type": 2,
-                  "text": ")"
+                  "text": ")",
+                  "range": {
+                    "stopIndex": 224,
+                    "startIndex": 224,
+                    "line": 1,
+                    "column": 224,
+                    "type": 2
+                  }
                 }
               ]
             }

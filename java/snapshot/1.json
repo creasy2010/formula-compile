@@ -6,13 +6,27 @@
           "formulaFunctionName": [
             {
               "type": 15,
-              "text": "ROUND"
+              "text": "ROUND",
+              "range": {
+                "stopIndex": 4,
+                "startIndex": 0,
+                "line": 1,
+                "column": 0,
+                "type": 15
+              }
             }
           ]
         },
         {
           "type": 1,
-          "text": "("
+          "text": "(",
+          "range": {
+            "stopIndex": 5,
+            "startIndex": 5,
+            "line": 1,
+            "column": 5,
+            "type": 1
+          }
         },
         {
           "formulaParams": [
@@ -24,7 +38,14 @@
                       "formulaParamNum": [
                         {
                           "type": 14,
-                          "text": "0"
+                          "text": "0",
+                          "range": {
+                            "stopIndex": 6,
+                            "startIndex": 6,
+                            "line": 1,
+                            "column": 6,
+                            "type": 14
+                          }
                         }
                       ]
                     }
@@ -36,7 +57,14 @@
         },
         {
           "type": 2,
-          "text": ")"
+          "text": ")",
+          "range": {
+            "stopIndex": 7,
+            "startIndex": 7,
+            "line": 1,
+            "column": 7,
+            "type": 2
+          }
         }
       ]
     }

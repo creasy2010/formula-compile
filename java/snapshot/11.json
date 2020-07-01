@@ -14,7 +14,14 @@
                           "formulaCELLLoc": [
                             {
                               "type": 17,
-                              "text": "{附表一}![L8]"
+                              "text": "{附表一}![L8]",
+                              "range": {
+                                "stopIndex": 9,
+                                "startIndex": 0,
+                                "line": 1,
+                                "column": 0,
+                                "type": 17
+                              }
                             }
                           ]
                         }
@@ -24,7 +31,14 @@
                       "formulaOperation": [
                         {
                           "type": 9,
-                          "text": "+"
+                          "text": "+",
+                          "range": {
+                            "stopIndex": 10,
+                            "startIndex": 10,
+                            "line": 1,
+                            "column": 10,
+                            "type": 9
+                          }
                         }
                       ]
                     },
@@ -34,7 +48,14 @@
                           "formulaCELLLoc": [
                             {
                               "type": 17,
-                              "text": "{附表一}![L9]"
+                              "text": "{附表一}![L9]",
+                              "range": {
+                                "stopIndex": 20,
+                                "startIndex": 11,
+                                "line": 1,
+                                "column": 11,
+                                "type": 17
+                              }
                             }
                           ]
                         }
@@ -46,7 +67,14 @@
                   "formulaOperation": [
                     {
                       "type": 9,
-                      "text": "+"
+                      "text": "+",
+                      "range": {
+                        "stopIndex": 21,
+                        "startIndex": 21,
+                        "line": 1,
+                        "column": 21,
+                        "type": 9
+                      }
                     }
                   ]
                 },
@@ -56,7 +84,14 @@
                       "formulaCELLLoc": [
                         {
                           "type": 17,
-                          "text": "{附表一}![L10]"
+                          "text": "{附表一}![L10]",
+                          "range": {
+                            "stopIndex": 32,
+                            "startIndex": 22,
+                            "line": 1,
+                            "column": 22,
+                            "type": 17
+                          }
                         }
                       ]
                     }
@@ -68,7 +103,14 @@
               "formulaOperation": [
                 {
                   "type": 9,
-                  "text": "+"
+                  "text": "+",
+                  "range": {
+                    "stopIndex": 33,
+                    "startIndex": 33,
+                    "line": 1,
+                    "column": 33,
+                    "type": 9
+                  }
                 }
               ]
             },
@@ -78,7 +120,14 @@
                   "formulaCELLLoc": [
                     {
                       "type": 17,
-                      "text": "{附表一}![L11]"
+                      "text": "{附表一}![L11]",
+                      "range": {
+                        "stopIndex": 44,
+                        "startIndex": 34,
+                        "line": 1,
+                        "column": 34,
+                        "type": 17
+                      }
                     }
                   ]
                 }
@@ -90,7 +139,14 @@
           "formulaOperation": [
             {
               "type": 9,
-              "text": "+"
+              "text": "+",
+              "range": {
+                "stopIndex": 45,
+                "startIndex": 45,
+                "line": 1,
+                "column": 45,
+                "type": 9
+              }
             }
           ]
         },
@@ -100,7 +156,14 @@
               "formulaCELLLoc": [
                 {
                   "type": 17,
-                  "text": "{附表一}![L12]"
+                  "text": "{附表一}![L12]",
+                  "range": {
+                    "stopIndex": 56,
+                    "startIndex": 46,
+                    "line": 1,
+                    "column": 46,
+                    "type": 17
+                  }
                 }
               ]
             }
