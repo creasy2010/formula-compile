@@ -30,9 +30,12 @@ describe('公式测试', () => {
 
   it('visitor处理',async()=>{
     let visitor  = new FormulaTSVisitor();
-    let ast  =visitor.toAst(formulas[2]);
-    console.log(JSON.stringify(ast,null,2));
-    //
+    // for (let i = 0, iLen = formulas.length; i < iLen; i++) {
+    for (let i = 0, iLen = 10; i < iLen; i++) {
+      let formula = formulas[i];
+      let ast  =visitor.toAst(formula);
+      expect(ast).toMatchSnapshot('测试公式formulas['+i+']');
+    }
     // let tree  = parseFormula(formulas[2]);
     // visitor.visit(tree);
   })

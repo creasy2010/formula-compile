@@ -78,5 +78,23 @@ FormulaTSVisitor.prototype.visitFormulaOperation = function(ctx) {
 };
 
 
+// Visit a parse tree produced by FormulaTSParser#skipFuncLBracket.
+FormulaTSVisitor.prototype.visitSkipFuncLBracket = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by FormulaTSParser#skipFuncRBracket.
+FormulaTSVisitor.prototype.visitSkipFuncRBracket = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by FormulaTSParser#skipParamComma.
+FormulaTSVisitor.prototype.visitSkipParamComma = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 
 exports.FormulaTSVisitor = FormulaTSVisitor;

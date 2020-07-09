@@ -39,18 +39,22 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaFunction.
   visitFormulaFunction(ctx) {
-    debugger;
-    return {
-      '!': 'FormulaFunction',
-      range: getRangeInfo(ctx),
-      name:this.visit(ctx.children[0]),
-      params:ctx.children.length > 3 && ctx.children[2].children.map(item=>{
+    let params=[];
+    if( ctx.children.length > 3 && ctx.children[2].children) {
+      params = ctx.children[2].children?.map(item=>{
         if(item instanceof TerminalNodeImpl) {
           return getTerminalNodeInfo(item);
         } else {
           return this.visit(item)
         }
-      })
+      }).filter(item=>!!item)
+    }
+
+    return {
+      '!': 'FormulaFunction',
+      range: getRangeInfo(ctx),
+      name:this.visit(ctx.children[0]),
+      params
     };
   }
 
@@ -129,4 +133,24 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
       value:ctx.getText()
     };
   }
+
+
+// Visit a parse tree produced by FormulaTSParser#skipFuncLBracket.
+  visitSkipFuncLBracket(ctx) {
+    return ;
+  };
+
+
+// Visit a parse tree produced by FormulaTSParser#skipFuncRBracket.
+  visitSkipFuncRBracket(ctx) {
+    return ;
+  };
+
+
+// Visit a parse tree produced by FormulaTSParser#skipParamComma.
+  visitSkipParamComma(ctx) {
+    return ;
+  };
+
+
 }

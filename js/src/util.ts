@@ -33,7 +33,7 @@ export function getTokenInfo(token:Token){
 
 export function getRangeInfo(ctx:ParserRuleContext){
 
-  // return "todo";
+  return "todo";
   return {
     depth:ctx.depth(),
     start: getTokenInfo(ctx.start),

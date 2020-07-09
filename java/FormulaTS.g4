@@ -4,8 +4,8 @@ formulaUnit  :
    formulaFunction
  | formulaExpress
 ;
-formulaFunction : formulaFunctionName Func_LBracket formulaParams? Func_RBracket;
-formulaParams :(formulaParam ParamComma?)*;
+formulaFunction : formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
+formulaParams :(formulaParam skipParamComma?)*;
 ////公式变量;
 formulaParam
     : formulaParamConst
@@ -49,6 +49,10 @@ formulaOperation
          ;
 
 
+skipFuncLBracket:'(';
+skipFuncRBracket:')';
+//参数间隔符号;
+skipParamComma : ',' ;
 
 //操作符;
 OPERATE_GREATE:'>';
@@ -80,9 +84,3 @@ WS  :            [ \t\r\n]+ ->skip;
 //静态变量
 //CONSTVAR :       [A-Za-z_]+;
 CONSTVAR :  '$'[A-Za-z_]+'$';
-
-Func_LBracket:'(' ->skip;
-Func_RBracket:')' ->skip;
-
-//参数间隔符号;
-ParamComma : ',' ->skip;
