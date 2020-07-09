@@ -6,7 +6,9 @@
  * @coder.yang2010@gmail.com
  * @Date    2020/7/9
  **/
-import {parseFormula, toJSON} from '../index'
+import {parseFormula} from '../index'
+import {FormulaTSVisitor} from "../FormulaTSVisitor";
+import {toJSON} from "../util";
 
 describe('公式测试', () => {
   it('基本公式测试', async () => {
@@ -25,6 +27,15 @@ describe('公式测试', () => {
       }
     }
   });
+
+  it('visitor处理',async()=>{
+    let visitor  = new FormulaTSVisitor();
+    let ast  =visitor.toAst(formulas[2]);
+    console.log(JSON.stringify(ast,null,2));
+    //
+    // let tree  = parseFormula(formulas[2]);
+    // visitor.visit(tree);
+  })
 });
 
 

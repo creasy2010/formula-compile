@@ -14,56 +14,16 @@ import {FormulaTSLexer} from './FormulaTSLexer';
 import {FormulaTSParser} from './FormulaTSParser';
 import {FormulaTSListener} from './FormulaTSListener';
 import {ParseTree, ParseTreeWalker, TerminalNodeImpl} from "antlr4/tree/Tree";
+import {ParserRuleContext} from "antlr4";
+import {toJSON} from "./util";
 
 
-
-export function toJSON(tree:ParseTree){
-  let result  ={};
-  traverse(tree,result);
-  return result;
-}
-
-
-
-function traverse(tree:ParseTree,result){
-
-  if(tree instanceof TerminalNodeImpl){
-    let token = tree.getSymbol();
-    // result.token=token;
-    result.range={
-      type:token.type,
-      line:token.line,
-      startIndex:token.start,
-      stopIndex:token.stop,
-      column:token.column,
-    };
-    result.text =token.text;
-  }else{
-    let children = [];
-    let name  = Object.getPrototypeOf(tree).constructor.name.replace(/Context$/,"");
-    result[name] = children;
-    //@ts-ignore
-    if(tree?.children?.length>0){
-      //@ts-ignore
-      for (let i = 0, iLen = tree.children?.length; i < iLen; i++) {
-        //@ts-ignore
-        let child = tree.children[i];
-        let childInfo={
-          type:name,
-        };
-        children.push(childInfo);
-        traverse(child,childInfo);
-      }
-    }
-  }
-
-}
 
 export function parseFormula2Json(formulaStr:string){
   return toJSON(parseFormula(formulaStr));
 }
 
-export function walk(tree:ParseTree,listener:FormulaTSListener){
+export function walk(tree:ParserRuleContext,listener:FormulaTSListener){
   let walker = new ParseTreeWalker();
   walker.walk(listener, tree);
 }
@@ -73,7 +33,7 @@ export function walk(tree:ParseTree,listener:FormulaTSListener){
  * 解析公式字符串
  * @param formulaStr
  */
-export function parseFormula(formulaStr:string):ParseTree{
+export function parseFormula(formulaStr:string):ParserRuleContext{
   var chars = new antlr4.InputStream(formulaStr);
   let lexer = new FormulaTSLexer(chars);
   var tokens  = new antlr4.CommonTokenStream(lexer);
