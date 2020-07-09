@@ -146,14 +146,18 @@ public class Formula {
 
         for (int i = 0; i < Formula.testFormulas.size(); i++) {
             FormulaLexer lexer = new FormulaLexer(CharStreams.fromString(Formula.testFormulas.get(i)));
+
+            long startTime = System.currentTimeMillis(); //程序开始记录时间
             CommonTokenStream tokens = new CommonTokenStream(lexer);
 //
             FileOutputStream outStream = new FileOutputStream("/Users/dong/yzfworkbench/formula-compile/java/snapshot/"+i+".json");
             OutputStreamWriter writer = new OutputStreamWriter(outStream, "UTF-8");
-            writer.append(Formula.toJson(new FormulaParser(tokens).formulaUnit()));
+             String result  =Formula.toJson(new FormulaParser(tokens).formulaUnit());
+            long endTime   = System.currentTimeMillis(); //程序结束记录时间
+            System.out.println("公式 "+i+"用时"+(endTime - startTime)+"ms");
+            writer.append(result);
             writer.close();
             outStream.close();
-
 //            FormulaParser parser = new FormulaParser(tokens);
 //            RuleContext tree = parser.formulaUnit();
 //            parser.setBuildParseTree(true);
