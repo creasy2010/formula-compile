@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gene": "antlr4 -Dlanguage=JavaScript ../java/Formula.g4",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

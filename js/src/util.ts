@@ -19,7 +19,6 @@ export function toJSON(tree:ParserRuleContext){
 }
 
 
-
 export function getTokenInfo(token:Token){
   return {
     type:token.type,
