@@ -4,11 +4,14 @@ formulaUnit  :
    formulaFunction
  | formulaExpress
 ;
-formulaFunction : formulaFunctionName '(' formulaParams? ')';
-formulaParams :(formulaParam ','?)*;
+formulaFunction : formulaFunctionName Func_LBracket formulaParams? Func_RBracket;
+formulaParams :(formulaParam ParamComma?)*;
 ////公式变量;
 formulaParam
-    : formulaExpress
+    : formulaParamConst
+    | formulaParamNum
+    | formulaParamString
+    | formulaExpress
     ;
 
 //公式方法名称;
@@ -74,7 +77,12 @@ SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
 //ID  :            [a-z]+;
 //空格
 WS  :            [ \t\r\n]+ ->skip;
-
 //静态变量
 //CONSTVAR :       [A-Za-z_]+;
 CONSTVAR :  '$'[A-Za-z_]+'$';
+
+Func_LBracket:'(' ->skip;
+Func_RBracket:')' ->skip;
+
+//参数间隔符号;
+ParamComma : ',' ->skip;
