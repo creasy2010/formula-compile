@@ -32,8 +32,11 @@ describe('公式测试', () => {
     let visitor  = new FormulaTSVisitor();
     for (let i = 0, iLen = formulas.length; i < iLen; i++) {
     // for (let i = 0, iLen = 20; i < iLen; i++) {
+      let timeFLag =`公式[${i}]耗时`;
       let formula = formulas[i];
+      console.time(timeFLag);
       let ast  =visitor.toAst(formula);
+      console.timeEnd(timeFLag);
       expect(ast).toMatchSnapshot('测试公式formulas['+i+']');
     }
     // let tree  = parseFormula(formulas[2]);
