@@ -13,7 +13,8 @@ import * as fse from 'fs-extra';
 import {FormulaTSLexer} from './FormulaTSLexer';
 import {FormulaTSParser} from './FormulaTSParser';
 import {FormulaTSListener} from './FormulaTSListener';
-import {ParseTree, TerminalNodeImpl} from "antlr4/tree/Tree";
+import {ParseTree, ParseTreeWalker, TerminalNodeImpl} from "antlr4/tree/Tree";
+
 
 
 export function toJSON(tree:ParseTree){
@@ -22,27 +23,34 @@ export function toJSON(tree:ParseTree){
   return result;
 }
 
+
+
 function traverse(tree:ParseTree,result){
 
   if(tree instanceof TerminalNodeImpl){
     let token = tree.getSymbol();
     // result.token=token;
     result.range={
+      type:token.type,
       line:token.line,
       startIndex:token.start,
       stopIndex:token.stop,
       column:token.column,
-      type:token.type,
     };
     result.text =token.text;
   }else{
     let children = [];
     let name  = Object.getPrototypeOf(tree).constructor.name.replace(/Context$/,"");
     result[name] = children;
+    //@ts-ignore
     if(tree?.children?.length>0){
+      //@ts-ignore
       for (let i = 0, iLen = tree.children?.length; i < iLen; i++) {
+        //@ts-ignore
         let child = tree.children[i];
-        let childInfo={};
+        let childInfo={
+          type:name,
+        };
         children.push(childInfo);
         traverse(child,childInfo);
       }
@@ -51,13 +59,23 @@ function traverse(tree:ParseTree,result){
 
 }
 
+export function parseFormula2Json(formulaStr:string){
+  return toJSON(parseFormula(formulaStr));
+}
+
+export function walk(tree:ParseTree,listener:FormulaTSListener){
+  let walker = new ParseTreeWalker();
+  walker.walk(listener, tree);
+}
+
+
 /**
  * 解析公式字符串
  * @param formulaStr
  */
-export function parseFormula(formulaStr:string){
+export function parseFormula(formulaStr:string):ParseTree{
   var chars = new antlr4.InputStream(formulaStr);
-  let lexer = new FormulaTSLexer(chars)
+  let lexer = new FormulaTSLexer(chars);
   var tokens  = new antlr4.CommonTokenStream(lexer);
 //用token生成parser
   var parser = new FormulaTSParser(tokens);
