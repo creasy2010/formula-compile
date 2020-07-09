@@ -1,0 +1,29 @@
+{
+  "name": "formula-compile",
+  "version": "1.0.0",
+  "description": "公式编译器",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creasy2010/formula-compile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creasy2010/formula-compile/issues"
+  },
+  "homepage": "https://github.com/creasy2010/formula-compile#readme",
+  "dependencies": {
+    "jest": "^26.1.0",
+    "jest-cli": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4"
+  }
+}

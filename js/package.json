@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "@types/antlr4": "^4.7.1",
-    "antlr4": "^4.8.0"
+    "@types/fs-extra": "^9.0.1",
+    "antlr4": "^4.8.0",
+    "fs-extra": "^9.0.1"
   }
 }
