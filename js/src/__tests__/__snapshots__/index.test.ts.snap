@@ -88,7 +88,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -348,7 +348,7 @@ Object {
                     },
                     "range": "todo",
                   },
-                  "name": undefined,
+                  "name": "IF",
                   "range": "todo",
                   "thenStatement": Object {
                     "!": "FormulaParam",
@@ -520,7 +520,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -640,7 +640,7 @@ Object {
                     },
                     "range": "todo",
                   },
-                  "name": undefined,
+                  "name": "IF",
                   "range": "todo",
                   "thenStatement": Object {
                     "!": "FormulaParam",
@@ -666,7 +666,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -860,7 +860,7 @@ Object {
                     },
                     "range": "todo",
                   },
-                  "name": undefined,
+                  "name": "IF",
                   "range": "todo",
                   "thenStatement": Object {
                     "!": "FormulaParam",
@@ -960,7 +960,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -1715,7 +1715,7 @@ Object {
                                                                                                                                                                                                                               },
                                                                                                                                                                                                                               "range": "todo",
                                                                                                                                                                                                                             },
-                                                                                                                                                                                                                            "name": undefined,
+                                                                                                                                                                                                                            "name": "IF",
                                                                                                                                                                                                                             "range": "todo",
                                                                                                                                                                                                                             "thenStatement": Object {
                                                                                                                                                                                                                               "!": "FormulaParam",
@@ -1980,7 +1980,7 @@ Object {
                                                                                                                                                                                                                           },
                                                                                                                                                                                                                           "range": "todo",
                                                                                                                                                                                                                         },
-                                                                                                                                                                                                                        "name": undefined,
+                                                                                                                                                                                                                        "name": "IF",
                                                                                                                                                                                                                         "range": "todo",
                                                                                                                                                                                                                         "thenStatement": Object {
                                                                                                                                                                                                                           "!": "FormulaParam",
@@ -2380,7 +2380,7 @@ Object {
                                                                                                                                                                                                               },
                                                                                                                                                                                                               "range": "todo",
                                                                                                                                                                                                             },
-                                                                                                                                                                                                            "name": undefined,
+                                                                                                                                                                                                            "name": "IF",
                                                                                                                                                                                                             "range": "todo",
                                                                                                                                                                                                             "thenStatement": Object {
                                                                                                                                                                                                               "!": "FormulaParam",
@@ -5165,7 +5165,7 @@ Object {
                                                                                   },
                                                                                   "range": "todo",
                                                                                 },
-                                                                                "name": undefined,
+                                                                                "name": "IF",
                                                                                 "range": "todo",
                                                                                 "thenStatement": Object {
                                                                                   "!": "FormulaParam",
@@ -19948,7 +19948,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -20111,7 +20111,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -20337,7 +20337,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -20597,7 +20597,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -20918,7 +20918,7 @@ Object {
                   },
                   "range": "todo",
                 },
-                "name": undefined,
+                "name": "IF",
                 "range": "todo",
                 "thenStatement": Object {
                   "!": "FormulaParam",
@@ -21223,7 +21223,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -22708,7 +22708,7 @@ Object {
                   },
                   "range": "todo",
                 },
-                "name": undefined,
+                "name": "IF",
                 "range": "todo",
                 "thenStatement": Object {
                   "!": "FormulaParam",
@@ -25972,7 +25972,7 @@ Object {
           },
           "range": "todo",
         },
-        "name": undefined,
+        "name": "IF",
         "range": "todo",
         "thenStatement": Object {
           "!": "FormulaParam",
@@ -26074,6 +26074,436 @@ Object {
         },
       },
       "params": Array [],
+      "range": "todo",
+    },
+  ],
+  "range": "todo",
+}
+`;
+
+exports[`公式测试 visitor处理: 测试公式formulas[27] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaExpress",
+      "express": Array [
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "1",
+                    },
+                  ],
+                  "range": "todo",
+                },
+                Object {
+                  "!": "FormulaOperation",
+                  "range": "todo",
+                  "value": "+",
+                },
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "2",
+                    },
+                  ],
+                  "range": "todo",
+                },
+              ],
+              "range": "todo",
+            },
+            Object {
+              "!": "FormulaOperation",
+              "range": "todo",
+              "value": "+",
+            },
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": "todo",
+                  "value": "3",
+                },
+              ],
+              "range": "todo",
+            },
+          ],
+          "range": "todo",
+        },
+        Object {
+          "!": "FormulaOperation",
+          "range": "todo",
+          "value": "*",
+        },
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaParamNum",
+              "range": "todo",
+              "value": "5",
+            },
+          ],
+          "range": "todo",
+        },
+      ],
+      "range": "todo",
+    },
+  ],
+  "range": "todo",
+}
+`;
+
+exports[`公式测试 visitor处理: 测试公式formulas[29] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaExpress",
+      "express": Array [
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "1",
+                    },
+                  ],
+                  "range": "todo",
+                },
+                Object {
+                  "!": "FormulaOperation",
+                  "range": "todo",
+                  "value": "+",
+                },
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "2",
+                    },
+                  ],
+                  "range": "todo",
+                },
+              ],
+              "range": "todo",
+            },
+            Object {
+              "!": "FormulaOperation",
+              "range": "todo",
+              "value": "*",
+            },
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": "todo",
+                  "value": "3",
+                },
+              ],
+              "range": "todo",
+            },
+          ],
+          "range": "todo",
+        },
+        Object {
+          "!": "FormulaOperation",
+          "range": "todo",
+          "value": "+",
+        },
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaParamNum",
+              "range": "todo",
+              "value": "5",
+            },
+          ],
+          "range": "todo",
+        },
+      ],
+      "range": "todo",
+    },
+  ],
+  "range": "todo",
+}
+`;
+
+exports[`公式测试 visitor处理: 测试公式formulas[31] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaExpress",
+      "express": Array [
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "1",
+                    },
+                  ],
+                  "range": "todo",
+                },
+                Object {
+                  "!": "FormulaOperation",
+                  "range": "todo",
+                  "value": "*",
+                },
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "2",
+                    },
+                  ],
+                  "range": "todo",
+                },
+              ],
+              "range": "todo",
+            },
+            Object {
+              "!": "FormulaOperation",
+              "range": "todo",
+              "value": "+",
+            },
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": "todo",
+                  "value": "3",
+                },
+              ],
+              "range": "todo",
+            },
+          ],
+          "range": "todo",
+        },
+        Object {
+          "!": "FormulaOperation",
+          "range": "todo",
+          "value": "+",
+        },
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaParamNum",
+              "range": "todo",
+              "value": "5",
+            },
+          ],
+          "range": "todo",
+        },
+      ],
+      "range": "todo",
+    },
+  ],
+  "range": "todo",
+}
+`;
+
+exports[`公式测试 visitor处理: 测试公式formulas[33] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaExpress",
+      "express": Array [
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "1",
+                    },
+                  ],
+                  "range": "todo",
+                },
+                Object {
+                  "!": "FormulaOperation",
+                  "range": "todo",
+                  "value": "*",
+                },
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "2",
+                    },
+                  ],
+                  "range": "todo",
+                },
+              ],
+              "range": "todo",
+            },
+            Object {
+              "!": "FormulaOperation",
+              "range": "todo",
+              "value": "+",
+            },
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": "todo",
+                  "value": "3",
+                },
+              ],
+              "range": "todo",
+            },
+          ],
+          "range": "todo",
+        },
+        Object {
+          "!": "FormulaOperation",
+          "range": "todo",
+          "value": "*",
+        },
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaParamNum",
+              "range": "todo",
+              "value": "5",
+            },
+          ],
+          "range": "todo",
+        },
+      ],
+      "range": "todo",
+    },
+  ],
+  "range": "todo",
+}
+`;
+
+exports[`公式测试 visitor处理: 测试公式formulas[35] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaExpress",
+      "express": Array [
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "1",
+                    },
+                  ],
+                  "range": "todo",
+                },
+                Object {
+                  "!": "FormulaOperation",
+                  "range": "todo",
+                  "value": "+",
+                },
+                Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": "todo",
+                      "value": "2",
+                    },
+                  ],
+                  "range": "todo",
+                },
+              ],
+              "range": "todo",
+            },
+            Object {
+              "!": "FormulaOperation",
+              "range": "todo",
+              "value": "+",
+            },
+            Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": "todo",
+                  "value": "3",
+                },
+              ],
+              "range": "todo",
+            },
+          ],
+          "range": "todo",
+        },
+        Object {
+          "!": "FormulaOperation",
+          "range": "todo",
+          "value": ">",
+        },
+        Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaParamNum",
+              "range": "todo",
+              "value": "5",
+            },
+          ],
+          "range": "todo",
+        },
+      ],
       "range": "todo",
     },
   ],

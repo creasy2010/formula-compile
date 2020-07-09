@@ -33,7 +33,10 @@ describe('公式测试', () => {
     for (let i = 0, iLen = formulas.length; i < iLen; i++) {
     // for (let i = 0, iLen = 20; i < iLen; i++) {
       let formula = formulas[i];
-      let timeFLag =`公式[${i}]耗时 长度:${formula.length}`;
+      if(!formula){
+        continue;
+      }
+      let timeFLag =`公式[${i}]耗时 长度:${formula?.length}`;
       console.time(timeFLag);
       let ast  =visitor.toAst(formula);
       console.timeEnd(timeFLag);
@@ -75,4 +78,9 @@ let formulas:string[] = [
   ,"[Q12]+IF(CJ_SFCJ($QYID$, $KJND$, $KJQJ$, $SBSZID$, $NSQXDM$)==0,UDEF_ZB($QYID$,$KJND$,$KJQJ$,'613392304798957568','主表','W12',-1,0,$NSQXDM$),UDEF_ZB($QYID$,$KJND$,$KJQJ$,'559786832728948736','主表','W12',-1,0,$NSQXDM$))"
   ,"UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSZY','00010201','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSPT','00010201','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','JDCXS','00010201','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','GSTYJD','00010201','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSZY','00010205','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSPT','00010205','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','GSTYJD','00010205','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSZY','00010206','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSPT','00010206','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','JDCXS','00010206','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','GSTYJD','00010206','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSZY','00010207','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSPT','00010207','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','GSTYJD','00010207','1','null','1','0')  +UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSZY','00010212','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSPT','00010212','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','JDCXS','00010212','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','GSTYJD','00010212','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSZY','00010213','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','ZZSPT','00010213','1','null','1','0')+UDEF_FP_XX('1',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','GSTYJD','00010213','1','null','1','0')"
   ,"IF(CJ_SFCJ($QYID$, $KJND$, $KJQJ$, $SBSZID$, $NSQXDM$)==0,UDEF_ZB($QYID$,$KJND$,$KJQJ$,'613392304798957568','主表','AE41',-1,0,$NSQXDM$),UDEF_ZB($QYID$,$KJND$,$KJQJ$,'559786832728948736','主表','AE41',-1,0,$NSQXDM$))"
+  ,"1+2+3*5",
+  ,"1+2*3+5",
+  ,"1*2+3+5",
+  ,"1*2+3*5",
+  ,"1+2+3>5",
 ];
