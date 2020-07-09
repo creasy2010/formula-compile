@@ -33,13 +33,13 @@ export function getTokenInfo(token:Token){
 
 export function getRangeInfo(ctx:ParserRuleContext){
 
-  return "todo";
-  // return {
-  //   depth:ctx.depth(),
-  //   start: getTokenInfo(ctx.start),
-  //   stop: getTokenInfo(ctx.stop),
-  //   _source: ctx.getText(),
-  // }
+  // return "todo";
+  return {
+    depth:ctx.depth(),
+    start: getTokenInfo(ctx.start),
+    stop: getTokenInfo(ctx.stop),
+    _source: ctx.getText(),
+  }
 }
 
 export function getTerminalNodeInfo(terminalNode:TerminalNodeImpl){

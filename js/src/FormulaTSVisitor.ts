@@ -66,7 +66,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     return {
       '!': 'FormulaParam',
       range: getRangeInfo(ctx),
-      content:this.visit(ctx.children)
+      content:this.visit(ctx.children[0])
     }
   }
 
