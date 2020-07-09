@@ -30,8 +30,8 @@ describe('公式测试', () => {
 
   it('visitor处理',async()=>{
     let visitor  = new FormulaTSVisitor();
-    // for (let i = 0, iLen = formulas.length; i < iLen; i++) {
-    for (let i = 0, iLen = 20; i < iLen; i++) {
+    for (let i = 0, iLen = formulas.length; i < iLen; i++) {
+    // for (let i = 0, iLen = 20; i < iLen; i++) {
       let formula = formulas[i];
       let ast  =visitor.toAst(formula);
       expect(ast).toMatchSnapshot('测试公式formulas['+i+']');
