@@ -1,11 +1,14 @@
 grammar FormulaTS;
 
 formulaUnit  :
-   formulaFunction
- | formulaExpress
-;
-formulaFunction : formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
+      formulaFunction
+    | formulaExpress;
+
+formulaFunction : formulaIfFunction
+    |formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
+
 formulaParams :(formulaParam skipParamComma?)*;
+
 ////公式变量;
 formulaParam
     : formulaParamConst
@@ -13,6 +16,9 @@ formulaParam
     | formulaParamString
     | formulaExpress
     ;
+
+//如果方法
+formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
 
 //公式方法名称;
 formulaFunctionName : FORMULANAME;

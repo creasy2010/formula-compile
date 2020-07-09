@@ -37,6 +37,23 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     };
   }
 
+  // Visit a parse tree produced by FormulaTSParser#formulaIfFunction.
+  visitFormulaIfFunction (ctx) {
+    debugger;
+    let [condition,thenStatement,elseStatement]  = this.visit(ctx.children[2].children).filter(item=>!!item);
+
+    return {
+      '!': 'FormulaIfFunction',
+      range: getRangeInfo(ctx),
+      name:ctx.children[0].getText(),
+      condition,
+      thenStatement,
+      elseStatement
+    };
+  };
+
+
+
   // Visit a parse tree produced by FormulaTSParser#formulaFunction.
   visitFormulaFunction(ctx) {
     let params=[];
@@ -66,7 +83,6 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaParam.
   visitFormulaParam(ctx) {
-    debugger;
     return {
       '!': 'FormulaParam',
       range: getRangeInfo(ctx),

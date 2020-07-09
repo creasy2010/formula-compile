@@ -21,7 +21,7 @@ describe('公式测试', () => {
         let treeResult =toJSON(tree);
         expect(treeResult).toMatchSnapshot('公式'+i);
         let jsonEnd  = Date.now();
-        console.log(`公式parse${i}用时${jsonEnd-start} -解析用时${parseEnd-start} ms - ${jsonEnd-parseEnd}ms`);
+        console.log(`公式parse${i}用时${jsonEnd-start} -解析用时${parseEnd-start} ms - ${jsonEnd-parseEnd}ms 长度:${formula.length}`);
       } catch(e) {
         console.log(e)
       }
@@ -32,8 +32,8 @@ describe('公式测试', () => {
     let visitor  = new FormulaTSVisitor();
     for (let i = 0, iLen = formulas.length; i < iLen; i++) {
     // for (let i = 0, iLen = 20; i < iLen; i++) {
-      let timeFLag =`公式[${i}]耗时`;
       let formula = formulas[i];
+      let timeFLag =`公式[${i}]耗时 长度:${formula.length}`;
       console.time(timeFLag);
       let ast  =visitor.toAst(formula);
       console.timeEnd(timeFLag);
@@ -43,8 +43,6 @@ describe('公式测试', () => {
     // visitor.visit(tree);
   })
 });
-
-
 
 
 
