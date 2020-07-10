@@ -31,7 +31,9 @@ formulaParamString: STRING;
 formulaCELLLoc: CELLLoc;
 
 formulaExpress :
- formulaExpress formulaOperation formulaExpress
+ formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
+ |formulaExpress (OPERATE_PLUS|OPERATE_MINUS) formulaExpress
+ |formulaExpress (OPERATE_GREATE|OPERATE_GREATE_EQ|OPERATE_LESS|OPERATE_LESS_EQ|OPERATE_EQ|OPERATE_NEQ) formulaExpress
  |formulaBracketExpress
  |formulaParamConst
  |formulaFunction
@@ -39,6 +41,12 @@ formulaExpress :
  |formulaCELLLoc
  |formulaParamString
  ;
+//
+//formulaBinaryOperation:
+// formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
+// |formulaExpress (OPERATE_PLUS|OPERATE_MINUS) formulaExpress
+// |formulaExpress (OPERATE_GREATE|OPERATE_GREATE_EQ|OPERATE_LESS|OPERATE_LESS_EQ|OPERATE_EQ|OPERATE_NEQ) formulaExpress
+//;
 
  //带括号的表达式;
 formulaBracketExpress :'('formulaExpress ')';
@@ -65,15 +73,17 @@ skipFuncRBracket:')';
 skipParamComma : ',' ;
 
 //操作符;
+OPERATE_multiply:'*';
+OPERATE_DIVIDE:'/';
+
+OPERATE_PLUS:'+';
+OPERATE_MINUS:'-';
+
 OPERATE_GREATE:'>';
 OPERATE_GREATE_EQ:'>=';
 OPERATE_LESS:'<';
 OPERATE_LESS_EQ:'<=';
 OPERATE_EQ:'==';
-OPERATE_PLUS:'+';
-OPERATE_multiply:'*';
-OPERATE_DIVIDE:'/';
-OPERATE_MINUS:'-';
 OPERATE_NEQ : '!=';
 
 

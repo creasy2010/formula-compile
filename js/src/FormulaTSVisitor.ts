@@ -39,7 +39,6 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaIfFunction.
   visitFormulaIfFunction (ctx) {
-    debugger;
     let [condition,thenStatement,elseStatement]  = this.visit(ctx.children[2].children).filter(item=>!!item);
 
     return {
@@ -77,7 +76,6 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaParams.
   visitFormulaParams(ctx) {
-    debugger;
     return this.visitChildren(ctx.children)
   }
 
@@ -105,7 +103,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   }
 
   // Visit a parse tree produced by FormulaTSParser#formulaParamNum.
-  visitFormulaParamNum(ctx) {
+  visitFormulaParamNum(ctx:ParserRuleContext) {
     return {
       '!': 'FormulaParamNum',
       range: getRangeInfo(ctx),
@@ -114,7 +112,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   }
 
   // Visit a parse tree produced by FormulaTSParser#formulaParamString.
-  visitFormulaParamString(ctx) {
+  visitFormulaParamString(ctx:ParserRuleContext) {
     return {
       '!': 'FormulaParamString',
       range: getRangeInfo(ctx),
@@ -123,7 +121,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   }
 
   // Visit a parse tree produced by FormulaTSParser#formulaCELLLoc.
-  visitFormulaCELLLoc(ctx) {
+  visitFormulaCELLLoc(ctx:ParserRuleContext) {
     return {
       '!': 'FormulaCELLLoc',
       range: getRangeInfo(ctx),
@@ -134,12 +132,41 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   // Visit a parse tree produced by FormulaTSParser#formulaExpress.
   visitFormulaExpress(ctx) {
     // TODO dong 2020/7/9 ast 解析的有问题.
+    if(ctx.getChildCount()===1) {
+      return {
+        '!': 'FormulaExpress',
+        range: getRangeInfo(ctx),
+        express:this.visit(ctx.children),
+      };
+    } else if(ctx.getChildCount()===3) {
+      //二元运算;
+      // if(!this.visit(ctx.children[0])) {
+      //   debugger;
+      // }
+      return {
+        '!': 'FormulaBinaryOperationExpress',
+        range: getRangeInfo(ctx),
+        leftExp:this.visit(ctx.children[0]),
+        operate:getTerminalNodeInfo(ctx.children[1]),
+        rigthExp:this.visit(ctx.children[2]),
+      };
+    } else {
+      throw new Error('未知表达式'+ ctx.getText());
+    }
+
+  }
+
+
+// Visit a parse tree produced by FormulaTSParser#formulaBracketExpress.
+  visitFormulaBracketExpress (ctx) {
     return {
-      '!': 'FormulaExpress',
+      '!': 'FormulaBracketExpress',
       range: getRangeInfo(ctx),
       express:this.visit(ctx.children),
     };
-  }
+  };
+
+
 
   // Visit a parse tree produced by FormulaTSParser#formulaOperation.
   visitFormulaOperation(ctx) {

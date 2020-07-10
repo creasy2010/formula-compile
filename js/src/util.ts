@@ -45,6 +45,7 @@ export function getTerminalNodeInfo(terminalNode:TerminalNodeImpl){
   let token  = terminalNode.getSymbol();
   return {
     "!":"TerminalNodeImpl",
+    value:terminalNode.getText(),
     range:{
       type:token.type,
       line:token.line,

@@ -110,6 +110,15 @@ FormulaTSListener.prototype.exitFormulaExpress = function(ctx) {
 };
 
 
+// Enter a parse tree produced by FormulaTSParser#formulaBracketExpress.
+FormulaTSListener.prototype.enterFormulaBracketExpress = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaBracketExpress.
+FormulaTSListener.prototype.exitFormulaBracketExpress = function(ctx) {
+};
+
+
 // Enter a parse tree produced by FormulaTSParser#formulaOperation.
 FormulaTSListener.prototype.enterFormulaOperation = function(ctx) {
 };
