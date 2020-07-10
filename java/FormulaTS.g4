@@ -32,14 +32,18 @@ formulaCELLLoc: CELLLoc;
 
 formulaExpress :
  formulaExpress formulaOperation formulaExpress
- |'('formulaExpress ')'
- |formulaParamConst formulaOperation formulaExpress
+ |formulaBracketExpress
  |formulaParamConst
  |formulaFunction
  |formulaParamNum
  |formulaCELLLoc
  |formulaParamString
  ;
+
+ //带括号的表达式;
+formulaBracketExpress :'('formulaExpress ')';
+
+
 
 formulaOperation
         :OPERATE_GREATE
