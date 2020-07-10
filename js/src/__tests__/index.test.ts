@@ -33,7 +33,7 @@ describe('公式测试', () => {
     for (let i = 0, iLen = formulas.length; i < iLen; i++) {
     // for (let i = 0, iLen = 20; i < iLen; i++) {
       let formula = formulas[i];
-      if(!formula){
+      if(!formula) {
         continue;
       }
       let timeFLag =`公式[${i}]耗时 长度:${formula?.length}`;
