@@ -1,12 +1,12 @@
 grammar FormulaTS;
 
 formulaUnit  :
-      formulaFunction
-    | formulaExpress;
+    formulaIfFunction
+    |  formulaRefTemplateFunction
+    |  formulaFunction
+    |  formulaExpress;
 
-formulaFunction : formulaIfFunction
-    |formulaRefTemplateFunction
-    |formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
+formulaFunction :formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
 
 formulaParams :(formulaParam skipParamComma?)*;
 

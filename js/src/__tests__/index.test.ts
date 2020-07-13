@@ -30,7 +30,7 @@ describe('公式测试', () => {
 
   it('visitor处理',async()=>{
     let visitor  = new FormulaTSVisitor();
-    for (let i = 0, iLen = formulas.length; i < iLen; i++) {
+    for (let i = 37, iLen = formulas.length; i < iLen; i++) {
     // for (let i = 0, iLen = 20; i < iLen; i++) {
       let formula = formulas[i];
       if(!formula) {
