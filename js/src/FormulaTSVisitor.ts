@@ -132,10 +132,11 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaParamString.
   visitFormulaParamString(ctx:ParserRuleContext) {
+    let content =ctx.getText();
     return {
       '!': 'FormulaParamString',
       range: getRangeInfo(ctx),
-      value:ctx.getText()
+      value:content.substring(1,content.length-1)
     }
   }
 
