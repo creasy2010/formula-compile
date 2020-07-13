@@ -25,6 +25,8 @@ formulaExpress :
  |formulaBracketExpress
  |formulaParamConst
  |formulaFunction
+ |formulaIfFunction
+ |formulaRefTemplateFunction
  |formulaParamNum
  |formulaCELLLoc
  |formulaParamString
