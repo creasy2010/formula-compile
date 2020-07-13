@@ -54,6 +54,12 @@ FormulaTSVisitor.prototype.visitFormulaIfFunction = function(ctx) {
 };
 
 
+// Visit a parse tree produced by FormulaTSParser#formulaRefTemplateFunction.
+FormulaTSVisitor.prototype.visitFormulaRefTemplateFunction = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by FormulaTSParser#formulaFunctionName.
 FormulaTSVisitor.prototype.visitFormulaFunctionName = function(ctx) {
   return this.visitChildren(ctx);

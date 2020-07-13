@@ -9,7 +9,7 @@
 import {ParseTreeVisitor, TerminalNodeImpl} from 'antlr4/tree/Tree';
 import {parseFormula} from './index';
 import {ParserRuleContext} from 'antlr4';
-import {getRange, getRangeInfo, getTerminalNodeInfo, getTokenInfo} from './util';
+import { getRangeInfo, getTerminalNodeInfo, getTokenInfo} from './util';
 
 export interface FormulaAst {
   [name: string]: any;
@@ -50,6 +50,24 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
       elseStatement
     };
   };
+
+  // Visit a parse tree produced by FormulaTSParser#formulaRefTemplateFunction.
+  visitFormulaRefTemplateFunction(ctx) {
+    return {
+      '!': 'FormulaRefTemplateFunction',
+      range: getRangeInfo(ctx),
+      name:ctx.children[0].getText(),
+      refSheet:{
+        range:getTerminalNodeInfo(ctx.children[2]),
+        value:ctx.children[2].getText()
+      },
+      refCell:{
+        range:getTerminalNodeInfo(ctx.children[4]),
+        value:ctx.children[4].getText()
+      }
+    };
+  };
+
 
 
 

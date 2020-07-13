@@ -21,7 +21,7 @@ export function toJSON(tree:ParserRuleContext){
 
 export function getTokenInfo(token:Token){
   return {
-    type:token.type,
+    // type:token.type,
     line:token.line,
     start:token.start,
     stop:token.stop,
@@ -43,11 +43,12 @@ export function getRangeInfo(ctx:ParserRuleContext){
 
 export function getTerminalNodeInfo(terminalNode:TerminalNodeImpl){
   let token  = terminalNode.getSymbol();
+  debugger;
   return {
     "!":"TerminalNodeImpl",
     value:terminalNode.getText(),
     range:{
-      type:token.type,
+      // type:token.type,
       line:token.line,
       startIndex:token.start,
       stopIndex:token.stop,
@@ -55,22 +56,7 @@ export function getTerminalNodeInfo(terminalNode:TerminalNodeImpl){
       _source:terminalNode.getText()
     }
   }
-
-
-
-
 }
-
-export function getRange(token:Token){
-  return {
-    type:token.type,
-    line:token.line,
-    startIndex:token.start,
-    stopIndex:token.stop,
-    column:token.column,
-  };
-}
-
 function traverse(tree:ParserRuleContext,result){
 
   if(tree instanceof TerminalNodeImpl){

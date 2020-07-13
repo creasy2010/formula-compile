@@ -74,6 +74,15 @@ FormulaTSListener.prototype.exitFormulaIfFunction = function(ctx) {
 };
 
 
+// Enter a parse tree produced by FormulaTSParser#formulaRefTemplateFunction.
+FormulaTSListener.prototype.enterFormulaRefTemplateFunction = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaRefTemplateFunction.
+FormulaTSListener.prototype.exitFormulaRefTemplateFunction = function(ctx) {
+};
+
+
 // Enter a parse tree produced by FormulaTSParser#formulaFunctionName.
 FormulaTSListener.prototype.enterFormulaFunctionName = function(ctx) {
 };

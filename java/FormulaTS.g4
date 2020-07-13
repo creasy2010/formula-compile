@@ -5,6 +5,7 @@ formulaUnit  :
     | formulaExpress;
 
 formulaFunction : formulaIfFunction
+    |formulaRefTemplateFunction
     |formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
 
 formulaParams :(formulaParam skipParamComma?)*;
@@ -41,6 +42,8 @@ formulaBracketExpress :'('formulaExpress ')';
 
 //如果方法
 formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
+//模板公式引用
+formulaRefTemplateFunction: ('RefTemplate'|'模板公式') skipFuncLBracket (.*) ',' (.*) skipFuncRBracket;
 
 //公式方法名称;
 formulaFunctionName : FORMULANAME;
@@ -94,11 +97,11 @@ FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
 STRING:         '\''~['\r\n]*'\'';
 //FORMULANAME : [A-Za-z_]+;
 
-//CELLLoc:('{'SheetName'}!')?'[' [A-Z][0-9]+ ']';
 //所引用的内部sheet名称;
 RefSheet:'{'SheetName'}!';
 //sheet 内单元格;
-CELLLoc:'[' [A-Z][0-9]+ ']';
+CELLLoc:'['CELLNum']';
+CELLNum: [A-Z][0-9]+;
 
 SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
 
