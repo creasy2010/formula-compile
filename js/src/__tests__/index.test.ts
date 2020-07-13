@@ -84,5 +84,6 @@ let formulas:string[] = [
   ,"1*2+3*5",
   ,"1+2+3>5",
   ,"RefTemplate(文化事业建设费申报表,E6)",
+  ,"获取发票指标('测试参数',[E6])",
   // ,"RefTemplate(qweqwe1231,E6)",
 ];
