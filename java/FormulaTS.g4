@@ -17,19 +17,6 @@ formulaParam
     | formulaExpress
     ;
 
-//如果方法
-formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
-
-//公式方法名称;
-formulaFunctionName : FORMULANAME;
-// 公式中固定变量;
-formulaParamConst:CONSTVAR;
-// 公式参数 数字变化;
-formulaParamNum:NUMBER;
-// 公式参数 字符串
-formulaParamString: STRING;
-formulaCELLLoc: CELLLoc;
-
 formulaExpress :
  formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
  |formulaExpress (OPERATE_PLUS|OPERATE_MINUS) formulaExpress
@@ -52,6 +39,18 @@ formulaExpress :
 formulaBracketExpress :'('formulaExpress ')';
 
 
+//如果方法
+formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
+
+//公式方法名称;
+formulaFunctionName : FORMULANAME;
+// 公式中固定变量;
+formulaParamConst:CONSTVAR;
+// 公式参数 数字变化;
+formulaParamNum:NUMBER;
+// 公式参数 字符串
+formulaParamString: STRING;
+formulaCELLLoc: RefSheet? CELLLoc;
 
 formulaOperation
         :OPERATE_GREATE
@@ -90,11 +89,16 @@ OPERATE_NEQ : '!=';
 //数字 包含浮点与整数;
 NUMBER:'-'?[0-9]+'.'?[0-9]*;
 //方法名称
-FORMULANAME :   [A-Za-z_0-9]+;
+FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
 //字符串  中文
 STRING:         '\''~['\r\n]*'\'';
 //FORMULANAME : [A-Za-z_]+;
-CELLLoc:('{'SheetName'}!')?'[' [A-Z][0-9]+ ']';
+
+//CELLLoc:('{'SheetName'}!')?'[' [A-Z][0-9]+ ']';
+//所引用的内部sheet名称;
+RefSheet:'{'SheetName'}!';
+//sheet 内单元格;
+CELLLoc:'[' [A-Z][0-9]+ ']';
 
 SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
 

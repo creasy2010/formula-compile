@@ -36,6 +36,18 @@ FormulaTSVisitor.prototype.visitFormulaParam = function(ctx) {
 };
 
 
+// Visit a parse tree produced by FormulaTSParser#formulaExpress.
+FormulaTSVisitor.prototype.visitFormulaExpress = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by FormulaTSParser#formulaBracketExpress.
+FormulaTSVisitor.prototype.visitFormulaBracketExpress = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by FormulaTSParser#formulaIfFunction.
 FormulaTSVisitor.prototype.visitFormulaIfFunction = function(ctx) {
   return this.visitChildren(ctx);
@@ -68,18 +80,6 @@ FormulaTSVisitor.prototype.visitFormulaParamString = function(ctx) {
 
 // Visit a parse tree produced by FormulaTSParser#formulaCELLLoc.
 FormulaTSVisitor.prototype.visitFormulaCELLLoc = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by FormulaTSParser#formulaExpress.
-FormulaTSVisitor.prototype.visitFormulaExpress = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
-// Visit a parse tree produced by FormulaTSParser#formulaBracketExpress.
-FormulaTSVisitor.prototype.visitFormulaBracketExpress = function(ctx) {
   return this.visitChildren(ctx);
 };
 

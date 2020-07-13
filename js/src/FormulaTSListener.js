@@ -47,6 +47,24 @@ FormulaTSListener.prototype.exitFormulaParam = function(ctx) {
 };
 
 
+// Enter a parse tree produced by FormulaTSParser#formulaExpress.
+FormulaTSListener.prototype.enterFormulaExpress = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaExpress.
+FormulaTSListener.prototype.exitFormulaExpress = function(ctx) {
+};
+
+
+// Enter a parse tree produced by FormulaTSParser#formulaBracketExpress.
+FormulaTSListener.prototype.enterFormulaBracketExpress = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaBracketExpress.
+FormulaTSListener.prototype.exitFormulaBracketExpress = function(ctx) {
+};
+
+
 // Enter a parse tree produced by FormulaTSParser#formulaIfFunction.
 FormulaTSListener.prototype.enterFormulaIfFunction = function(ctx) {
 };
@@ -98,24 +116,6 @@ FormulaTSListener.prototype.enterFormulaCELLLoc = function(ctx) {
 
 // Exit a parse tree produced by FormulaTSParser#formulaCELLLoc.
 FormulaTSListener.prototype.exitFormulaCELLLoc = function(ctx) {
-};
-
-
-// Enter a parse tree produced by FormulaTSParser#formulaExpress.
-FormulaTSListener.prototype.enterFormulaExpress = function(ctx) {
-};
-
-// Exit a parse tree produced by FormulaTSParser#formulaExpress.
-FormulaTSListener.prototype.exitFormulaExpress = function(ctx) {
-};
-
-
-// Enter a parse tree produced by FormulaTSParser#formulaBracketExpress.
-FormulaTSListener.prototype.enterFormulaBracketExpress = function(ctx) {
-};
-
-// Exit a parse tree produced by FormulaTSParser#formulaBracketExpress.
-FormulaTSListener.prototype.exitFormulaBracketExpress = function(ctx) {
 };
 
 

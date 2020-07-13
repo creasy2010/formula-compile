@@ -122,11 +122,27 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaCELLLoc.
   visitFormulaCELLLoc(ctx:ParserRuleContext) {
+    let cellLoc = null , sheetName=null;
+     if(ctx.getChildCount()===1){
+       let cellStr:string = ctx.getChild(0).getText();
+       cellLoc=cellStr.substr(1,cellStr.length-2);
+     } else if(ctx.getChildCount()===2){
+        let sheetStr:string = ctx.getChild(0).getText();
+        sheetName=sheetStr.substr(1,sheetStr.length-3);
+       let cellStr:string = ctx.getChild(1).getText();
+       cellLoc=cellStr.substr(1,cellStr.length-2);
+     }else{
+       throw new Error('未知语法格式');
+     }
+
     return {
       '!': 'FormulaCELLLoc',
       range: getRangeInfo(ctx),
-      value:ctx.getText()
+      cellLoc,
+      sheetName,
     };
+
+
   }
 
   // Visit a parse tree produced by FormulaTSParser#formulaExpress.
