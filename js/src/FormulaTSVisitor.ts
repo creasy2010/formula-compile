@@ -183,7 +183,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
         range: getRangeInfo(ctx),
         leftExp:this.visit(ctx.children[0]),
         operate:getTerminalNodeInfo(ctx.children[1]),
-        rigthExp:this.visit(ctx.children[2]),
+        rightExp:this.visit(ctx.children[2]),
       };
     } else {
       throw new Error('未知表达式'+ ctx.getText());
