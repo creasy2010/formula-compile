@@ -19,6 +19,7 @@ describe('公式测试', () => {
         let tree  = parseFormula(formula);
         let parseEnd  = Date.now();
         let treeResult =toJSON(tree);
+        debugger;
         expect(treeResult).toMatchSnapshot('公式'+i);
         let jsonEnd  = Date.now();
         console.log(`公式parse${i}用时${jsonEnd-start} -解析用时${parseEnd-start} ms - ${jsonEnd-parseEnd}ms 长度:${formula.length}`);

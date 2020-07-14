@@ -43,7 +43,7 @@ export function getRangeInfo(ctx:ParserRuleContext){
 
 export function getTerminalNodeInfo(terminalNode:TerminalNodeImpl){
   let token  = terminalNode.getSymbol();
-  debugger;
+
   return {
     "!":"TerminalNodeImpl",
     value:terminalNode.getText(),

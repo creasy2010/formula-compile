@@ -74,7 +74,6 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   // Visit a parse tree produced by FormulaTSParser#formulaFunction.
   visitFormulaFunction(ctx) {
     let params=[];
-    debugger;
     if( ctx.children.length > 3 && ctx.children[2].children) {
       params = ctx.children[2].children?.map(item=>{
         if(item instanceof TerminalNodeImpl) {
