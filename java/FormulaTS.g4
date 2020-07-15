@@ -19,7 +19,8 @@ formulaParam
     ;
 
 formulaExpress :
- formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
+  formulaExpress (OPERATE_OR|OPERATE_AND) formulaExpress
+ |formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
  |formulaExpress (OPERATE_PLUS|OPERATE_MINUS) formulaExpress
  |formulaExpress (OPERATE_GREATE|OPERATE_GREATE_EQ|OPERATE_LESS|OPERATE_LESS_EQ|OPERATE_EQ|OPERATE_NEQ) formulaExpress
  |formulaBracketExpress
@@ -90,6 +91,9 @@ OPERATE_LESS_EQ:'<=';
 OPERATE_EQ:'==';
 OPERATE_NEQ : '!=';
 
+OPERATE_AND : '&&';
+OPERATE_OR : '||';
+
 
 //数字 包含浮点与整数;
 NUMBER:'-'?[0-9]+'.'?[0-9]*;
@@ -100,12 +104,19 @@ STRING:         '\''~['\r\n]*'\'';
 //FORMULANAME : [A-Za-z_]+;
 
 //所引用的内部sheet名称;
-RefSheet:'{'SheetName'}!';
+RefSheet:'{'~[}]*'}!';
 //sheet 内单元格;
 CELLLoc:'['CELLNum']';
 CELLNum: [A-Z][0-9]+;
 
-SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
+//SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
+//SheetName:;
+//SheetName:['}']+;
+
+//SheetName:~('}')+;
+//sheetName合法字符都可以. 只要不是}
+//SheetName:~['\r\n]+;
+
 
 //ID  :            [a-z]+;
 //空格
