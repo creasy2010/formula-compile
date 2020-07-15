@@ -8,7 +8,7 @@ var grammarFileName = "FormulaTS.g4";
 
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003\u001d\u008e\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004",
+    "\u0003\u001c\u008e\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004",
     "\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007",
     "\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f",
     "\u0004\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010",
@@ -79,7 +79,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "sq\u0003\u0002\u0002\u0002st\u0003\u0002\u0002\u0002tv\u0003\u0002\u0002",
     "\u0002us\u0003\u0002\u0002\u0002vw\u0005 \u0011\u0002w\u0011\u0003\u0002",
     "\u0002\u0002xy\u0007\u0017\u0002\u0002y\u0013\u0003\u0002\u0002\u0002",
-    "z{\u0007\u001d\u0002\u0002{\u0015\u0003\u0002\u0002\u0002|}\u0007\u0016",
+    "z{\u0007\u001c\u0002\u0002{\u0015\u0003\u0002\u0002\u0002|}\u0007\u0016",
     "\u0002\u0002}\u0017\u0003\u0002\u0002\u0002~\u007f\u0007\u0018\u0002",
     "\u0002\u007f\u0019\u0003\u0002\u0002\u0002\u0080\u0082\u0007\u0019\u0002",
     "\u0002\u0081\u0080\u0003\u0002\u0002\u0002\u0081\u0082\u0003\u0002\u0002",
@@ -107,7 +107,7 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, "OPERATE_m
                       "OPERATE_GREATE", "OPERATE_GREATE_EQ", "OPERATE_LESS", 
                       "OPERATE_LESS_EQ", "OPERATE_EQ", "OPERATE_NEQ", "OPERATE_AND", 
                       "OPERATE_OR", "NUMBER", "FORMULANAME", "STRING", "RefSheet", 
-                      "CELLLoc", "CELLNum", "WS", "CONSTVAR" ];
+                      "CELLLoc", "WS", "CONSTVAR" ];
 
 var ruleNames =  [ "formulaUnit", "formulaFunction", "formulaParams", "formulaParam", 
                    "formulaExpress", "formulaBracketExpress", "formulaIfFunction", 
@@ -159,9 +159,8 @@ FormulaTSParser.FORMULANAME = 21;
 FormulaTSParser.STRING = 22;
 FormulaTSParser.RefSheet = 23;
 FormulaTSParser.CELLLoc = 24;
-FormulaTSParser.CELLNum = 25;
-FormulaTSParser.WS = 26;
-FormulaTSParser.CONSTVAR = 27;
+FormulaTSParser.WS = 25;
+FormulaTSParser.CONSTVAR = 26;
 
 FormulaTSParser.RULE_formulaUnit = 0;
 FormulaTSParser.RULE_formulaFunction = 1;

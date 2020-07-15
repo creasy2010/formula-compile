@@ -101,21 +101,15 @@ NUMBER:'-'?[0-9]+'.'?[0-9]*;
 FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
 //字符串  中文
 STRING:         '\''~['\r\n]*'\'';
-//FORMULANAME : [A-Za-z_]+;
 
 //所引用的内部sheet名称;
-RefSheet:'{'~[}]*'}!';
+RefSheet:'{'SheetName'}!';
 //sheet 内单元格;
 CELLLoc:'['CELLNum']';
-CELLNum: [A-Z][0-9]+;
+fragment CELLNum: [A-Z][0-9]+;
 
 //SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
-//SheetName:;
-//SheetName:['}']+;
-
-//SheetName:~('}')+;
-//sheetName合法字符都可以. 只要不是}
-//SheetName:~['\r\n]+;
+fragment SheetName: ~[}]*;
 
 
 //ID  :            [a-z]+;
