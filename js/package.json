@@ -1,12 +1,15 @@
 {
-  "name": "formula-compile",
-  "version": "0.0.0",
+  "name": "@paas/formula-compile",
+  "version": "0.0.0-alpha.2",
   "description": "formula-compile",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "gene": "antlr4 -Dlanguage=JavaScript ../java/Formula.g4",
-    "build": "tsc",
+    "build": "sh build/build.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig":{
+    "registry": "http://221.226.82.254:7001/"
   },
   "author": "",
   "license": "ISC",
