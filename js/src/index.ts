@@ -16,6 +16,7 @@ import {FormulaTSListener} from './FormulaTSListener';
 import {ParseTree, ParseTreeWalker, TerminalNodeImpl} from "antlr4/tree/Tree";
 import {ParserRuleContext} from "antlr4";
 import {toJSON} from "./util";
+import {FormulaTSVisitor} from "./FormulaTSVisitor";
 
 
 
@@ -50,4 +51,8 @@ export function parseFormula(formulaStr:string):ParserRuleContext{
   parser.buildParseTrees = true;
   var tree = parser.formulaUnit();
   return tree; 
+}
+
+export {
+  FormulaTSVisitor
 }
