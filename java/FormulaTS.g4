@@ -21,13 +21,15 @@ formulaParam
 formulaExpress :
   formulaExpress (OPERATE_OR|OPERATE_AND) formulaExpress
  |formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
- |formulaExpress (OPERATE_PLUS|OPERATE_MINUS) formulaExpress
+ |formulaExpress (OPERATE_PLUS | OPERATE_MINUS) formulaExpress
  |formulaExpress (OPERATE_GREATE|OPERATE_GREATE_EQ|OPERATE_LESS|OPERATE_LESS_EQ|OPERATE_EQ|OPERATE_NEQ) formulaExpress
  |formulaBracketExpress
  |formulaParamConst
- |formulaFunction
+
  |formulaIfFunction
  |formulaRefTemplateFunction
+ |formulaFunction
+
  |formulaParamNum
  |formulaCELLLoc
  |formulaParamString
