@@ -36,6 +36,9 @@ export function parseFormula(formulaStr:string):ParserRuleContext{
   var chars = new antlr4.InputStream(formulaStr);
   let lexer = new FormulaTSLexer(chars);
   var tokens  = new antlr4.CommonTokenStream(lexer);
+  //tokens.getTokens(0,5)
+  //@ts-ignore
+  console.log(`所有tokens如下 ::${tokens.getTokens(0,tokens.getNumberOfOnChannelTokens()).map(item=>`type[${item.type}]:${item.text}`)}`);
 //用token生成parser
   var parser = new FormulaTSParser(tokens);
 

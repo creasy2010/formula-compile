@@ -24,11 +24,13 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   }
 
   toAst(formula: string): FormulaAst {
-    let context = require('./index').parseFormula(formula);
+    let parse=require('./index').parseFormula;
+    let context = parse(formula);
      return this.visit(context);
   }
 
   visitFormulaUnit(ctx: ParserRuleContext) {
+
     return {
       '!': 'FormulaUnit',
       range: getRangeInfo(ctx),
@@ -121,6 +123,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaParamNum.
   visitFormulaParamNum(ctx:ParserRuleContext) {
+    debugger;
     return {
       '!': 'FormulaParamNum',
       range: getRangeInfo(ctx),
@@ -166,6 +169,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   // Visit a parse tree produced by FormulaTSParser#formulaExpress.
   visitFormulaExpress(ctx) {
     // TODO dong 2020/7/9 ast 解析的有问题.
+
     if(ctx.getChildCount()===1) {
       return {
         '!': 'FormulaExpress',

@@ -90,12 +90,6 @@ FormulaTSVisitor.prototype.visitFormulaCELLLoc = function(ctx) {
 };
 
 
-// Visit a parse tree produced by FormulaTSParser#formulaOperation.
-FormulaTSVisitor.prototype.visitFormulaOperation = function(ctx) {
-  return this.visitChildren(ctx);
-};
-
-
 // Visit a parse tree produced by FormulaTSParser#skipFuncLBracket.
 FormulaTSVisitor.prototype.visitSkipFuncLBracket = function(ctx) {
   return this.visitChildren(ctx);
