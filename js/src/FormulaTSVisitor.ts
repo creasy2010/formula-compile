@@ -7,7 +7,6 @@
  * @Date    2020/7/9
  **/
 import {ParseTreeVisitor, TerminalNodeImpl} from 'antlr4/tree/Tree';
-import {parseFormula} from './index';
 import {ParserRuleContext} from 'antlr4';
 import { getRangeInfo, getTerminalNodeInfo, getTokenInfo} from './util';
 
@@ -25,7 +24,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   }
 
   toAst(formula: string): FormulaAst {
-    let context = parseFormula(formula);
+    let context = require('./index').parseFormula(formula);
      return this.visit(context);
   }
 

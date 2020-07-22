@@ -9,14 +9,12 @@
 
 
 import * as antlr4 from  'antlr4';
-import * as fse from 'fs-extra';
 import {FormulaTSLexer} from './FormulaTSLexer';
 import {FormulaTSParser} from './FormulaTSParser';
 import {FormulaTSListener} from './FormulaTSListener';
 import {ParseTree, ParseTreeWalker, TerminalNodeImpl} from "antlr4/tree/Tree";
 import {ParserRuleContext} from "antlr4";
 import {toJSON} from "./util";
-import {FormulaTSVisitor} from "./FormulaTSVisitor";
 
 
 
@@ -51,8 +49,4 @@ export function parseFormula(formulaStr:string):ParserRuleContext{
   parser.buildParseTrees = true;
   var tree = parser.formulaUnit();
   return tree; 
-}
-
-export {
-  FormulaTSVisitor
 }

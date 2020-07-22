@@ -6,9 +6,9 @@
  * @coder.yang2010@gmail.com
  * @Date    2020/7/9
  **/
-import {parseFormula} from '../index'
 import {FormulaTSVisitor} from "../FormulaTSVisitor";
 import {toJSON, formulaFormat} from "../util";
+
 
 describe('公式测试', () => {
 
