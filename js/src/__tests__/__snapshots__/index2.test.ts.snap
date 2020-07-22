@@ -1,0 +1,1273 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`公式第二批 visitor处理: 测试公式formulas[0] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaBinaryOperationExpress",
+      "leftExp": Object {
+        "!": "FormulaBinaryOperationExpress",
+        "leftExp": Object {
+          "!": "FormulaBinaryOperationExpress",
+          "leftExp": Object {
+            "!": "FormulaBinaryOperationExpress",
+            "leftExp": Object {
+              "!": "FormulaBinaryOperationExpress",
+              "leftExp": Object {
+                "!": "FormulaBinaryOperationExpress",
+                "leftExp": Object {
+                  "!": "FormulaBinaryOperationExpress",
+                  "leftExp": Object {
+                    "!": "FormulaBinaryOperationExpress",
+                    "leftExp": Object {
+                      "!": "FormulaBinaryOperationExpress",
+                      "leftExp": Object {
+                        "!": "FormulaBinaryOperationExpress",
+                        "leftExp": Object {
+                          "!": "FormulaBinaryOperationExpress",
+                          "leftExp": Object {
+                            "!": "FormulaBinaryOperationExpress",
+                            "leftExp": Object {
+                              "!": "FormulaBinaryOperationExpress",
+                              "leftExp": Object {
+                                "!": "FormulaBinaryOperationExpress",
+                                "leftExp": Object {
+                                  "!": "FormulaBinaryOperationExpress",
+                                  "leftExp": Object {
+                                    "!": "FormulaBinaryOperationExpress",
+                                    "leftExp": Object {
+                                      "!": "FormulaBinaryOperationExpress",
+                                      "leftExp": Object {
+                                        "!": "FormulaExpress",
+                                        "express": Array [
+                                          Object {
+                                            "!": "FormulaParamNum",
+                                            "range": Object {
+                                              "_source": "0",
+                                              "depth": 20,
+                                              "start": Object {
+                                                "column": 0,
+                                                "line": 1,
+                                                "start": 0,
+                                                "stop": 0,
+                                              },
+                                              "stop": Object {
+                                                "column": 0,
+                                                "line": 1,
+                                                "start": 0,
+                                                "stop": 0,
+                                              },
+                                            },
+                                            "value": "0",
+                                          },
+                                        ],
+                                        "range": Object {
+                                          "_source": "0",
+                                          "depth": 19,
+                                          "start": Object {
+                                            "column": 0,
+                                            "line": 1,
+                                            "start": 0,
+                                            "stop": 0,
+                                          },
+                                          "stop": Object {
+                                            "column": 0,
+                                            "line": 1,
+                                            "start": 0,
+                                            "stop": 0,
+                                          },
+                                        },
+                                      },
+                                      "operate": Object {
+                                        "!": "TerminalNodeImpl",
+                                        "range": Object {
+                                          "_source": "+",
+                                          "column": 1,
+                                          "line": 1,
+                                          "startIndex": 1,
+                                          "stopIndex": 1,
+                                        },
+                                        "value": "+",
+                                      },
+                                      "range": Object {
+                                        "_source": "0+0",
+                                        "depth": 18,
+                                        "start": Object {
+                                          "column": 0,
+                                          "line": 1,
+                                          "start": 0,
+                                          "stop": 0,
+                                        },
+                                        "stop": Object {
+                                          "column": 2,
+                                          "line": 1,
+                                          "start": 2,
+                                          "stop": 2,
+                                        },
+                                      },
+                                      "rightExp": Object {
+                                        "!": "FormulaExpress",
+                                        "express": Array [
+                                          Object {
+                                            "!": "FormulaParamNum",
+                                            "range": Object {
+                                              "_source": "0",
+                                              "depth": 20,
+                                              "start": Object {
+                                                "column": 2,
+                                                "line": 1,
+                                                "start": 2,
+                                                "stop": 2,
+                                              },
+                                              "stop": Object {
+                                                "column": 2,
+                                                "line": 1,
+                                                "start": 2,
+                                                "stop": 2,
+                                              },
+                                            },
+                                            "value": "0",
+                                          },
+                                        ],
+                                        "range": Object {
+                                          "_source": "0",
+                                          "depth": 19,
+                                          "start": Object {
+                                            "column": 2,
+                                            "line": 1,
+                                            "start": 2,
+                                            "stop": 2,
+                                          },
+                                          "stop": Object {
+                                            "column": 2,
+                                            "line": 1,
+                                            "start": 2,
+                                            "stop": 2,
+                                          },
+                                        },
+                                      },
+                                    },
+                                    "operate": Object {
+                                      "!": "TerminalNodeImpl",
+                                      "range": Object {
+                                        "_source": "+",
+                                        "column": 3,
+                                        "line": 1,
+                                        "startIndex": 3,
+                                        "stopIndex": 3,
+                                      },
+                                      "value": "+",
+                                    },
+                                    "range": Object {
+                                      "_source": "0+0+0",
+                                      "depth": 17,
+                                      "start": Object {
+                                        "column": 0,
+                                        "line": 1,
+                                        "start": 0,
+                                        "stop": 0,
+                                      },
+                                      "stop": Object {
+                                        "column": 4,
+                                        "line": 1,
+                                        "start": 4,
+                                        "stop": 4,
+                                      },
+                                    },
+                                    "rightExp": Object {
+                                      "!": "FormulaExpress",
+                                      "express": Array [
+                                        Object {
+                                          "!": "FormulaParamNum",
+                                          "range": Object {
+                                            "_source": "0",
+                                            "depth": 19,
+                                            "start": Object {
+                                              "column": 4,
+                                              "line": 1,
+                                              "start": 4,
+                                              "stop": 4,
+                                            },
+                                            "stop": Object {
+                                              "column": 4,
+                                              "line": 1,
+                                              "start": 4,
+                                              "stop": 4,
+                                            },
+                                          },
+                                          "value": "0",
+                                        },
+                                      ],
+                                      "range": Object {
+                                        "_source": "0",
+                                        "depth": 18,
+                                        "start": Object {
+                                          "column": 4,
+                                          "line": 1,
+                                          "start": 4,
+                                          "stop": 4,
+                                        },
+                                        "stop": Object {
+                                          "column": 4,
+                                          "line": 1,
+                                          "start": 4,
+                                          "stop": 4,
+                                        },
+                                      },
+                                    },
+                                  },
+                                  "operate": Object {
+                                    "!": "TerminalNodeImpl",
+                                    "range": Object {
+                                      "_source": "+",
+                                      "column": 5,
+                                      "line": 1,
+                                      "startIndex": 5,
+                                      "stopIndex": 5,
+                                    },
+                                    "value": "+",
+                                  },
+                                  "range": Object {
+                                    "_source": "0+0+0+0",
+                                    "depth": 16,
+                                    "start": Object {
+                                      "column": 0,
+                                      "line": 1,
+                                      "start": 0,
+                                      "stop": 0,
+                                    },
+                                    "stop": Object {
+                                      "column": 6,
+                                      "line": 1,
+                                      "start": 6,
+                                      "stop": 6,
+                                    },
+                                  },
+                                  "rightExp": Object {
+                                    "!": "FormulaExpress",
+                                    "express": Array [
+                                      Object {
+                                        "!": "FormulaParamNum",
+                                        "range": Object {
+                                          "_source": "0",
+                                          "depth": 18,
+                                          "start": Object {
+                                            "column": 6,
+                                            "line": 1,
+                                            "start": 6,
+                                            "stop": 6,
+                                          },
+                                          "stop": Object {
+                                            "column": 6,
+                                            "line": 1,
+                                            "start": 6,
+                                            "stop": 6,
+                                          },
+                                        },
+                                        "value": "0",
+                                      },
+                                    ],
+                                    "range": Object {
+                                      "_source": "0",
+                                      "depth": 17,
+                                      "start": Object {
+                                        "column": 6,
+                                        "line": 1,
+                                        "start": 6,
+                                        "stop": 6,
+                                      },
+                                      "stop": Object {
+                                        "column": 6,
+                                        "line": 1,
+                                        "start": 6,
+                                        "stop": 6,
+                                      },
+                                    },
+                                  },
+                                },
+                                "operate": Object {
+                                  "!": "TerminalNodeImpl",
+                                  "range": Object {
+                                    "_source": "+",
+                                    "column": 7,
+                                    "line": 1,
+                                    "startIndex": 7,
+                                    "stopIndex": 7,
+                                  },
+                                  "value": "+",
+                                },
+                                "range": Object {
+                                  "_source": "0+0+0+0+0",
+                                  "depth": 15,
+                                  "start": Object {
+                                    "column": 0,
+                                    "line": 1,
+                                    "start": 0,
+                                    "stop": 0,
+                                  },
+                                  "stop": Object {
+                                    "column": 8,
+                                    "line": 1,
+                                    "start": 8,
+                                    "stop": 8,
+                                  },
+                                },
+                                "rightExp": Object {
+                                  "!": "FormulaExpress",
+                                  "express": Array [
+                                    Object {
+                                      "!": "FormulaParamNum",
+                                      "range": Object {
+                                        "_source": "0",
+                                        "depth": 17,
+                                        "start": Object {
+                                          "column": 8,
+                                          "line": 1,
+                                          "start": 8,
+                                          "stop": 8,
+                                        },
+                                        "stop": Object {
+                                          "column": 8,
+                                          "line": 1,
+                                          "start": 8,
+                                          "stop": 8,
+                                        },
+                                      },
+                                      "value": "0",
+                                    },
+                                  ],
+                                  "range": Object {
+                                    "_source": "0",
+                                    "depth": 16,
+                                    "start": Object {
+                                      "column": 8,
+                                      "line": 1,
+                                      "start": 8,
+                                      "stop": 8,
+                                    },
+                                    "stop": Object {
+                                      "column": 8,
+                                      "line": 1,
+                                      "start": 8,
+                                      "stop": 8,
+                                    },
+                                  },
+                                },
+                              },
+                              "operate": Object {
+                                "!": "TerminalNodeImpl",
+                                "range": Object {
+                                  "_source": "+",
+                                  "column": 9,
+                                  "line": 1,
+                                  "startIndex": 9,
+                                  "stopIndex": 9,
+                                },
+                                "value": "+",
+                              },
+                              "range": Object {
+                                "_source": "0+0+0+0+0+0",
+                                "depth": 14,
+                                "start": Object {
+                                  "column": 0,
+                                  "line": 1,
+                                  "start": 0,
+                                  "stop": 0,
+                                },
+                                "stop": Object {
+                                  "column": 10,
+                                  "line": 1,
+                                  "start": 10,
+                                  "stop": 10,
+                                },
+                              },
+                              "rightExp": Object {
+                                "!": "FormulaExpress",
+                                "express": Array [
+                                  Object {
+                                    "!": "FormulaParamNum",
+                                    "range": Object {
+                                      "_source": "0",
+                                      "depth": 16,
+                                      "start": Object {
+                                        "column": 10,
+                                        "line": 1,
+                                        "start": 10,
+                                        "stop": 10,
+                                      },
+                                      "stop": Object {
+                                        "column": 10,
+                                        "line": 1,
+                                        "start": 10,
+                                        "stop": 10,
+                                      },
+                                    },
+                                    "value": "0",
+                                  },
+                                ],
+                                "range": Object {
+                                  "_source": "0",
+                                  "depth": 15,
+                                  "start": Object {
+                                    "column": 10,
+                                    "line": 1,
+                                    "start": 10,
+                                    "stop": 10,
+                                  },
+                                  "stop": Object {
+                                    "column": 10,
+                                    "line": 1,
+                                    "start": 10,
+                                    "stop": 10,
+                                  },
+                                },
+                              },
+                            },
+                            "operate": Object {
+                              "!": "TerminalNodeImpl",
+                              "range": Object {
+                                "_source": "+",
+                                "column": 11,
+                                "line": 1,
+                                "startIndex": 11,
+                                "stopIndex": 11,
+                              },
+                              "value": "+",
+                            },
+                            "range": Object {
+                              "_source": "0+0+0+0+0+0+0",
+                              "depth": 13,
+                              "start": Object {
+                                "column": 0,
+                                "line": 1,
+                                "start": 0,
+                                "stop": 0,
+                              },
+                              "stop": Object {
+                                "column": 12,
+                                "line": 1,
+                                "start": 12,
+                                "stop": 12,
+                              },
+                            },
+                            "rightExp": Object {
+                              "!": "FormulaExpress",
+                              "express": Array [
+                                Object {
+                                  "!": "FormulaParamNum",
+                                  "range": Object {
+                                    "_source": "0",
+                                    "depth": 15,
+                                    "start": Object {
+                                      "column": 12,
+                                      "line": 1,
+                                      "start": 12,
+                                      "stop": 12,
+                                    },
+                                    "stop": Object {
+                                      "column": 12,
+                                      "line": 1,
+                                      "start": 12,
+                                      "stop": 12,
+                                    },
+                                  },
+                                  "value": "0",
+                                },
+                              ],
+                              "range": Object {
+                                "_source": "0",
+                                "depth": 14,
+                                "start": Object {
+                                  "column": 12,
+                                  "line": 1,
+                                  "start": 12,
+                                  "stop": 12,
+                                },
+                                "stop": Object {
+                                  "column": 12,
+                                  "line": 1,
+                                  "start": 12,
+                                  "stop": 12,
+                                },
+                              },
+                            },
+                          },
+                          "operate": Object {
+                            "!": "TerminalNodeImpl",
+                            "range": Object {
+                              "_source": "+",
+                              "column": 13,
+                              "line": 1,
+                              "startIndex": 13,
+                              "stopIndex": 13,
+                            },
+                            "value": "+",
+                          },
+                          "range": Object {
+                            "_source": "0+0+0+0+0+0+0+0",
+                            "depth": 12,
+                            "start": Object {
+                              "column": 0,
+                              "line": 1,
+                              "start": 0,
+                              "stop": 0,
+                            },
+                            "stop": Object {
+                              "column": 14,
+                              "line": 1,
+                              "start": 14,
+                              "stop": 14,
+                            },
+                          },
+                          "rightExp": Object {
+                            "!": "FormulaExpress",
+                            "express": Array [
+                              Object {
+                                "!": "FormulaParamNum",
+                                "range": Object {
+                                  "_source": "0",
+                                  "depth": 14,
+                                  "start": Object {
+                                    "column": 14,
+                                    "line": 1,
+                                    "start": 14,
+                                    "stop": 14,
+                                  },
+                                  "stop": Object {
+                                    "column": 14,
+                                    "line": 1,
+                                    "start": 14,
+                                    "stop": 14,
+                                  },
+                                },
+                                "value": "0",
+                              },
+                            ],
+                            "range": Object {
+                              "_source": "0",
+                              "depth": 13,
+                              "start": Object {
+                                "column": 14,
+                                "line": 1,
+                                "start": 14,
+                                "stop": 14,
+                              },
+                              "stop": Object {
+                                "column": 14,
+                                "line": 1,
+                                "start": 14,
+                                "stop": 14,
+                              },
+                            },
+                          },
+                        },
+                        "operate": Object {
+                          "!": "TerminalNodeImpl",
+                          "range": Object {
+                            "_source": "+",
+                            "column": 15,
+                            "line": 1,
+                            "startIndex": 15,
+                            "stopIndex": 15,
+                          },
+                          "value": "+",
+                        },
+                        "range": Object {
+                          "_source": "0+0+0+0+0+0+0+0+0",
+                          "depth": 11,
+                          "start": Object {
+                            "column": 0,
+                            "line": 1,
+                            "start": 0,
+                            "stop": 0,
+                          },
+                          "stop": Object {
+                            "column": 16,
+                            "line": 1,
+                            "start": 16,
+                            "stop": 16,
+                          },
+                        },
+                        "rightExp": Object {
+                          "!": "FormulaExpress",
+                          "express": Array [
+                            Object {
+                              "!": "FormulaParamNum",
+                              "range": Object {
+                                "_source": "0",
+                                "depth": 13,
+                                "start": Object {
+                                  "column": 16,
+                                  "line": 1,
+                                  "start": 16,
+                                  "stop": 16,
+                                },
+                                "stop": Object {
+                                  "column": 16,
+                                  "line": 1,
+                                  "start": 16,
+                                  "stop": 16,
+                                },
+                              },
+                              "value": "0",
+                            },
+                          ],
+                          "range": Object {
+                            "_source": "0",
+                            "depth": 12,
+                            "start": Object {
+                              "column": 16,
+                              "line": 1,
+                              "start": 16,
+                              "stop": 16,
+                            },
+                            "stop": Object {
+                              "column": 16,
+                              "line": 1,
+                              "start": 16,
+                              "stop": 16,
+                            },
+                          },
+                        },
+                      },
+                      "operate": Object {
+                        "!": "TerminalNodeImpl",
+                        "range": Object {
+                          "_source": "+",
+                          "column": 17,
+                          "line": 1,
+                          "startIndex": 17,
+                          "stopIndex": 17,
+                        },
+                        "value": "+",
+                      },
+                      "range": Object {
+                        "_source": "0+0+0+0+0+0+0+0+0+0",
+                        "depth": 10,
+                        "start": Object {
+                          "column": 0,
+                          "line": 1,
+                          "start": 0,
+                          "stop": 0,
+                        },
+                        "stop": Object {
+                          "column": 18,
+                          "line": 1,
+                          "start": 18,
+                          "stop": 18,
+                        },
+                      },
+                      "rightExp": Object {
+                        "!": "FormulaExpress",
+                        "express": Array [
+                          Object {
+                            "!": "FormulaParamNum",
+                            "range": Object {
+                              "_source": "0",
+                              "depth": 12,
+                              "start": Object {
+                                "column": 18,
+                                "line": 1,
+                                "start": 18,
+                                "stop": 18,
+                              },
+                              "stop": Object {
+                                "column": 18,
+                                "line": 1,
+                                "start": 18,
+                                "stop": 18,
+                              },
+                            },
+                            "value": "0",
+                          },
+                        ],
+                        "range": Object {
+                          "_source": "0",
+                          "depth": 11,
+                          "start": Object {
+                            "column": 18,
+                            "line": 1,
+                            "start": 18,
+                            "stop": 18,
+                          },
+                          "stop": Object {
+                            "column": 18,
+                            "line": 1,
+                            "start": 18,
+                            "stop": 18,
+                          },
+                        },
+                      },
+                    },
+                    "operate": Object {
+                      "!": "TerminalNodeImpl",
+                      "range": Object {
+                        "_source": "+",
+                        "column": 19,
+                        "line": 1,
+                        "startIndex": 19,
+                        "stopIndex": 19,
+                      },
+                      "value": "+",
+                    },
+                    "range": Object {
+                      "_source": "0+0+0+0+0+0+0+0+0+0+0",
+                      "depth": 9,
+                      "start": Object {
+                        "column": 0,
+                        "line": 1,
+                        "start": 0,
+                        "stop": 0,
+                      },
+                      "stop": Object {
+                        "column": 20,
+                        "line": 1,
+                        "start": 20,
+                        "stop": 20,
+                      },
+                    },
+                    "rightExp": Object {
+                      "!": "FormulaExpress",
+                      "express": Array [
+                        Object {
+                          "!": "FormulaParamNum",
+                          "range": Object {
+                            "_source": "0",
+                            "depth": 11,
+                            "start": Object {
+                              "column": 20,
+                              "line": 1,
+                              "start": 20,
+                              "stop": 20,
+                            },
+                            "stop": Object {
+                              "column": 20,
+                              "line": 1,
+                              "start": 20,
+                              "stop": 20,
+                            },
+                          },
+                          "value": "0",
+                        },
+                      ],
+                      "range": Object {
+                        "_source": "0",
+                        "depth": 10,
+                        "start": Object {
+                          "column": 20,
+                          "line": 1,
+                          "start": 20,
+                          "stop": 20,
+                        },
+                        "stop": Object {
+                          "column": 20,
+                          "line": 1,
+                          "start": 20,
+                          "stop": 20,
+                        },
+                      },
+                    },
+                  },
+                  "operate": Object {
+                    "!": "TerminalNodeImpl",
+                    "range": Object {
+                      "_source": "+",
+                      "column": 21,
+                      "line": 1,
+                      "startIndex": 21,
+                      "stopIndex": 21,
+                    },
+                    "value": "+",
+                  },
+                  "range": Object {
+                    "_source": "0+0+0+0+0+0+0+0+0+0+0+0",
+                    "depth": 8,
+                    "start": Object {
+                      "column": 0,
+                      "line": 1,
+                      "start": 0,
+                      "stop": 0,
+                    },
+                    "stop": Object {
+                      "column": 22,
+                      "line": 1,
+                      "start": 22,
+                      "stop": 22,
+                    },
+                  },
+                  "rightExp": Object {
+                    "!": "FormulaExpress",
+                    "express": Array [
+                      Object {
+                        "!": "FormulaParamNum",
+                        "range": Object {
+                          "_source": "0",
+                          "depth": 10,
+                          "start": Object {
+                            "column": 22,
+                            "line": 1,
+                            "start": 22,
+                            "stop": 22,
+                          },
+                          "stop": Object {
+                            "column": 22,
+                            "line": 1,
+                            "start": 22,
+                            "stop": 22,
+                          },
+                        },
+                        "value": "0",
+                      },
+                    ],
+                    "range": Object {
+                      "_source": "0",
+                      "depth": 9,
+                      "start": Object {
+                        "column": 22,
+                        "line": 1,
+                        "start": 22,
+                        "stop": 22,
+                      },
+                      "stop": Object {
+                        "column": 22,
+                        "line": 1,
+                        "start": 22,
+                        "stop": 22,
+                      },
+                    },
+                  },
+                },
+                "operate": Object {
+                  "!": "TerminalNodeImpl",
+                  "range": Object {
+                    "_source": "+",
+                    "column": 23,
+                    "line": 1,
+                    "startIndex": 23,
+                    "stopIndex": 23,
+                  },
+                  "value": "+",
+                },
+                "range": Object {
+                  "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0",
+                  "depth": 7,
+                  "start": Object {
+                    "column": 0,
+                    "line": 1,
+                    "start": 0,
+                    "stop": 0,
+                  },
+                  "stop": Object {
+                    "column": 24,
+                    "line": 1,
+                    "start": 24,
+                    "stop": 24,
+                  },
+                },
+                "rightExp": Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": Object {
+                        "_source": "0",
+                        "depth": 9,
+                        "start": Object {
+                          "column": 24,
+                          "line": 1,
+                          "start": 24,
+                          "stop": 24,
+                        },
+                        "stop": Object {
+                          "column": 24,
+                          "line": 1,
+                          "start": 24,
+                          "stop": 24,
+                        },
+                      },
+                      "value": "0",
+                    },
+                  ],
+                  "range": Object {
+                    "_source": "0",
+                    "depth": 8,
+                    "start": Object {
+                      "column": 24,
+                      "line": 1,
+                      "start": 24,
+                      "stop": 24,
+                    },
+                    "stop": Object {
+                      "column": 24,
+                      "line": 1,
+                      "start": 24,
+                      "stop": 24,
+                    },
+                  },
+                },
+              },
+              "operate": Object {
+                "!": "TerminalNodeImpl",
+                "range": Object {
+                  "_source": "+",
+                  "column": 25,
+                  "line": 1,
+                  "startIndex": 25,
+                  "stopIndex": 25,
+                },
+                "value": "+",
+              },
+              "range": Object {
+                "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0+0",
+                "depth": 6,
+                "start": Object {
+                  "column": 0,
+                  "line": 1,
+                  "start": 0,
+                  "stop": 0,
+                },
+                "stop": Object {
+                  "column": 26,
+                  "line": 1,
+                  "start": 26,
+                  "stop": 26,
+                },
+              },
+              "rightExp": Object {
+                "!": "FormulaExpress",
+                "express": Array [
+                  Object {
+                    "!": "FormulaParamNum",
+                    "range": Object {
+                      "_source": "0",
+                      "depth": 8,
+                      "start": Object {
+                        "column": 26,
+                        "line": 1,
+                        "start": 26,
+                        "stop": 26,
+                      },
+                      "stop": Object {
+                        "column": 26,
+                        "line": 1,
+                        "start": 26,
+                        "stop": 26,
+                      },
+                    },
+                    "value": "0",
+                  },
+                ],
+                "range": Object {
+                  "_source": "0",
+                  "depth": 7,
+                  "start": Object {
+                    "column": 26,
+                    "line": 1,
+                    "start": 26,
+                    "stop": 26,
+                  },
+                  "stop": Object {
+                    "column": 26,
+                    "line": 1,
+                    "start": 26,
+                    "stop": 26,
+                  },
+                },
+              },
+            },
+            "operate": Object {
+              "!": "TerminalNodeImpl",
+              "range": Object {
+                "_source": "+",
+                "column": 27,
+                "line": 1,
+                "startIndex": 27,
+                "stopIndex": 27,
+              },
+              "value": "+",
+            },
+            "range": Object {
+              "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0+0+0",
+              "depth": 5,
+              "start": Object {
+                "column": 0,
+                "line": 1,
+                "start": 0,
+                "stop": 0,
+              },
+              "stop": Object {
+                "column": 28,
+                "line": 1,
+                "start": 28,
+                "stop": 28,
+              },
+            },
+            "rightExp": Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": Object {
+                    "_source": "0",
+                    "depth": 7,
+                    "start": Object {
+                      "column": 28,
+                      "line": 1,
+                      "start": 28,
+                      "stop": 28,
+                    },
+                    "stop": Object {
+                      "column": 28,
+                      "line": 1,
+                      "start": 28,
+                      "stop": 28,
+                    },
+                  },
+                  "value": "0",
+                },
+              ],
+              "range": Object {
+                "_source": "0",
+                "depth": 6,
+                "start": Object {
+                  "column": 28,
+                  "line": 1,
+                  "start": 28,
+                  "stop": 28,
+                },
+                "stop": Object {
+                  "column": 28,
+                  "line": 1,
+                  "start": 28,
+                  "stop": 28,
+                },
+              },
+            },
+          },
+          "operate": Object {
+            "!": "TerminalNodeImpl",
+            "range": Object {
+              "_source": "+",
+              "column": 29,
+              "line": 1,
+              "startIndex": 29,
+              "stopIndex": 29,
+            },
+            "value": "+",
+          },
+          "range": Object {
+            "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0",
+            "depth": 4,
+            "start": Object {
+              "column": 0,
+              "line": 1,
+              "start": 0,
+              "stop": 0,
+            },
+            "stop": Object {
+              "column": 30,
+              "line": 1,
+              "start": 30,
+              "stop": 30,
+            },
+          },
+          "rightExp": Object {
+            "!": "FormulaExpress",
+            "express": Array [
+              Object {
+                "!": "FormulaParamNum",
+                "range": Object {
+                  "_source": "0",
+                  "depth": 6,
+                  "start": Object {
+                    "column": 30,
+                    "line": 1,
+                    "start": 30,
+                    "stop": 30,
+                  },
+                  "stop": Object {
+                    "column": 30,
+                    "line": 1,
+                    "start": 30,
+                    "stop": 30,
+                  },
+                },
+                "value": "0",
+              },
+            ],
+            "range": Object {
+              "_source": "0",
+              "depth": 5,
+              "start": Object {
+                "column": 30,
+                "line": 1,
+                "start": 30,
+                "stop": 30,
+              },
+              "stop": Object {
+                "column": 30,
+                "line": 1,
+                "start": 30,
+                "stop": 30,
+              },
+            },
+          },
+        },
+        "operate": Object {
+          "!": "TerminalNodeImpl",
+          "range": Object {
+            "_source": "+",
+            "column": 31,
+            "line": 1,
+            "startIndex": 31,
+            "stopIndex": 31,
+          },
+          "value": "+",
+        },
+        "range": Object {
+          "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0",
+          "depth": 3,
+          "start": Object {
+            "column": 0,
+            "line": 1,
+            "start": 0,
+            "stop": 0,
+          },
+          "stop": Object {
+            "column": 32,
+            "line": 1,
+            "start": 32,
+            "stop": 32,
+          },
+        },
+        "rightExp": Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaParamNum",
+              "range": Object {
+                "_source": "0",
+                "depth": 5,
+                "start": Object {
+                  "column": 32,
+                  "line": 1,
+                  "start": 32,
+                  "stop": 32,
+                },
+                "stop": Object {
+                  "column": 32,
+                  "line": 1,
+                  "start": 32,
+                  "stop": 32,
+                },
+              },
+              "value": "0",
+            },
+          ],
+          "range": Object {
+            "_source": "0",
+            "depth": 4,
+            "start": Object {
+              "column": 32,
+              "line": 1,
+              "start": 32,
+              "stop": 32,
+            },
+            "stop": Object {
+              "column": 32,
+              "line": 1,
+              "start": 32,
+              "stop": 32,
+            },
+          },
+        },
+      },
+      "operate": Object {
+        "!": "TerminalNodeImpl",
+        "range": Object {
+          "_source": "+",
+          "column": 33,
+          "line": 1,
+          "startIndex": 33,
+          "stopIndex": 33,
+        },
+        "value": "+",
+      },
+      "range": Object {
+        "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0",
+        "depth": 2,
+        "start": Object {
+          "column": 0,
+          "line": 1,
+          "start": 0,
+          "stop": 0,
+        },
+        "stop": Object {
+          "column": 34,
+          "line": 1,
+          "start": 34,
+          "stop": 34,
+        },
+      },
+      "rightExp": Object {
+        "!": "FormulaExpress",
+        "express": Array [
+          Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "0",
+              "depth": 4,
+              "start": Object {
+                "column": 34,
+                "line": 1,
+                "start": 34,
+                "stop": 34,
+              },
+              "stop": Object {
+                "column": 34,
+                "line": 1,
+                "start": 34,
+                "stop": 34,
+              },
+            },
+            "value": "0",
+          },
+        ],
+        "range": Object {
+          "_source": "0",
+          "depth": 3,
+          "start": Object {
+            "column": 34,
+            "line": 1,
+            "start": 34,
+            "stop": 34,
+          },
+          "stop": Object {
+            "column": 34,
+            "line": 1,
+            "start": 34,
+            "stop": 34,
+          },
+        },
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0+0",
+    "depth": 1,
+    "start": Object {
+      "column": 0,
+      "line": 1,
+      "start": 0,
+      "stop": 0,
+    },
+    "stop": Object {
+      "column": 34,
+      "line": 1,
+      "start": 34,
+      "stop": 34,
+    },
+  },
+}
+`;
