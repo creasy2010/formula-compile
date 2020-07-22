@@ -15,8 +15,13 @@ import {FormulaTSListener} from './FormulaTSListener';
 import {ParseTree, ParseTreeWalker, TerminalNodeImpl} from "antlr4/tree/Tree";
 import {ParserRuleContext} from "antlr4";
 import {toJSON} from "./util";
+import {FormulaTSVisitor} from "./FormulaTSVisitor";
 
+let astGen = new FormulaTSVisitor();
 
+export function toAst(formulaStr:string) {
+  return astGen.toAst(formulaStr);
+}
 
 export function parseFormula2Json(formulaStr:string){
   return toJSON(parseFormula(formulaStr));

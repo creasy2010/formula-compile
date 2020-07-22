@@ -23,7 +23,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     super();
   }
 
-  toAst(formula: string): FormulaAst {
+ toAst(formula: string): FormulaAst {
     let parse=require('./index').parseFormula;
     let context = parse(formula);
      return this.visit(context);
