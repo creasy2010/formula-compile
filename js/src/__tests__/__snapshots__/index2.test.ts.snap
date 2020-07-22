@@ -66,20 +66,13 @@ Object {
             "!": "FormulaBracketExpress",
             "express": Array [
               undefined,
+              undefined,
               Object {
-                "!": "FormulaExpress",
-                "express": Array [
-                  Object {
-                    "!": "FormulaParamNum",
-                    "range": Object {
-                      "_source": "-2",
-                    },
-                    "value": "-2",
-                  },
-                ],
+                "!": "FormulaParamNum",
                 "range": Object {
-                  "_source": "-2",
+                  "_source": "2",
                 },
+                "value": "2",
               },
               undefined,
             ],
@@ -229,20 +222,13 @@ Object {
                       "!": "FormulaBracketExpress",
                       "express": Array [
                         undefined,
+                        undefined,
                         Object {
-                          "!": "FormulaExpress",
-                          "express": Array [
-                            Object {
-                              "!": "FormulaParamNum",
-                              "range": Object {
-                                "_source": "-2",
-                              },
-                              "value": "-2",
-                            },
-                          ],
+                          "!": "FormulaParamNum",
                           "range": Object {
-                            "_source": "-2",
+                            "_source": "2",
                           },
+                          "value": "2",
                         },
                         undefined,
                       ],

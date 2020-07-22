@@ -19,30 +19,26 @@ formulaParam
     ;
 
 formulaExpress :
-  formulaExpress (OPERATE_OR|OPERATE_AND) formulaExpress
- |formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
- |formulaExpress (OPERATE_PLUS | OPERATE_MINUS) formulaExpress
- |formulaExpress (OPERATE_GREATE|OPERATE_GREATE_EQ|OPERATE_LESS|OPERATE_LESS_EQ|OPERATE_EQ|OPERATE_NEQ) formulaExpress
- |formulaBracketExpress
- |formulaParamConst
+  formulaExpress op=(OPERATE_OR | OPERATE_AND) formulaExpress
+ |formulaExpress op=(OPERATE_multiply | OPERATE_DIVIDE) formulaExpress
+ |formulaExpress op=(OPERATE_PLUS | OPERATE_MINUS) formulaExpress
+ |formulaExpress op=(OPERATE_GREATE | OPERATE_GREATE_EQ | OPERATE_LESS | OPERATE_LESS_EQ | OPERATE_EQ | OPERATE_NEQ) formulaExpress
 
+ |formulaBracketExpress
+//方法的处理
  |formulaIfFunction
  |formulaRefTemplateFunction
  |formulaFunction
 
+//当个参数的处理
+ |formulaParamConst
  |formulaParamNum
  |formulaCELLLoc
  |formulaParamString
  ;
-//
-//formulaBinaryOperation:
-// formulaExpress (OPERATE_multiply|OPERATE_DIVIDE) formulaExpress
-// |formulaExpress (OPERATE_PLUS|OPERATE_MINUS) formulaExpress
-// |formulaExpress (OPERATE_GREATE|OPERATE_GREATE_EQ|OPERATE_LESS|OPERATE_LESS_EQ|OPERATE_EQ|OPERATE_NEQ) formulaExpress
-//;
 
  //带括号的表达式;
-formulaBracketExpress :'('formulaExpress ')';
+formulaBracketExpress :'('(formulaExpress |formulaParamNum | formulaParamConst ) ')';
 
 
 //如果方法
@@ -55,23 +51,10 @@ formulaFunctionName : FORMULANAME;
 // 公式中固定变量;
 formulaParamConst:CONSTVAR;
 // 公式参数 数字变化;
-formulaParamNum:NUMBER;
+formulaParamNum:(sign=(OPERATE_PLUS|OPERATE_MINUS))?NUMBER;
 // 公式参数 字符串
 formulaParamString: STRING;
 formulaCELLLoc: RefSheet? CELLLoc;
-
-formulaOperation
-        :OPERATE_GREATE
-        |OPERATE_GREATE_EQ
-        |OPERATE_LESS
-        |OPERATE_LESS_EQ
-        |OPERATE_EQ
-        |OPERATE_NEQ
-        |OPERATE_PLUS
-        |OPERATE_MINUS
-        |OPERATE_DIVIDE
-        |OPERATE_multiply
-         ;
 
 
 skipFuncLBracket:'(';
@@ -83,8 +66,8 @@ skipParamComma : ',' ;
 OPERATE_multiply:'*';
 OPERATE_DIVIDE:'/';
 
-OPERATE_PLUS:'+';
-OPERATE_MINUS:'-';
+OPERATE_PLUS:FlagPlus;
+OPERATE_MINUS:FlagSub;
 
 OPERATE_GREATE:'>';
 OPERATE_GREATE_EQ:'>=';
@@ -97,8 +80,11 @@ OPERATE_AND : '&&';
 OPERATE_OR : '||';
 
 
+fragment FlagPlus: '+';
+fragment FlagSub: '-';
+
 //数字 包含浮点与整数;
-NUMBER:'-'?[0-9]+'.'?[0-9]*;
+NUMBER: [0-9]+'.'?[0-9]*;
 //方法名称
 FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
 //字符串  中文
