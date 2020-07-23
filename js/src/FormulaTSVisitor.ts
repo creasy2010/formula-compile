@@ -23,9 +23,9 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     super();
   }
 
- toAst(formula: string): FormulaAst {
+ async toAst(formula: string): Promise<FormulaAst> {
     let parse=require('./index').parseFormula;
-    let context = parse(formula);
+    let context = await parse(formula);
      return this.visit(context);
   }
 
@@ -123,7 +123,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
   // Visit a parse tree produced by FormulaTSParser#formulaParamNum.
   visitFormulaParamNum(ctx:ParserRuleContext) {
-    debugger;
+
     return {
       '!': 'FormulaParamNum',
       range: getRangeInfo(ctx),

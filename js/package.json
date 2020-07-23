@@ -1,6 +1,6 @@
 {
   "name": "@paas/formula-compile",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.5",
   "description": "formula-compile",
   "main": "lib/index.js",
   "scripts": {

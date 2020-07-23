@@ -16,15 +16,13 @@ import {ParseTree, ParseTreeWalker, TerminalNodeImpl} from "antlr4/tree/Tree";
 import {ParserRuleContext} from "antlr4";
 import {toJSON} from "./util";
 import {FormulaTSVisitor} from "./FormulaTSVisitor";
+import {Recognizer} from "antlr4/Recognizer";
+import {Token} from "antlr4/Token";
 
 let astGen = new FormulaTSVisitor();
 
 export function toAst(formulaStr:string) {
   return astGen.toAst(formulaStr);
-}
-
-export function parseFormula2Json(formulaStr:string){
-  return toJSON(parseFormula(formulaStr));
 }
 
 export function walk(tree:ParserRuleContext,listener:FormulaTSListener){
@@ -37,24 +35,50 @@ export function walk(tree:ParserRuleContext,listener:FormulaTSListener){
  * 解析公式字符串
  * @param formulaStr
  */
-export function parseFormula(formulaStr:string):ParserRuleContext{
-  var chars = new antlr4.InputStream(formulaStr);
-  let lexer = new FormulaTSLexer(chars);
-  var tokens  = new antlr4.CommonTokenStream(lexer);
-  //tokens.getTokens(0,5)
-  //@ts-ignore
-  // console.log(`所有tokens如下 ::${tokens.getTokens(0,tokens.getNumberOfOnChannelTokens()).map(item=>`type[${item.type}]:${item.text}`)}`);
+export async function parseFormula(formulaStr:string):Promise<ParserRuleContext>{
+  return new Promise((resolve,reject)=>{
+
+    var chars = new antlr4.InputStream(formulaStr);
+    let lexer = new FormulaTSLexer(chars);
+    var tokens  = new antlr4.CommonTokenStream(lexer);
+    //tokens.getTokens(0,5)
+    //@ts-ignore
+    // console.log(`所有tokens如下 ::${tokens.getTokens(0,tokens.getNumberOfOnChannelTokens()).map(item=>`type[${item.type}]:${item.text}`)}`);
 //用token生成parser
-  var parser = new FormulaTSParser(tokens);
+    var parser = new FormulaTSParser(tokens);
 
 //生成语法树遍历监听器
-  var listener = new FormulaTSListener(function(tree){
-    console.log('parse final!!!!');
-    // callback(tree);
-  });
-  // parser.addErrorListener(ConsoleErrorListener);
-  //配置parser 生成语法树
-  parser.buildParseTrees = true;
-  var tree = parser.formulaUnit();
-  return tree; 
+    parser.addErrorListener({
+      syntaxError:(recognizer: Recognizer, offendingSymbol: Token, line: number, column: number, msg: string, e: any)=>{
+       reject({
+         type:"syntaxError",
+         recognizer, offendingSymbol, line, column, msg, e
+       });
+      },
+      reportAmbiguity:(recognizer: Recognizer, dfa: any, startIndex: number, stopIndex: number, exact: any, ambigAlts: any, configs: any)=>{
+        reject({
+          type:"reportAmbiguity",
+          recognizer, dfa, startIndex, stopIndex, exact, ambigAlts,configs
+        });
+      },
+      reportAttemptingFullContext:(recognizer: Recognizer, dfa: any, startIndex: number, stopIndex: number, conflictingAlts: any, configs: any)=>{
+        reject({
+          type:"reportAttemptingFullContext",
+          recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs
+        });
+      },
+      reportContextSensitivity:(recognizer: Recognizer, dfa: any, startIndex: number, stopIndex: number, conflictingAlts: any, configs: any)=>{
+        reject(
+          {
+            type:"reportContextSensitivity",
+            recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs
+          }
+        );
+      },
+    });
+    //配置parser 生成语法树
+    parser.buildParseTrees = true;
+    var tree = parser.formulaUnit();
+    resolve(tree);
+  })
 }
