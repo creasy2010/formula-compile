@@ -23,7 +23,7 @@ describe('公式第二批', () => {
       }
       let timeFLag =`公式[${i}]耗时 长度:${formula?.length}`;
       console.time(timeFLag);
-      let ast  =visitor.toAst(formula);
+      let ast  =await visitor.toAst(formula);
       console.timeEnd(timeFLag);
       expect(ast).toMatchSnapshot('测试公式formulas['+i+']');
     }
