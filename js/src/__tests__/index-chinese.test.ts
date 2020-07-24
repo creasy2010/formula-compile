@@ -11,7 +11,7 @@ import {toJSON, formulaFormat, toggleRangeInfo} from "../util";
 
 toggleRangeInfo();
 
-describe('中英文场景', () => {
+describe('中英文场景', async() => {
 
   it('visitor处理',async()=>{
     let visitor  = new FormulaTSVisitor();
