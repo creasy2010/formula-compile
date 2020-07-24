@@ -21,7 +21,7 @@ import {Token} from "antlr4/Token";
 
 let astGen = new FormulaTSVisitor();
 
-export function toAst(formulaStr:string) {
+export async function toAst(formulaStr:string) {
   return astGen.toAst(formulaStr);
 }
 
