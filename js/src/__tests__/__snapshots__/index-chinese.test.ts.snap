@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`中英文场景 visitor处理: 测试公式formulas[0] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaFunction",
+      "name": "if",
+      "params": Array [
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "1",
+            },
+            "value": "1",
+          },
+          "range": Object {
+            "_source": "1",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaBinaryOperationExpress",
+            "leftExp": Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": Object {
+                    "_source": "+1",
+                  },
+                  "value": "+1",
+                },
+              ],
+              "range": Object {
+                "_source": "+1",
+              },
+            },
+            "operate": Object {
+              "!": "TerminalNodeImpl",
+              "range": Object {
+                "_source": ">",
+              },
+              "value": ">",
+            },
+            "range": Object {
+              "_source": "+1>2",
+            },
+            "rightExp": Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": Object {
+                    "_source": "2",
+                  },
+                  "value": "2",
+                },
+              ],
+              "range": Object {
+                "_source": "2",
+              },
+            },
+          },
+          "range": Object {
+            "_source": "+1>2",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "0",
+            },
+            "value": "0",
+          },
+          "range": Object {
+            "_source": "0",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "1",
+            },
+            "value": "1",
+          },
+          "range": Object {
+            "_source": "1",
+          },
+        },
+      ],
+      "range": Object {
+        "_source": "if（1+1>2，0，1）",
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "if（1+1>2，0，1）",
+  },
+}
+`;
+
+exports[`中英文场景 visitor处理: 测试公式formulas[1] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaFunction",
+      "name": "if",
+      "params": Array [
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "1",
+            },
+            "value": "1",
+          },
+          "range": Object {
+            "_source": "1",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaBinaryOperationExpress",
+            "leftExp": Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": Object {
+                    "_source": "+1",
+                  },
+                  "value": "+1",
+                },
+              ],
+              "range": Object {
+                "_source": "+1",
+              },
+            },
+            "operate": Object {
+              "!": "TerminalNodeImpl",
+              "range": Object {
+                "_source": ">",
+              },
+              "value": ">",
+            },
+            "range": Object {
+              "_source": "+1>2",
+            },
+            "rightExp": Object {
+              "!": "FormulaExpress",
+              "express": Array [
+                Object {
+                  "!": "FormulaParamNum",
+                  "range": Object {
+                    "_source": "2",
+                  },
+                  "value": "2",
+                },
+              ],
+              "range": Object {
+                "_source": "2",
+              },
+            },
+          },
+          "range": Object {
+            "_source": "+1>2",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "0",
+            },
+            "value": "0",
+          },
+          "range": Object {
+            "_source": "0",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "1",
+            },
+            "value": "1",
+          },
+          "range": Object {
+            "_source": "1",
+          },
+        },
+      ],
+      "range": Object {
+        "_source": "if(1+1>2,0,1)",
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "if(1+1>2,0,1)",
+  },
+}
+`;
+
+exports[`中英文场景 visitor处理: 测试公式formulas[2] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaFunction",
+      "name": "取进项发票明细-根据开票事项",
+      "params": Array [],
+      "range": Object {
+        "_source": "取进项发票明细-根据开票事项()",
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "取进项发票明细-根据开票事项()",
+  },
+}
+`;

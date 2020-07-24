@@ -27,7 +27,7 @@ describe('性能测试', () => {
         let ast  =await visitor.toAst(formula);
         expect(ast).toMatchSnapshot('测试公式formulas['+i+']');
       } catch (err) {
-        debugger;
+        expect(jest.fn()).not.toBeCalled();
       }
       console.timeEnd(timeFLag);
     }

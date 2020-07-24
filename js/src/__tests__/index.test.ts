@@ -43,6 +43,7 @@ describe('公式测试', () => {
       expect(f===formula.replace(/\s+/g,"")).toBeTruthy()
     }
   })
+
 });
 
 

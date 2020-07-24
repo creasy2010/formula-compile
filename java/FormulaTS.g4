@@ -38,13 +38,13 @@ formulaExpress :
  ;
 
  //带括号的表达式;
-formulaBracketExpress :'('(formulaExpress |formulaParamNum | formulaParamConst ) ')';
+formulaBracketExpress :skipFuncLBracket(formulaExpress |formulaParamNum | formulaParamConst ) skipFuncRBracket;
 
 
 //如果方法
 formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
 //模板公式引用
-formulaRefTemplateFunction: ('RefTemplate'|'模板公式') skipFuncLBracket (.*) ',' (.*) skipFuncRBracket;
+formulaRefTemplateFunction: ('RefTemplate'|'模板公式') skipFuncLBracket (.*) skipParamComma (.*) skipFuncRBracket;
 
 //公式方法名称;
 formulaFunctionName : FORMULANAME;
@@ -57,10 +57,10 @@ formulaParamString: STRING;
 formulaCELLLoc: RefSheet? CELLLoc;
 
 
-skipFuncLBracket:'(';
-skipFuncRBracket:')';
+skipFuncLBracket:('('|'（') ;
+skipFuncRBracket:(')'|'）') ;
 //参数间隔符号;
-skipParamComma : ',' ;
+skipParamComma : (','|'，') ;
 
 //操作符;
 OPERATE_multiply:'*';
@@ -86,7 +86,7 @@ fragment FlagSub: '-';
 //数字 包含浮点与整数;
 NUMBER: [0-9]+'.'?[0-9]*;
 //方法名称
-FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
+FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5-]+;
 //字符串  中文
 STRING:         '\''~['\r\n]*'\'';
 
