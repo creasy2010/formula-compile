@@ -32,11 +32,10 @@ describe('中英文场景', () => {
       console.timeEnd(timeFLag);
     }
   })
+
 });
 
 
 let formulas:string[] = [
   `if（1+1>2，0，1）`
-  ,`if(1+1>2,0,1)`
-  ,`取进项发票明细-根据开票事项()`
 ];

@@ -86,7 +86,7 @@ fragment FlagSub: '-';
 //数字 包含浮点与整数;
 NUMBER: [0-9]+'.'?[0-9]*;
 //方法名称
-FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5-]+;
+FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
 //字符串  中文
 STRING:         '\''~['\r\n]*'\'';
 

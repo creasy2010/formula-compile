@@ -27,10 +27,12 @@ describe('公式错误测试', () => {
       expect(errorHandleFn).toBeCalledTimes(1);
     }
   })
+
 });
 
 
 let formulas:string[] = [
   // `0-1+(-2)//`,
   `IF((2020*100+6)<=202003,0,IF(IF((2020*100+6)`
+  ,/*不能包含- 用_代替*/`取进项发票明细-根据开票事项()`
 ];
