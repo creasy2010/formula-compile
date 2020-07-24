@@ -50,30 +50,33 @@ export async function parseFormula(formulaStr:string):Promise<ParserRuleContext>
 //生成语法树遍历监听器
     parser.addErrorListener({
       syntaxError:(recognizer: Recognizer, offendingSymbol: Token, line: number, column: number, msg: string, e: any)=>{
+
        reject({
          type:"syntaxError",
          recognizer, offendingSymbol, line, column, msg, e
        });
       },
       reportAmbiguity:(recognizer: Recognizer, dfa: any, startIndex: number, stopIndex: number, exact: any, ambigAlts: any, configs: any)=>{
-        reject({
-          type:"reportAmbiguity",
-          recognizer, dfa, startIndex, stopIndex, exact, ambigAlts,configs
-        });
+
+        // reject({
+        //   type:"reportAmbiguity",
+        //   recognizer, dfa, startIndex, stopIndex, exact, ambigAlts,configs
+        // });
       },
       reportAttemptingFullContext:(recognizer: Recognizer, dfa: any, startIndex: number, stopIndex: number, conflictingAlts: any, configs: any)=>{
-        reject({
-          type:"reportAttemptingFullContext",
-          recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs
-        });
+        // reject({
+        //   type:"reportAttemptingFullContext",
+        //   recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs
+        // });
       },
       reportContextSensitivity:(recognizer: Recognizer, dfa: any, startIndex: number, stopIndex: number, conflictingAlts: any, configs: any)=>{
-        reject(
-          {
-            type:"reportContextSensitivity",
-            recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs
-          }
-        );
+
+        // reject(
+        //   {
+        //     type:"reportContextSensitivity",
+        //     recognizer, dfa, startIndex, stopIndex, conflictingAlts, configs
+        //   }
+        // );
       },
     });
     //配置parser 生成语法树
