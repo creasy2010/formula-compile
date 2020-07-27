@@ -6,7 +6,7 @@
   "scripts": {
     "gene": "antlr4 -Dlanguage=JavaScript ../java/Formula.g4",
     "build": "sh build/build.sh",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest -u"
   },
   "publishConfig":{
     "registry": "http://221.226.82.254:7001/"
@@ -18,5 +18,13 @@
     "@types/fs-extra": "^9.0.1",
     "antlr4": "^4.8.0",
     "fs-extra": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "jest-cli": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6",
+    "@types/jest": "^26.0.4"
   }
 }
