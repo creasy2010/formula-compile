@@ -34,6 +34,7 @@ formulaExpress :
  |formulaParamConst
  |formulaParamNum
  |formulaCELLLoc
+ |formulaCELLTPLLoc
  |formulaParamString
  ;
 
@@ -55,6 +56,7 @@ formulaParamNum:(sign=(OPERATE_PLUS|OPERATE_MINUS))?NUMBER;
 // 公式参数 字符串
 formulaParamString: STRING;
 formulaCELLLoc: RefSheet? CELLLoc;
+formulaCELLTPLLoc: XXCELLTPLLoc;
 
 
 skipFuncLBracket:('('|'（') ;
@@ -94,6 +96,7 @@ STRING:         '\''~['\r\n]*'\'';
 RefSheet:'{'SheetName'}!';
 //sheet 内单元格;
 CELLLoc:'['CELLNum']';
+CELLTPLLoc:'_@'CELLNum;
 fragment CELLNum: [A-Z][0-9]+;
 
 //SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;

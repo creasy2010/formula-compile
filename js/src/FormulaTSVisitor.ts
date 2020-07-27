@@ -165,6 +165,16 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
 
   }
+//公式模板引用位置.
+  visitFormulaCELLTPLLoc(ctx) {
+
+    let cellLoc=ctx.children[0].getText().replace("_@","");
+    return {
+      '!': 'FormulaCELLTPLLoc',
+      range: getRangeInfo(ctx),
+      cellLoc,
+    };
+  };
 
   // Visit a parse tree produced by FormulaTSParser#formulaExpress.
   visitFormulaExpress(ctx) {

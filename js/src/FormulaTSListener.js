@@ -128,6 +128,15 @@ FormulaTSListener.prototype.exitFormulaCELLLoc = function(ctx) {
 };
 
 
+// Enter a parse tree produced by FormulaTSParser#formulaCELLTPLLoc.
+FormulaTSListener.prototype.enterFormulaCELLTPLLoc = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaCELLTPLLoc.
+FormulaTSListener.prototype.exitFormulaCELLTPLLoc = function(ctx) {
+};
+
+
 // Enter a parse tree produced by FormulaTSParser#skipFuncLBracket.
 FormulaTSListener.prototype.enterSkipFuncLBracket = function(ctx) {
 };
