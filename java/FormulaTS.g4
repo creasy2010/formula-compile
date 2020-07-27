@@ -56,7 +56,7 @@ formulaParamNum:(sign=(OPERATE_PLUS|OPERATE_MINUS))?NUMBER;
 // 公式参数 字符串
 formulaParamString: STRING;
 formulaCELLLoc: RefSheet? CELLLoc;
-formulaCELLTPLLoc: XXCELLTPLLoc;
+formulaCELLTPLLoc: CELLTPLLoc;
 
 
 skipFuncLBracket:('('|'（') ;

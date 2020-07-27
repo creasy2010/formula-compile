@@ -28,7 +28,6 @@ CELLLoc=27
 CELLTPLLoc=28
 WS=29
 CONSTVAR=30
-XXCELLTPLLoc=31
 'IF'=1
 '如果'=2
 'RefTemplate'=3

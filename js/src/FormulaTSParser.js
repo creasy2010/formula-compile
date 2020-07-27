@@ -8,7 +8,7 @@ var grammarFileName = "FormulaTS.g4";
 
 
 var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003!\u0096\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
+    "\u0003 \u0096\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
     "\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007\u0004",
     "\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f\u0004",
     "\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010\u0004",
@@ -92,7 +92,7 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0007\u001c\u0002\u0002\u0089\u0088\u0003\u0002\u0002\u0002\u0089\u008a",
     "\u0003\u0002\u0002\u0002\u008a\u008b\u0003\u0002\u0002\u0002\u008b\u008c",
     "\u0007\u001d\u0002\u0002\u008c\u001b\u0003\u0002\u0002\u0002\u008d\u008e",
-    "\u0007!\u0002\u0002\u008e\u001d\u0003\u0002\u0002\u0002\u008f\u0090",
+    "\u0007\u001e\u0002\u0002\u008e\u001d\u0003\u0002\u0002\u0002\u008f\u0090",
     "\t\b\u0002\u0002\u0090\u001f\u0003\u0002\u0002\u0002\u0091\u0092\t\t",
     "\u0002\u0002\u0092!\u0003\u0002\u0002\u0002\u0093\u0094\t\n\u0002\u0002",
     "\u0094#\u0003\u0002\u0002\u0002\u0010(-37>JXZahqx\u0082\u0089"].join("");
@@ -115,7 +115,7 @@ var symbolicNames = [ null, null, null, null, null, null, null, null, null,
                       "OPERATE_GREATE_EQ", "OPERATE_LESS", "OPERATE_LESS_EQ", 
                       "OPERATE_EQ", "OPERATE_NEQ", "OPERATE_AND", "OPERATE_OR", 
                       "NUMBER", "FORMULANAME", "STRING", "RefSheet", "CELLLoc", 
-                      "CELLTPLLoc", "WS", "CONSTVAR", "XXCELLTPLLoc" ];
+                      "CELLTPLLoc", "WS", "CONSTVAR" ];
 
 var ruleNames =  [ "formulaUnit", "formulaFunction", "formulaParams", "formulaParam", 
                    "formulaExpress", "formulaBracketExpress", "formulaIfFunction", 
@@ -173,7 +173,6 @@ FormulaTSParser.CELLLoc = 27;
 FormulaTSParser.CELLTPLLoc = 28;
 FormulaTSParser.WS = 29;
 FormulaTSParser.CONSTVAR = 30;
-FormulaTSParser.XXCELLTPLLoc = 31;
 
 FormulaTSParser.RULE_formulaUnit = 0;
 FormulaTSParser.RULE_formulaFunction = 1;
@@ -465,7 +464,7 @@ FormulaTSParser.prototype.formulaParams = function() {
         this.state = 53;
         this._errHandler.sync(this);
         _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << FormulaTSParser.T__0) | (1 << FormulaTSParser.T__1) | (1 << FormulaTSParser.T__2) | (1 << FormulaTSParser.T__3) | (1 << FormulaTSParser.T__4) | (1 << FormulaTSParser.T__5) | (1 << FormulaTSParser.OPERATE_PLUS) | (1 << FormulaTSParser.OPERATE_MINUS) | (1 << FormulaTSParser.NUMBER) | (1 << FormulaTSParser.FORMULANAME) | (1 << FormulaTSParser.STRING) | (1 << FormulaTSParser.RefSheet) | (1 << FormulaTSParser.CELLLoc) | (1 << FormulaTSParser.CONSTVAR) | (1 << FormulaTSParser.XXCELLTPLLoc))) !== 0)) {
+        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << FormulaTSParser.T__0) | (1 << FormulaTSParser.T__1) | (1 << FormulaTSParser.T__2) | (1 << FormulaTSParser.T__3) | (1 << FormulaTSParser.T__4) | (1 << FormulaTSParser.T__5) | (1 << FormulaTSParser.OPERATE_PLUS) | (1 << FormulaTSParser.OPERATE_MINUS) | (1 << FormulaTSParser.NUMBER) | (1 << FormulaTSParser.FORMULANAME) | (1 << FormulaTSParser.STRING) | (1 << FormulaTSParser.RefSheet) | (1 << FormulaTSParser.CELLLoc) | (1 << FormulaTSParser.CELLTPLLoc) | (1 << FormulaTSParser.CONSTVAR))) !== 0)) {
             this.state = 47;
             this.formulaParam();
             this.state = 49;
@@ -785,7 +784,7 @@ FormulaTSParser.prototype.formulaExpress = function(_p) {
             this.state = 69;
             this.formulaCELLLoc();
             break;
-        case FormulaTSParser.XXCELLTPLLoc:
+        case FormulaTSParser.CELLTPLLoc:
             this.state = 70;
             this.formulaCELLTPLLoc();
             break;
@@ -1631,8 +1630,8 @@ function FormulaCELLTPLLocContext(parser, parent, invokingState) {
 FormulaCELLTPLLocContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
 FormulaCELLTPLLocContext.prototype.constructor = FormulaCELLTPLLocContext;
 
-FormulaCELLTPLLocContext.prototype.XXCELLTPLLoc = function() {
-    return this.getToken(FormulaTSParser.XXCELLTPLLoc, 0);
+FormulaCELLTPLLocContext.prototype.CELLTPLLoc = function() {
+    return this.getToken(FormulaTSParser.CELLTPLLoc, 0);
 };
 
 FormulaCELLTPLLocContext.prototype.enterRule = function(listener) {
@@ -1667,7 +1666,7 @@ FormulaTSParser.prototype.formulaCELLTPLLoc = function() {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 139;
-        this.match(FormulaTSParser.XXCELLTPLLoc);
+        this.match(FormulaTSParser.CELLTPLLoc);
     } catch (re) {
     	if(re instanceof antlr4.error.RecognitionException) {
 	        localctx.exception = re;
