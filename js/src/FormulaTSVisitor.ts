@@ -208,10 +208,7 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 // Visit a parse tree produced by FormulaTSParser#formulaBracketExpress.
   visitFormulaBracketExpress (ctx) {
     let express = ctx.children.slice(1,ctx.children.length-1).map(item=>this.visit(item));
-    debugger;
-    if(express.includes(undefined)){
-      debugger;
-    }
+
     return {
       '!': 'FormulaBracketExpress',
       range: getRangeInfo(ctx),
