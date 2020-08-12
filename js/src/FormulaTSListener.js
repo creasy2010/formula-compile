@@ -11,6 +11,15 @@ function FormulaTSListener() {
 FormulaTSListener.prototype = Object.create(antlr4.tree.ParseTreeListener.prototype);
 FormulaTSListener.prototype.constructor = FormulaTSListener;
 
+// Enter a parse tree produced by FormulaTSParser#formula.
+FormulaTSListener.prototype.enterFormula = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formula.
+FormulaTSListener.prototype.exitFormula = function(ctx) {
+};
+
+
 // Enter a parse tree produced by FormulaTSParser#formulaUnit.
 FormulaTSListener.prototype.enterFormulaUnit = function(ctx) {
 };
@@ -62,6 +71,15 @@ FormulaTSListener.prototype.enterFormulaBracketExpress = function(ctx) {
 
 // Exit a parse tree produced by FormulaTSParser#formulaBracketExpress.
 FormulaTSListener.prototype.exitFormulaBracketExpress = function(ctx) {
+};
+
+
+// Enter a parse tree produced by FormulaTSParser#formulaVarDeclareStatement.
+FormulaTSListener.prototype.enterFormulaVarDeclareStatement = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaVarDeclareStatement.
+FormulaTSListener.prototype.exitFormulaVarDeclareStatement = function(ctx) {
 };
 
 

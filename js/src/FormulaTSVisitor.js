@@ -12,6 +12,12 @@ function FormulaTSVisitor() {
 FormulaTSVisitor.prototype = Object.create(antlr4.tree.ParseTreeVisitor.prototype);
 FormulaTSVisitor.prototype.constructor = FormulaTSVisitor;
 
+// Visit a parse tree produced by FormulaTSParser#formula.
+FormulaTSVisitor.prototype.visitFormula = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by FormulaTSParser#formulaUnit.
 FormulaTSVisitor.prototype.visitFormulaUnit = function(ctx) {
   return this.visitChildren(ctx);
@@ -44,6 +50,12 @@ FormulaTSVisitor.prototype.visitFormulaExpress = function(ctx) {
 
 // Visit a parse tree produced by FormulaTSParser#formulaBracketExpress.
 FormulaTSVisitor.prototype.visitFormulaBracketExpress = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by FormulaTSParser#formulaVarDeclareStatement.
+FormulaTSVisitor.prototype.visitFormulaVarDeclareStatement = function(ctx) {
   return this.visitChildren(ctx);
 };
 

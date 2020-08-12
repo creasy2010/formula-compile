@@ -1,10 +1,13 @@
 grammar FormulaTS;
 
+formula   :  formulaUnit+;
+
 formulaUnit  :
-    formulaIfFunction
-    |  formulaRefTemplateFunction
-    |  formulaFunction
-    |  formulaExpress;
+        formulaVarDeclareStatement
+    |   formulaIfFunction
+    |   formulaRefTemplateFunction
+    |   formulaFunction
+    |   formulaExpress;
 
 formulaFunction :formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
 
@@ -41,6 +44,9 @@ formulaExpress :
  //带括号的表达式;
 formulaBracketExpress :skipFuncLBracket(formulaExpress |formulaParamNum | formulaParamConst ) skipFuncRBracket;
 
+ //表达式语句 statement;
+formulaVarDeclareStatement: CONSTVAR '=' (formulaIfFunction|formulaRefTemplateFunction|formulaFunction|formulaExpress)';'
+         ;
 
 //如果方法
 formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;

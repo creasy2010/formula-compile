@@ -29,6 +29,36 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
      return this.visit(context);
   }
 
+
+
+// Visit a parse tree produced by FormulaTSParser#formula.
+  visitFormula(ctx) {
+    return {
+      '!': 'Formula',
+      range: getRangeInfo(ctx),
+      units: this.visitChildren(ctx),
+    }
+  };
+
+
+// Visit a parse tree produced by FormulaTSParser#formulaVarDeclareStatement.
+  visitFormulaVarDeclareStatement(ctx) {
+    return {
+      '!': 'FormulaVarDeclareStatement',
+      range: getRangeInfo(ctx),
+      varConst:{
+        name:ctx[0].getText(),
+        range: getRangeInfo(ctx)
+      },
+      express:{
+        value:ctx[2].getText(),
+        range: getRangeInfo(ctx[2])
+      }
+
+    }
+  };
+
+
   visitFormulaUnit(ctx: ParserRuleContext) {
 
     return {

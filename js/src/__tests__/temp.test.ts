@@ -23,4 +23,16 @@ describe('临时测试', () => {
     const f = formulaFormat(ast);
     expect(f).toEqual(formula.replace(/\s+/g,""));
   })
+
+
+
+  it('单个用例2',async()=>{
+    let visitor  = new FormulaTSVisitor();
+    let formula=`$KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC/+|BQ0028|SR/-|BQ0028|ZC')`;
+
+    let ast  =await visitor.toAst(formula);
+    expect(ast).toMatchSnapshot();
+    const f = formulaFormat(ast);
+    expect(f).toEqual(formula.replace(/\s+/g,""));
+  })
 });
