@@ -8021,3 +8021,58 @@ Object {
   },
 }
 `;
+
+exports[`公式第二批 visitor处理: 测试公式formulas[6] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaFunction",
+      "name": "获取发票指标",
+      "params": Array [
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamString",
+            "range": Object {
+              "_source": "\\"测试参数\\"",
+            },
+            "value": "测试参数",
+          },
+          "range": Object {
+            "_source": "\\"测试参数\\"",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaExpress",
+            "express": Array [
+              Object {
+                "!": "FormulaCELLLoc",
+                "cellLoc": "E6",
+                "range": Object {
+                  "_source": "[E6]",
+                },
+                "sheetName": null,
+              },
+            ],
+            "range": Object {
+              "_source": "[E6]",
+            },
+          },
+          "range": Object {
+            "_source": "[E6]",
+          },
+        },
+      ],
+      "range": Object {
+        "_source": "获取发票指标(\\"测试参数\\",[E6])",
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "获取发票指标(\\"测试参数\\",[E6])",
+  },
+}
+`;
