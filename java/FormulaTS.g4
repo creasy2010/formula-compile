@@ -108,4 +108,4 @@ fragment SheetName: ~[}]*;
 WS  :            [ \t\r\n]+ ->skip;
 //静态变量
 //CONSTVAR :       [A-Za-z_]+;
-CONSTVAR :  '$'[A-Za-z_]+'$';
+CONSTVAR :  '$'[A-Za-z_0-9\-]+'$';
