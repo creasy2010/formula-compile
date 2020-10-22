@@ -8076,3 +8076,122 @@ Object {
   },
 }
 `;
+
+exports[`公式第二批 visitor处理: 测试公式formulas[7] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaIfFunction",
+      "condition": Object {
+        "!": "FormulaParam",
+        "content": Object {
+          "!": "FormulaParamNum",
+          "range": Object {
+            "_source": "11",
+          },
+          "value": "11",
+        },
+        "range": Object {
+          "_source": "11",
+        },
+      },
+      "elseStatement": Object {
+        "!": "FormulaParam",
+        "content": Object {
+          "!": "FormulaExpress",
+          "express": Array [
+            Object {
+              "!": "FormulaFunction",
+              "name": "aa",
+              "params": Array [
+                Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaParamNum",
+                    "range": Object {
+                      "_source": "1",
+                    },
+                    "value": "1",
+                  },
+                  "range": Object {
+                    "_source": "1",
+                  },
+                },
+                Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaParamNum",
+                    "range": Object {
+                      "_source": "2",
+                    },
+                    "value": "2",
+                  },
+                  "range": Object {
+                    "_source": "2",
+                  },
+                },
+                Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaParamNum",
+                    "range": Object {
+                      "_source": "3",
+                    },
+                    "value": "3",
+                  },
+                  "range": Object {
+                    "_source": "3",
+                  },
+                },
+                Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaParamString",
+                    "range": Object {
+                      "_source": "'ZCRQ'",
+                    },
+                    "value": "ZCRQ",
+                  },
+                  "range": Object {
+                    "_source": "'ZCRQ'",
+                  },
+                },
+              ],
+              "range": Object {
+                "_source": "aa(1,2,3,'ZCRQ')",
+              },
+            },
+          ],
+          "range": Object {
+            "_source": "aa(1,2,3,'ZCRQ')",
+          },
+        },
+        "range": Object {
+          "_source": "aa(1,2,3,'ZCRQ')",
+        },
+      },
+      "name": "IF",
+      "range": Object {
+        "_source": "IF(11,\\"2000-00-00\\",aa(1,2,3,'ZCRQ'))",
+      },
+      "thenStatement": Object {
+        "!": "FormulaParam",
+        "content": Object {
+          "!": "FormulaParamString",
+          "range": Object {
+            "_source": "\\"2000-00-00\\"",
+          },
+          "value": "2000-00-00",
+        },
+        "range": Object {
+          "_source": "\\"2000-00-00\\"",
+        },
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "IF(11,\\"2000-00-00\\",aa(1,2,3,'ZCRQ'))",
+  },
+}
+`;
