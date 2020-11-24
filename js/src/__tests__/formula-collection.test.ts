@@ -15,7 +15,7 @@ toggleRangeInfo();
 
 let formulas:string[] =readFileSync(join(__dirname,"test.all.formula.txt")).toString().split(/\n\r?/);
 
-debugger;
+
 describe('测试环境所有公式测试', () => {
 
   it('all parse test',async()=>{
