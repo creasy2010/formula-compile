@@ -40,12 +40,16 @@ export async function parseFormula(formulaStr:string):Promise<ParserRuleContext>
 
     var chars = new antlr4.InputStream(formulaStr);
     let lexer = new FormulaTSLexer(chars);
+    // console.time('parseFormula:tokens')
     var tokens  = new antlr4.CommonTokenStream(lexer);
+    // console.timeEnd('parseFormula:tokens')
     //tokens.getTokens(0,5)
     //@ts-ignore
     // console.log(`所有tokens如下 ::${tokens.getTokens(0,tokens.getNumberOfOnChannelTokens()).map(item=>`type[${item.type}]:${item.text}`)}`);
 //用token生成parser
+//     console.time('parseFormula:parser gen')
     var parser = new FormulaTSParser(tokens);
+    // console.timeEnd('parseFormula:parser gen')
 
 //生成语法树遍历监听器
     parser.addErrorListener({

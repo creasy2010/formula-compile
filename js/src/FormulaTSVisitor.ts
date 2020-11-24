@@ -25,7 +25,9 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
  async toAst(formula: string): Promise<FormulaAst> {
     let parse=require('./index').parseFormula;
+    // console.time('vistor:parse');
     let context = await parse(formula);
+   // console.timeEnd('vistor:parse');
      return this.visit(context);
   }
 
