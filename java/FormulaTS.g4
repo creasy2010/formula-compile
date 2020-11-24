@@ -13,6 +13,7 @@ formulaParams :(formulaParam skipParamComma?)*;
 ////公式变量;
 formulaParam
     : formulaParamConst
+    | formulaParamNull
     | formulaParamNum
     | formulaParamString
     | formulaExpress
@@ -55,6 +56,7 @@ formulaParamConst:CONSTVAR;
 formulaParamNum:(sign=(OPERATE_PLUS|OPERATE_MINUS))?NUMBER;
 // 公式参数 字符串
 formulaParamString: STRING;
+formulaParamNull: NULL;
 formulaCELLLoc: RefSheet? CELLLoc;
 formulaCELLTPLLoc: CELLTPLLoc;
 
@@ -85,6 +87,7 @@ OPERATE_OR : '||';
 fragment FlagPlus: '+';
 fragment FlagSub: '-';
 
+NULL : 'null';
 //数字 包含浮点与整数;
 NUMBER: [0-9]+'.'?[0-9]*;
 //方法名称

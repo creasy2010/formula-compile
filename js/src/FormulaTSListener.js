@@ -119,6 +119,15 @@ FormulaTSListener.prototype.exitFormulaParamString = function(ctx) {
 };
 
 
+// Enter a parse tree produced by FormulaTSParser#formulaParamNull.
+FormulaTSListener.prototype.enterFormulaParamNull = function(ctx) {
+};
+
+// Exit a parse tree produced by FormulaTSParser#formulaParamNull.
+FormulaTSListener.prototype.exitFormulaParamNull = function(ctx) {
+};
+
+
 // Enter a parse tree produced by FormulaTSParser#formulaCELLLoc.
 FormulaTSListener.prototype.enterFormulaCELLLoc = function(ctx) {
 };

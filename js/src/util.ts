@@ -129,12 +129,20 @@ export const formulaFormat = (()=>{
     }
     const name = obj.name;
     const type = obj['!'];
+
+    if(!formulaStrategy[type]){
+      throw new Error('格式化为对应类型'+type);
+    }
+
     return rawAtomicFormula + formulaStrategy[type](obj, newLine, space);
   }
 
   var formulaStrategy = {
     FormulaRefTemplateFunction: (obj, newLine, space)=>{
       return `RefTemplate(${obj.refSheet.value},${obj.refCell.value})`;
+    },
+    FormulaParamNull:(obj, newLine, space)=>{
+      return `null`
     },
     FormulaIfFunction: (obj, newLine, space)=>{
       let rawAtomicFormula = '';
@@ -196,7 +204,7 @@ export const formulaFormat = (()=>{
     },
     FormulaFunction: (obj, newLine,space)=>{
       let rawAtomicFormula = '';
-      const name = obj.name;      
+      const name = obj.name;
       if (typeof name === 'string') {
         rawAtomicFormula += `${name}(`;
         obj.params.forEach((param, paramIndex)=>{

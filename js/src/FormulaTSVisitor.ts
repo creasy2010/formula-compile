@@ -143,6 +143,17 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     }
   }
 
+
+// Visit a parse tree produced by FormulaTSParser#formulaParamNull.
+  visitFormulaParamNull(ctx) {
+    debugger;
+    return {
+      '!': 'FormulaParamNull',
+      range: getRangeInfo(ctx),
+      value:ctx.getText()
+    };
+  }
+
   // Visit a parse tree produced by FormulaTSParser#formulaCELLLoc.
   visitFormulaCELLLoc(ctx:ParserRuleContext) {
     let cellLoc = null , sheetName=null;
