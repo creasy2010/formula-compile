@@ -97,7 +97,7 @@ RefSheet:'{'SheetName'}!';
 //sheet 内单元格;
 CELLLoc:'['CELLNum']';
 CELLTPLLoc:'_@'CELLNum;
-fragment CELLNum: [A-Z][0-9]+;
+fragment CELLNum: [A-Z]+[0-9]+;
 
 //SheetName:[A-Za-z_0-9\u4e00-\u9fa5]+;
 fragment SheetName: ~[}]*;
