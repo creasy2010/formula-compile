@@ -22,7 +22,7 @@ describe('测试环境所有公式测试', () => {
     let visitor  = new FormulaTSVisitor();
     for (let i = 0, iLen = formulas.length; i < iLen; i++) {
     // for (let i = formulas.length-1, iLen = formulas.length; i < iLen; i++) {
-      console.log(`当前处理公式行号: ${i+1}`)
+    //   console.log(`当前处理公式行号: ${i+1}`)
       let formula = formulas[i];
       try {
         if(!formula) {

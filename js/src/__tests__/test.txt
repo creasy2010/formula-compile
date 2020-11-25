@@ -30,8 +30,14 @@ D31+D32-D33
 IF('A000000 《企业所得税年度纳税申报基础信息表》'!G8='是',0.75,0.5）
 E21/'A101010一般企业收入明细表'!C4
 
-
+IF([D6]==是,0.5,0)
 CONCATENATE($qyName)
+
+ROUND(IF([E5]!=0,[D5]/([E5]==0 ? 1 : [E5]),0),2)
+IF([E10]==0,0,[D10]/([E10]==0 ? 1 : [E10]))
+
+
+D5+D6+D9+D16+D18+D20+D27+D29+D30+D31
 
 n[E23]+UDEF_ZB($ZTDM$,$KJND$,$KJQJ$,'52001009','文化事业建设费','费额缴纳##本期检查已补缴费额@@本年累计',-1,0)
 n[E7]+[E8]-[E9]-[E10]
@@ -47,6 +53,7 @@ ROUND(QUERY_NSRSBH($QYID$),0,string)
 
 IF(QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'','',$NSQXDM$,null,$SBSZID$,'4')=='0',UDEF_ROOT_KM('YE',$QYID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'应收账款'),KMYE_DEBIT($QYID$,$KJND$,$KJQJ$,'应收账款')+KMYE_CREDIT($QYID$,$KJND$,$KJQJ$,'预收账款'))
 
+IF(QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','1','1','4500010007','1')=='市区(增值税附征)'||QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','2','1','4500020013','1')=='市区(增值税附征)'n||QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','1','1','4500010007','1')=='非市区、县城、镇(增值税附征)'n||QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','2','1','4500020013','1')=='非市区、县城、镇(增值税附征)'n||QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','1','1','4500010007','1')=='县城、镇(增值税附征)'n||QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','2','1','4500020013','1')=='县城、镇(增值税附征)',nQUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','1','1','4500010007','2')+QUERY_SZJDXX($QYID$,$KJND$,$KJQJ$,'4','NULL','2','1','4500020013','2')+,0)
 
 $KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC')
 $KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','其他应收款|SR/+|营业外收入|SR/-|营业外收入|ZC/-|BQ0032|SR/+|BQ0032|ZC/+|其他应付款|SR/+|递延收益|SR/-|递延收益|ZC/+|待处理财产损溢|SR/+|长期应付款|SR/+|机械作业|SR/+|BQ0028|SR/-|BQ0028|ZC/+|财务费用|SR')
@@ -117,3 +124,7 @@ $KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B
 $KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','应付利息|ZC/-|应付利息|SR')
 $KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','应付利润|ZC/-|应付利润|SR/+|利润分配|ZC/-|利润分配|SR')
 
+
+IF(0==0,工会经费,工会筹备金)
+
+IF(0==0,'否',是)

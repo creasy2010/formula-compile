@@ -22,6 +22,7 @@ formulaParam
 formulaExpress :
   formulaExpress op=(OPERATE_OR | OPERATE_AND) formulaExpress
  |formulaExpress op=(OPERATE_multiply | OPERATE_DIVIDE) formulaExpress
+// |formulaExpress op='?' formulaExpress ':' formulaExpress
  |formulaExpress op=(OPERATE_PLUS | OPERATE_MINUS) formulaExpress
  |formulaExpress op=(OPERATE_GREATE | OPERATE_GREATE_EQ | OPERATE_LESS | OPERATE_LESS_EQ | OPERATE_EQ | OPERATE_NEQ) formulaExpress
 
@@ -42,6 +43,7 @@ formulaExpress :
  //带括号的表达式;
 formulaBracketExpress :skipFuncLBracket(formulaExpress |formulaParamNum | formulaParamConst ) skipFuncRBracket;
 
+//formulaTernaryExpression :formulaExpress op='?' formulaExpress ':' formulaExpress;
 
 //如果方法
 formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
@@ -91,7 +93,7 @@ NULL : 'null';
 //数字 包含浮点与整数;
 NUMBER: [0-9]+'.'?[0-9]*;
 //方法名称
-FORMULANAME :   [A-Za-z_0-9\u4e00-\u9fa5]+;
+FORMULANAME :   [A-Za-z_0-9、\u4e00-\u9fa5]+;
 //字符串  中文
 STRING:         ['"]~['\r\n]*['"];
 

@@ -15,7 +15,7 @@ describe('临时测试', () => {
 
   it('单个用例',async()=>{
     let visitor  = new FormulaTSVisitor();
-    let formula=`aa(null,$ZTDM$,$KJND$,$KJQJ$,'-1','','4')`;
+    let formula=`IF([E5]!=0,[D5]/([E5]==0 ? 1 : [E5]),0)`;
 
     let ast  =await visitor.toAst(formula);
     // expect(ast).toMatchSnapshot('测试公式formulas[]');
