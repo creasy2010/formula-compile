@@ -38,7 +38,6 @@ describe('公式测试', () => {
         continue;
       }
       let ast  =await visitor.toAst(formula);
-      debugger
       const f = formulaFormat(ast)
       expect(f===formula.replace(/\s+/g,"")).toBeTruthy()
     }

@@ -21,7 +21,6 @@ describe('公式错误测试', () => {
       try{
         let ast = await visitor.toAst(formula);
         expect(ast).not.toBeNull();
-        debugger;
       } catch(err){
         errorHandleFn(err)
       }

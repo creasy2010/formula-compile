@@ -1,10 +1,11 @@
 grammar FormulaTS;
 
-formulaUnit  :
-    formulaIfFunction
-    |  formulaRefTemplateFunction
-    |  formulaFunction
-    |  formulaExpress;
+formulaUnit  :((formulaIfFunction
+         |  formulaRefTemplateFunction
+         |  formulaFunction
+         |  formulaExpress
+         |  formulaAssignExpress) ';'?)+
+         ;
 
 formulaFunction :formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;
 
@@ -22,7 +23,6 @@ formulaParam
 formulaExpress :
   formulaExpress op=(OPERATE_OR | OPERATE_AND) formulaExpress
  |formulaExpress op=(OPERATE_multiply | OPERATE_DIVIDE) formulaExpress
-// |formulaExpress op='?' formulaExpress ':' formulaExpress
  |formulaExpress op=(OPERATE_PLUS | OPERATE_MINUS) formulaExpress
  |formulaExpress op=(OPERATE_GREATE | OPERATE_GREATE_EQ | OPERATE_LESS | OPERATE_LESS_EQ | OPERATE_EQ | OPERATE_NEQ) formulaExpress
 
@@ -38,6 +38,7 @@ formulaExpress :
  |formulaCELLLoc
  |formulaCELLTPLLoc
  |formulaParamString
+ |formulaExpress op='?' formulaExpress ':' formulaExpress
  ;
 
  //带括号的表达式;
@@ -49,6 +50,8 @@ formulaBracketExpress :skipFuncLBracket(formulaExpress |formulaParamNum | formul
 formulaIfFunction: ('IF'|'如果') skipFuncLBracket formulaParams? skipFuncRBracket;
 //模板公式引用
 formulaRefTemplateFunction: ('RefTemplate'|'模板公式') skipFuncLBracket (.*) skipParamComma (.*) skipFuncRBracket;
+//赋值表达式;
+formulaAssignExpress:CONSTVAR '=' formulaExpress;
 
 //公式方法名称;
 formulaFunctionName : FORMULANAME;

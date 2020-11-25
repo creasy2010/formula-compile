@@ -36,7 +36,9 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     return {
       '!': 'FormulaUnit',
       range: getRangeInfo(ctx),
-      formulas: this.visitChildren(ctx),
+      formulas: this.visitChildren(ctx).filter(item=>{
+        return !!item;
+      }),
     };
   }
 
@@ -71,8 +73,14 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
     };
   };
 
-
-
+  visitFormulaAssignExpress(ctx){
+    return {
+      '!': 'FormulaAssignExpress',
+      range: getRangeInfo(ctx),
+      varName:ctx.children[0].getText(),
+      express:this.visit(ctx.children[2])
+    };
+  }
 
   // Visit a parse tree produced by FormulaTSParser#formulaFunction.
   visitFormulaFunction(ctx) {
@@ -146,7 +154,6 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
 
 // Visit a parse tree produced by FormulaTSParser#formulaParamNull.
   visitFormulaParamNull(ctx) {
-    debugger;
     return {
       '!': 'FormulaParamNull',
       range: getRangeInfo(ctx),
@@ -199,6 +206,16 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
         range: getRangeInfo(ctx),
         express:this.visit(ctx.children),
       };
+``    } else if(ctx.getChildCount()===5 && ctx.children[1].getText()==='?' && ctx.children[3].getText()===':') {
+      //三元表达式;
+
+      return  {
+          '!': 'FormulaTernaryExpression',
+          range: getRangeInfo(ctx),
+          condition:this.visit(ctx.children[0]),
+          trueExp:this.visit(ctx.children[2]),
+          falseExp:this.visit(ctx.children[4]),
+        }
     } else if(ctx.getChildCount()===3) {
       //二元运算;
       // if(!this.visit(ctx.children[0])) {
