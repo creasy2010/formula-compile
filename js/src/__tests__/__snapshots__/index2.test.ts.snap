@@ -8195,3 +8195,426 @@ Object {
   },
 }
 `;
+
+exports[`公式第二批 visitor处理: 测试公式formulas[8] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaFunction",
+      "name": "ROUND",
+      "params": Array [
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaExpress",
+            "express": Array [
+              Object {
+                "!": "FormulaIfFunction",
+                "condition": Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaBinaryOperationExpress",
+                    "leftExp": Object {
+                      "!": "FormulaExpress",
+                      "express": Array [
+                        Object {
+                          "!": "FormulaCELLLoc",
+                          "cellLoc": "E5",
+                          "range": Object {
+                            "_source": "[E5]",
+                          },
+                          "sheetName": null,
+                        },
+                      ],
+                      "range": Object {
+                        "_source": "[E5]",
+                      },
+                    },
+                    "operate": Object {
+                      "!": "TerminalNodeImpl",
+                      "range": Object {
+                        "_source": "!=",
+                      },
+                      "value": "!=",
+                    },
+                    "range": Object {
+                      "_source": "[E5]!=0",
+                    },
+                    "rightExp": Object {
+                      "!": "FormulaExpress",
+                      "express": Array [
+                        Object {
+                          "!": "FormulaParamNum",
+                          "range": Object {
+                            "_source": "0",
+                          },
+                          "value": "0",
+                        },
+                      ],
+                      "range": Object {
+                        "_source": "0",
+                      },
+                    },
+                  },
+                  "range": Object {
+                    "_source": "[E5]!=0",
+                  },
+                },
+                "elseStatement": Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaParamNum",
+                    "range": Object {
+                      "_source": "0",
+                    },
+                    "value": "0",
+                  },
+                  "range": Object {
+                    "_source": "0",
+                  },
+                },
+                "name": "IF",
+                "range": Object {
+                  "_source": "IF([E5]!=0,[D5]/([E5]==0?1:[E5]),0)",
+                },
+                "thenStatement": Object {
+                  "!": "FormulaParam",
+                  "content": Object {
+                    "!": "FormulaBinaryOperationExpress",
+                    "leftExp": Object {
+                      "!": "FormulaExpress",
+                      "express": Array [
+                        Object {
+                          "!": "FormulaCELLLoc",
+                          "cellLoc": "D5",
+                          "range": Object {
+                            "_source": "[D5]",
+                          },
+                          "sheetName": null,
+                        },
+                      ],
+                      "range": Object {
+                        "_source": "[D5]",
+                      },
+                    },
+                    "operate": Object {
+                      "!": "TerminalNodeImpl",
+                      "range": Object {
+                        "_source": "/",
+                      },
+                      "value": "/",
+                    },
+                    "range": Object {
+                      "_source": "[D5]/([E5]==0?1:[E5])",
+                    },
+                    "rightExp": Object {
+                      "!": "FormulaExpress",
+                      "express": Array [
+                        Object {
+                          "!": "FormulaBracketExpress",
+                          "express": Array [
+                            Object {
+                              "!": "FormulaTernaryExpression",
+                              "condition": Object {
+                                "!": "FormulaBinaryOperationExpress",
+                                "leftExp": Object {
+                                  "!": "FormulaExpress",
+                                  "express": Array [
+                                    Object {
+                                      "!": "FormulaCELLLoc",
+                                      "cellLoc": "E5",
+                                      "range": Object {
+                                        "_source": "[E5]",
+                                      },
+                                      "sheetName": null,
+                                    },
+                                  ],
+                                  "range": Object {
+                                    "_source": "[E5]",
+                                  },
+                                },
+                                "operate": Object {
+                                  "!": "TerminalNodeImpl",
+                                  "range": Object {
+                                    "_source": "==",
+                                  },
+                                  "value": "==",
+                                },
+                                "range": Object {
+                                  "_source": "[E5]==0",
+                                },
+                                "rightExp": Object {
+                                  "!": "FormulaExpress",
+                                  "express": Array [
+                                    Object {
+                                      "!": "FormulaParamNum",
+                                      "range": Object {
+                                        "_source": "0",
+                                      },
+                                      "value": "0",
+                                    },
+                                  ],
+                                  "range": Object {
+                                    "_source": "0",
+                                  },
+                                },
+                              },
+                              "falseExp": Object {
+                                "!": "FormulaExpress",
+                                "express": Array [
+                                  Object {
+                                    "!": "FormulaCELLLoc",
+                                    "cellLoc": "E5",
+                                    "range": Object {
+                                      "_source": "[E5]",
+                                    },
+                                    "sheetName": null,
+                                  },
+                                ],
+                                "range": Object {
+                                  "_source": "[E5]",
+                                },
+                              },
+                              "range": Object {
+                                "_source": "[E5]==0?1:[E5]",
+                              },
+                              "trueExp": Object {
+                                "!": "FormulaExpress",
+                                "express": Array [
+                                  Object {
+                                    "!": "FormulaParamNum",
+                                    "range": Object {
+                                      "_source": "1",
+                                    },
+                                    "value": "1",
+                                  },
+                                ],
+                                "range": Object {
+                                  "_source": "1",
+                                },
+                              },
+                            },
+                          ],
+                          "range": Object {
+                            "_source": "([E5]==0?1:[E5])",
+                          },
+                        },
+                      ],
+                      "range": Object {
+                        "_source": "([E5]==0?1:[E5])",
+                      },
+                    },
+                  },
+                  "range": Object {
+                    "_source": "[D5]/([E5]==0?1:[E5])",
+                  },
+                },
+              },
+            ],
+            "range": Object {
+              "_source": "IF([E5]!=0,[D5]/([E5]==0?1:[E5]),0)",
+            },
+          },
+          "range": Object {
+            "_source": "IF([E5]!=0,[D5]/([E5]==0?1:[E5]),0)",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamNum",
+            "range": Object {
+              "_source": "2",
+            },
+            "value": "2",
+          },
+          "range": Object {
+            "_source": "2",
+          },
+        },
+      ],
+      "range": Object {
+        "_source": "ROUND(IF([E5]!=0,[D5]/([E5]==0?1:[E5]),0),2)",
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "ROUND(IF([E5]!=0,[D5]/([E5]==0?1:[E5]),0),2)",
+  },
+}
+`;
+
+exports[`公式第二批 visitor处理: 测试公式formulas[9] 1`] = `
+Object {
+  "!": "FormulaUnit",
+  "formulas": Array [
+    Object {
+      "!": "FormulaAssignExpress",
+      "express": Object {
+        "!": "FormulaExpress",
+        "express": Array [
+          Object {
+            "!": "FormulaFunction",
+            "name": "GET_TOP_XJKMDZID",
+            "params": Array [
+              Object {
+                "!": "FormulaParam",
+                "content": Object {
+                  "!": "FormulaParamConst",
+                  "range": Object {
+                    "_source": "$ZTDM$",
+                  },
+                  "value": "$ZTDM$",
+                },
+                "range": Object {
+                  "_source": "$ZTDM$",
+                },
+              },
+              Object {
+                "!": "FormulaParam",
+                "content": Object {
+                  "!": "FormulaParamConst",
+                  "range": Object {
+                    "_source": "$KJND_B$",
+                  },
+                  "value": "$KJND_B$",
+                },
+                "range": Object {
+                  "_source": "$KJND_B$",
+                },
+              },
+            ],
+            "range": Object {
+              "_source": "GET_TOP_XJKMDZID($ZTDM$,$KJND_B$)",
+            },
+          },
+        ],
+        "range": Object {
+          "_source": "GET_TOP_XJKMDZID($ZTDM$,$KJND_B$)",
+        },
+      },
+      "range": Object {
+        "_source": "$KMDZID$=GET_TOP_XJKMDZID($ZTDM$,$KJND_B$)",
+      },
+      "varName": "$KMDZID$",
+    },
+    Object {
+      "!": "FormulaFunction",
+      "name": "UDEF_PZ_XJLL",
+      "params": Array [
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamConst",
+            "range": Object {
+              "_source": "$ZTDM$",
+            },
+            "value": "$ZTDM$",
+          },
+          "range": Object {
+            "_source": "$ZTDM$",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamConst",
+            "range": Object {
+              "_source": "$KMDZID$",
+            },
+            "value": "$KMDZID$",
+          },
+          "range": Object {
+            "_source": "$KMDZID$",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamConst",
+            "range": Object {
+              "_source": "$KJND_B$",
+            },
+            "value": "$KJND_B$",
+          },
+          "range": Object {
+            "_source": "$KJND_B$",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamConst",
+            "range": Object {
+              "_source": "$KJQJ_B$",
+            },
+            "value": "$KJQJ_B$",
+          },
+          "range": Object {
+            "_source": "$KJQJ_B$",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamConst",
+            "range": Object {
+              "_source": "$KJND_E$",
+            },
+            "value": "$KJND_E$",
+          },
+          "range": Object {
+            "_source": "$KJND_E$",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamConst",
+            "range": Object {
+              "_source": "$KJQJ_E$",
+            },
+            "value": "$KJQJ_E$",
+          },
+          "range": Object {
+            "_source": "$KJQJ_E$",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamString",
+            "range": Object {
+              "_source": "'1'",
+            },
+            "value": "1",
+          },
+          "range": Object {
+            "_source": "'1'",
+          },
+        },
+        Object {
+          "!": "FormulaParam",
+          "content": Object {
+            "!": "FormulaParamString",
+            "range": Object {
+              "_source": "'主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC'",
+            },
+            "value": "主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC",
+          },
+          "range": Object {
+            "_source": "'主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC'",
+          },
+        },
+      ],
+      "range": Object {
+        "_source": "UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC')",
+      },
+    },
+  ],
+  "range": Object {
+    "_source": "$KMDZID$=GET_TOP_XJKMDZID($ZTDM$,$KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC')",
+  },
+}
+`;
