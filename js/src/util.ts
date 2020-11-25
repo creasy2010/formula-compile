@@ -107,9 +107,11 @@ export const formulaFormat = (()=>{
     let rawFormula = '';
     if (ast && Object.prototype.toString.call(ast.formulas) === "[object Array]") {
       ast.formulas.forEach((formula, index)=>{
-        rawFormula += formatAtomicFormula(formula)
-        if (index !== ast.formulas.length-1) {
-          rawFormula += ';'
+        if(formula){
+          rawFormula += formatAtomicFormula(formula)
+          if (index !== ast.formulas.length-1) {
+            rawFormula += ';'
+          }
         }
       })
     }
@@ -138,6 +140,20 @@ export const formulaFormat = (()=>{
   }
 
   var formulaStrategy = {
+    FormulaAssignExpress: (obj, newLine, space)=>{
+
+      const varName =obj.varName
+      const express =formatAtomicFormula(obj.express, false, space)
+      // debugger;
+      return `${varName}=${express}`;
+    },
+    FormulaTernaryExpression: (obj, newLine, space)=>{
+
+      const conditionExp =formatAtomicFormula(obj.condition, false, space)
+      const trueExp =formatAtomicFormula(obj.trueExp, false, space)
+      const falseExp =formatAtomicFormula(obj.falseExp, false, space)
+      return `${conditionExp}?${trueExp}:${falseExp}`;
+    },
     FormulaRefTemplateFunction: (obj, newLine, space)=>{
       return `RefTemplate(${obj.refSheet.value},${obj.refCell.value})`;
     },
