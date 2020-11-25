@@ -62,4 +62,5 @@ let formulas:string[] = [
   ,"获取发票指标(\"测试参数\",[E6])"
   ,`IF(11,"2000-00-00",aa(1,2,3,'ZCRQ'))`
   ,`ROUND(IF([E5]!=0,[D5]/([E5]==0 ? 1 : [E5]),0),2)`
+  ,`$KMDZID$=GET_TOP_XJKMDZID($ZTDM$, $KJND_B$);UDEF_PZ_XJLL($ZTDM$,$KMDZID$,$KJND_B$,$KJQJ_B$,$KJND_E$,$KJQJ_E$,'1','主营业务收入|SR/-|主营业务收入|ZC/+|其他业务收入|SR/-|其他业务收入|ZC/+|应收票据|SR/-|应收票据|ZC/+|应收账款|SR/-|应收账款|ZC/+|预收账款|SR/-|预收账款|ZC')`
 ];
