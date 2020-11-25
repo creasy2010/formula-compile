@@ -1,10 +1,7 @@
 grammar FormulaTS;
 
-formulaUnit  :((formulaIfFunction
-         |  formulaRefTemplateFunction
-         |  formulaFunction
-         |  formulaExpress
-         |  formulaAssignExpress) ';'?)+
+formulaUnit  :((formulaExpress
+         |  formulaAssignExpress)';'?)+
          ;
 
 formulaFunction :formulaFunctionName skipFuncLBracket formulaParams? skipFuncRBracket;

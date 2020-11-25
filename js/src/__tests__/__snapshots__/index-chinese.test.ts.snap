@@ -5,95 +5,103 @@ Object {
   "!": "FormulaUnit",
   "formulas": Array [
     Object {
-      "!": "FormulaFunction",
-      "name": "if",
-      "params": Array [
+      "!": "FormulaExpress",
+      "express": Array [
         Object {
-          "!": "FormulaParam",
-          "content": Object {
-            "!": "FormulaParamNum",
-            "range": Object {
-              "_source": "1",
+          "!": "FormulaFunction",
+          "name": "if",
+          "params": Array [
+            Object {
+              "!": "FormulaParam",
+              "content": Object {
+                "!": "FormulaParamNum",
+                "range": Object {
+                  "_source": "1",
+                },
+                "value": "1",
+              },
+              "range": Object {
+                "_source": "1",
+              },
             },
-            "value": "1",
-          },
-          "range": Object {
-            "_source": "1",
-          },
-        },
-        Object {
-          "!": "FormulaParam",
-          "content": Object {
-            "!": "FormulaBinaryOperationExpress",
-            "leftExp": Object {
-              "!": "FormulaExpress",
-              "express": Array [
-                Object {
-                  "!": "FormulaParamNum",
+            Object {
+              "!": "FormulaParam",
+              "content": Object {
+                "!": "FormulaBinaryOperationExpress",
+                "leftExp": Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": Object {
+                        "_source": "+1",
+                      },
+                      "value": "+1",
+                    },
+                  ],
                   "range": Object {
                     "_source": "+1",
                   },
-                  "value": "+1",
                 },
-              ],
-              "range": Object {
-                "_source": "+1",
-              },
-            },
-            "operate": Object {
-              "!": "TerminalNodeImpl",
-              "range": Object {
-                "_source": ">",
-              },
-              "value": ">",
-            },
-            "range": Object {
-              "_source": "+1>2",
-            },
-            "rightExp": Object {
-              "!": "FormulaExpress",
-              "express": Array [
-                Object {
-                  "!": "FormulaParamNum",
+                "operate": Object {
+                  "!": "TerminalNodeImpl",
+                  "range": Object {
+                    "_source": ">",
+                  },
+                  "value": ">",
+                },
+                "range": Object {
+                  "_source": "+1>2",
+                },
+                "rightExp": Object {
+                  "!": "FormulaExpress",
+                  "express": Array [
+                    Object {
+                      "!": "FormulaParamNum",
+                      "range": Object {
+                        "_source": "2",
+                      },
+                      "value": "2",
+                    },
+                  ],
                   "range": Object {
                     "_source": "2",
                   },
-                  "value": "2",
                 },
-              ],
+              },
               "range": Object {
-                "_source": "2",
+                "_source": "+1>2",
               },
             },
-          },
-          "range": Object {
-            "_source": "+1>2",
-          },
-        },
-        Object {
-          "!": "FormulaParam",
-          "content": Object {
-            "!": "FormulaParamNum",
-            "range": Object {
-              "_source": "0",
+            Object {
+              "!": "FormulaParam",
+              "content": Object {
+                "!": "FormulaParamNum",
+                "range": Object {
+                  "_source": "0",
+                },
+                "value": "0",
+              },
+              "range": Object {
+                "_source": "0",
+              },
             },
-            "value": "0",
-          },
-          "range": Object {
-            "_source": "0",
-          },
-        },
-        Object {
-          "!": "FormulaParam",
-          "content": Object {
-            "!": "FormulaParamNum",
-            "range": Object {
-              "_source": "1",
+            Object {
+              "!": "FormulaParam",
+              "content": Object {
+                "!": "FormulaParamNum",
+                "range": Object {
+                  "_source": "1",
+                },
+                "value": "1",
+              },
+              "range": Object {
+                "_source": "1",
+              },
             },
-            "value": "1",
-          },
+          ],
           "range": Object {
-            "_source": "1",
+            "_source": "if（1+1>2，0，1）",
           },
         },
       ],
