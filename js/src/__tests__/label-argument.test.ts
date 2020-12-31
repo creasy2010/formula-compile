@@ -35,5 +35,5 @@ describe('labelArgument 测试', () => {
 
 
 let formulas:string[] = [
-  `COMBI_XX('#KJQJ#:3') `
+  `COMBI_XX('#KJQJ#:3')`
 ];
