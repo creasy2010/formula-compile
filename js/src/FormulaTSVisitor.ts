@@ -145,8 +145,8 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   visitFormulaParamString(ctx:ParserRuleContext) {
     let content =ctx.getText();
     content =content.substring(1,content.length-1);
-    if(content.startsWith("#") && /^\$[a-zA-Z0-9]$/.test(content)) {
-      const flag ="$:";
+    const flag ="#:";
+    if(content.startsWith(flag[0]) && /^\$[a-zA-Z0-9]$/.test(content)) {
       let falgIndex= content.indexOf(flag,1);
       let argumentName= content.substring(1,falgIndex);
       let value = content.substring(falgIndex+flag.length);
@@ -157,7 +157,6 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
         value
       }
     } else {
-
       return {
         '!': 'FormulaParamString',
         range: getRangeInfo(ctx),
