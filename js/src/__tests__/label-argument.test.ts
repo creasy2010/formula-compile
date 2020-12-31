@@ -11,7 +11,7 @@ import {toJSON, formulaFormat, toggleRangeInfo} from "../util";
 
 toggleRangeInfo();
 
-describe('性能测试', () => {
+describe('labelArgument 测试', () => {
 
   it('visitor处理',async()=>{
     let visitor  = new FormulaTSVisitor();
@@ -23,7 +23,6 @@ describe('性能测试', () => {
       let timeFLag =`公式[${i}]耗时 长度:${formula?.length}`;
       console.time(timeFLag);
       try {
-
         let ast  =await visitor.toAst(formula);
         expect(ast).toMatchSnapshot('测试公式formulas['+i+']');
       } catch (err) {
