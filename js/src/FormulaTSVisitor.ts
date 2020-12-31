@@ -144,10 +144,25 @@ export class FormulaTSVisitor extends ParseTreeVisitor {
   // Visit a parse tree produced by FormulaTSParser#formulaParamString.
   visitFormulaParamString(ctx:ParserRuleContext) {
     let content =ctx.getText();
-    return {
-      '!': 'FormulaParamString',
-      range: getRangeInfo(ctx),
-      value:content.substring(1,content.length-1)
+    content =content.substring(1,content.length-1);
+    if(content.startsWith("#") && /^\$[a-zA-Z0-9]$/.test(content)) {
+      const flag ="$:";
+      let falgIndex= content.indexOf(flag,1);
+      let argumentName= content.substring(1,falgIndex);
+      let value = content.substring(falgIndex+flag.length);
+      return {
+        '!': 'FormulaLabelArgumentParamString',
+        range: getRangeInfo(ctx),
+        argumentName,
+        value
+      }
+    } else {
+
+      return {
+        '!': 'FormulaParamString',
+        range: getRangeInfo(ctx),
+        value:content
+      }
     }
   }
 
