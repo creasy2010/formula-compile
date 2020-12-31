@@ -195,6 +195,9 @@ export const formulaFormat = (()=>{
     FormulaParamString: (obj, newLine, space)=>{
       return `'${obj.value}'`;
     },
+    FormulaLabelArgumentParamString: (obj, newLine, space)=>{
+      return `'#${obj.argumentName}#:${obj.value}'`;
+    },
     FormulaParamConst: (obj, newLine, space)=>{
       return `${obj.value}`;
     },
